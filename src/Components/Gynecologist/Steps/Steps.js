@@ -12,7 +12,7 @@ function Steps() {
             <h5>Step By Step Guide On How To Connect With a Gynecologist Nearby </h5>
             <div className='steps'>
                 <div className='step'>
-                    <h5>01</h5>
+                    <h5 className='diff1'>01</h5>
                     <img className='fade-bg' src={Fade} alt='fade' />
                     <img className='step-jpg' src={Step1} alt='step' />
                 </div>
@@ -31,9 +31,9 @@ function Steps() {
                     </p>
                 </div>
                 <div className='step'>
-                    <h5>02</h5>
-                    <img className='fade-bg' src={Fade} alt='fade' />
-                    <img className='step-jpg' src={Step2} alt='step' />
+                    <h5 className='diff2'>02</h5>
+                    <img className='fade-bg3' src={Fade} alt='fade' />
+                    <img className='step-jpg3' src={Step2} alt='step' />
                 </div>
                 <div className='step'>
                     <h5 className='diff'>03</h5>

@@ -6,7 +6,7 @@
     letter-spacing: 0;
 }
 
-.ready>div:has(h5) {
+.ready-hd {
     width: 750px;
     text-align: center;
     margin: 20px auto;

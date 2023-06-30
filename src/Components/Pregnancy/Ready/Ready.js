@@ -8,7 +8,7 @@ import Ready4 from './Ready4.png'
 function Ready() {
   return (
     <div className='ready'>
-        <div><h5>Ready To Embark On The Beautiful Journey Of Pregnancy?</h5></div>
+        <div className='ready-hd'><h5>Ready To Embark On The Beautiful Journey Of Pregnancy?</h5></div>
         <div className='journey'>
             <div className='journey-res'><img src={Ready1} alt='result'/></div>
             <div className='journey-bump1'><img src={Ready2} alt='bump'/></div>
