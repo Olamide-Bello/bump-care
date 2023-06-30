@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Homepage from './Components/Home/Homepage';
-import Pregnancy from './Components/Pregnancy/Pregnancy';
-import Gynecologist from './Components/Gynecologist/Gynecologist';
+import Homepage from './Components/Home/Homepage.js';
+import Pregnancy from './Components/Pregnancy/Pregnancy.js';
+import Gynecologist from './Components/Gynecologist/Gynecologist.js';
 
 function App() {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../Header/Header'
-import Find from './Find/Find'
-import We from './We/We'
-import Who from './Who/Who'
-import Why from './Why/Why'
-import Steps from './Steps/Steps'
-import MapContainer from './Map/MapContainer'
+import Header from '../Header/Header.js'
+import Find from './Find/Find.js'
+import We from './We/We.js'
+import Who from './Who/Who.js'
+import Why from './Why/Why.js'
+import Steps from './Steps/Steps.js'
+import MapContainer from './Map/MapContainer.js'
 
 
 function Gynecology() {
