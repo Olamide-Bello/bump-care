@@ -1,0 +1,88 @@
+.nutrition {
+    padding: 60px 80px 40px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.p-dish h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.dish {
+    position: relative;
+    width: 40vw;
+    height: 500px;
+    margin-top: 30px;
+
+}
+.dish img {
+    position: absolute;
+}
+
+#dish1 {
+    top: 0;
+    left: 10%;
+    z-index: 50;
+}
+
+#dish2 {
+    top: 3%;
+    right: 25%;
+}
+
+#dish3 {
+    left: 0;
+    top: 32%;
+}
+
+#dish4 {
+    top: 22%;
+    right: 21%;
+}
+
+#dish7 {
+    bottom: 3%;
+    left: 0;
+}
+
+#dish5 {
+    bottom: 0;
+    left: 20%;
+    z-index: 50;
+}
+
+#dish6 {
+    right: 11%;
+    bottom: 10%;
+}
+
+.p-nutrition p {
+    font-family: InterMedium;
+    font-size: 16;
+    color: #510115;
+    line-height: 120%;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.p-nutrition li {
+    font-family: PoppinsRegular;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+    padding-top: 25px;
+}
+
+.p-nutrition li::marker {
+    color: #FC6F92;
+    font-size: 30px;
+}

@@ -1,0 +1,69 @@
+.prenatal {
+    padding: 60px 80px 40px 120px;
+}
+
+.prenatal>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.p-test-nutr {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+}
+
+.tests>h5,
+.nutrients>h5 {
+    font-family: LatoBold;
+    font-size: 24px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.tests ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position:inside;
+}
+
+.tests li {
+    border: 1px #745464 solid ;
+    border-radius: 10px;
+    padding: 30px 25px 20px 40px;
+    text-indent: -20px;
+    font-family: PoppinsRegular;
+    font-size: 14px;
+    color: #745464;
+}
+
+.tests li:hover {
+    background-color: #FC6F92;
+    color: #FBFBFB;
+    border: 1px #FC6F92 solid;
+}
+
+.nutrients ul {
+    background-color: #FFF1F4;
+    padding: 60px 20px 20px 50px;
+    border-radius: 10px;
+}
+
+.nutrients li {
+    font-family: PoppinsRegular;
+    font-size: 14px;
+    color: #745464;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+}

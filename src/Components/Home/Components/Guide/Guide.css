@@ -1,0 +1,145 @@
+.guide {
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.guide-hd {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.guide-bd {
+    font-family: PoppinsRegular;
+    font-size: 14;
+    color: #745F64;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.res-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.res-group1,
+.res-group2 {
+    height: 870px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.res1,
+.res2,
+.res3,
+.res4 {
+    height: 420px;
+    width: 420px;
+    padding: 25px 15px 0 30px;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.5s ease-in-out
+}
+
+.res1>img,
+.res2>img,
+.res3>img,
+.res4>img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    transition: all 0.45s ease-in-out;
+    animation: check 0.45s ease-in-out 1;
+}
+
+.res h5 {
+    font-family: LatoBold;
+    font-size: 24;
+    color: #FFF;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.res p {
+    font-family: PoppinsRegular;
+    font-size: 14;
+    color: #FFF;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.res1 {
+    background-color: #FC6F92;
+}
+
+.res2 {
+    background-color: #FDAAB9;
+}
+
+.res3 {
+    background-color: #745464;
+}
+
+.res4 {
+    background-color: #FB9CD0;
+}
+
+.res1:hover,
+.res2:hover,
+.res3:hover,
+.res4:hover {
+    height: 795px;
+    transition: all 0.45s ease-in-out
+}
+
+
+
+
+.res1:hover img, 
+.res2:hover img, 
+.res3:hover img, 
+.res4:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+    transition: all 0.45s ease-in-out;
+}
+
+.res1:hover ~ .res2>img {
+    display: none;
+    transition: all 0.45s ease-in-out
+}
+.res1:has(~ .res2:hover) > img {
+    display: none;
+    transition: all 0.45s ease-in-out
+}
+.res3:hover ~ .res4>img {
+    display: none;
+    transition: all 0.45s ease-in-out
+}
+.res3:has(~ .res4:hover) > img {
+    display: none;
+    transition: all 0.45s ease-in-out
+}
+
+
+@keyframes check {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} 

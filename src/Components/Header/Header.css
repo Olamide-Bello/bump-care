@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px 20px 126px;
+
+}
+
+nav {
+    margin-left: 60px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 40px;
+    list-style: none;
+    font-family:PoppinsRegular ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #745464;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.big-btn {
+    font-family: LatoBold;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+

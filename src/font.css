@@ -1,0 +1,43 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: local(PoppinsBold), url('./Fonts/Poppins/Poppins-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: local(PoppinsRegular), url('./Fonts/Poppins/Poppins-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: local(PoppinsLight), url('./Fonts/Poppins/Poppins-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: local(LatoBold), url('./Fonts/Lato/Lato-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: LatoSemibold;
+  src: local(LatoSemibold), url('./Fonts/Lato/Lato-Semibold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: LatoMedium;
+  src: local(LatoMedium), url('./Fonts/Lato/Lato-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: InterMedium;
+  src: local(InterMedium), url('./Fonts/Inter/Inter-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'SofiaProRegular';
+  src: local('SofiaProRegular'), local('SofiaProRegular'),
+    url('./Fonts/SofiaPro/SofiaProRegular.ttf') format('embedded-opentype'),
+    url('./Fonts/SofiaPro/SofiaProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

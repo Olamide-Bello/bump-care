@@ -1,0 +1,39 @@
+.how {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.how>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.how-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.how-hd {
+    font-family: LatoBold;
+    font-size: 24;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+
+.how-bd {
+    font-family: PoppinsRegular;
+    font-size: 14;
+    color: #745464;
+    line-height: 140%;
+    letter-spacing: 0;
+}

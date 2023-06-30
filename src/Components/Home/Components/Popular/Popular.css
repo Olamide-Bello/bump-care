@@ -1,0 +1,30 @@
+.popular {
+    padding: 30px 120px;
+}
+
+.popular>h5 {
+    font-family: LatoBold;
+    font-size: 25px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.post,
+.post>img {
+    width: 235px;
+}
+
+.post a {
+    font-family: LatoSemibold;
+    font-family: 26px;
+    text-decoration: underline;
+    color: #745464;
+}

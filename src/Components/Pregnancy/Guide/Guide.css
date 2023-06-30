@@ -1,0 +1,49 @@
+.t-guide {
+    background-color: #FFF1F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 116px;
+    margin-top: 20px;
+    padding: 60px 80px 60px 120px;
+}
+
+.t-guide-c1>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #510115;
+}
+
+.t-guide-c1>p {
+    font-family: PoppinsRegular;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #745464;
+}
+
+.img-container {
+    position: relative;
+    width: 341px;
+}
+
+
+.img-container::before {
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: -20px;
+    border-radius: 5px;
+    height: 354px;
+    width: 220px;
+    background-color: rgba(252, 111, 146, 0.4);
+    z-index: 0 !important;
+    
+}
+
+.img-container * {
+    z-index: 100;
+    position: relative;
+}

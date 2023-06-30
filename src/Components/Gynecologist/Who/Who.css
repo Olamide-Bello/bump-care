@@ -1,0 +1,33 @@
+.who {
+    margin: 60px 100px 20px 126px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFF1F4;
+    border-radius: 10px;
+}
+
+.who-gyn {
+    padding: 0 30px 0 35px;
+}
+
+.who-gyn h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #510115;
+}
+
+.who-gyn p {
+    font-family: PoppinsRegular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #745464;
+    margin-top: 30px;
+}
+
+.who img {
+    width: 550px;
+}

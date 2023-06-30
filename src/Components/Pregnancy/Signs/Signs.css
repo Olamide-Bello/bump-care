@@ -1,0 +1,65 @@
+.signs {
+    background-color: rgba(246, 229, 250, 0.5);
+    padding: 60px 80px 40px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.p-signs>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.p-signs>p:first-of-type {
+    font-family: InterMedium;
+    font-size: 16;
+    color: #510115;
+    line-height: 120%;
+    letter-spacing: 0;
+}
+
+.p-signs P:not(:first-of-type),
+.p-signs li span {
+    font-family: PoppinsRegular;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #745464;
+}
+.p-signs ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.p-signs li {
+    list-style-position: inside;
+    color: #FB9CD0;
+}
+
+.signs-img {
+    position: relative;
+    width: 450px;
+}
+
+.signs-img::before {
+    position: absolute;
+    content: "";
+    width: 230px;
+    height: 260px;
+    border-radius: 10px;
+    background-color: #FB9CD0;
+    right: -20px;
+    top: -20px;
+}
+
+.signs-img * {
+    position: relative;
+    z-index: 100;
+}
+
+

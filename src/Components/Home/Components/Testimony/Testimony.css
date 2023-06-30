@@ -1,0 +1,71 @@
+.testimony>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+
+.tes-container {
+    background-color: #FB9CD0;
+    border-radius: 10px;
+    width: 80vw;
+    height: 600px;
+    margin: 30px auto;
+    position: relative;
+}
+
+
+
+.tes1,
+.tes2 {
+    position: absolute;
+    width: 520px;
+    height: 500px;
+    top: 50px;
+    background-color: #FFF1F4;
+    border-radius: 10px;
+    padding: 50px 10px 0 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tes1 {
+    left: -50px;
+}
+
+.tes2 {
+    right: -50px;
+}
+
+.tes-child1>h5 {
+    font-family: LatoBold;
+    font-size: 24px;
+    color: #510115;
+}
+
+.tes-child1>p {
+    font-family: PoppinsRegular;
+    font-size: 14px;
+    color: #745464;
+}
+
+.tes-child2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 37px;
+}
+
+.tes-dt {
+    text-align: left;
+    width: 200px;
+}
+
+
+
