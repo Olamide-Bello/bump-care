@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Homepage from './Components/Home/Homepage.js';
 import Pregnancy from './Components/Pregnancy/Pregnancy.js';
 import Gynecologist from './Components/Gynecologist/Gynecologist.js';
+import Childbirth from './Components/Childbirth/Childbirth';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/home" element={<Homepage/>}/>
         <Route path="/pregnancy" element={<Pregnancy/>}/>
         <Route path="/gynecologist" element={<Gynecologist/>}/>
+        <Route path="/childbirth" element={<Childbirth/>}/>
         <Route path="*" element={<Navigate to='/' />} />
       </Routes>
 
