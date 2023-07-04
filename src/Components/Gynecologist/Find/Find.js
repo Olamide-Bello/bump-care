@@ -12,7 +12,7 @@ function Find() {
                     Expert care for you and your baby, Your health and well-being matter to us. Easily find and connect with experienced gynecologists in your
                     area and schedule your appointment Today!
                 </p>
-                <button className='no-colour-btn'>Find a Gynecologist</button>
+                <a href='/#map'><button className='no-colour-btn'>Find a Gynecologist</button></a>
             </div>
             <div className='find-gyn2'>
                 <h5>Find The Right Gynecologist For Your Pregnancy Journey</h5>

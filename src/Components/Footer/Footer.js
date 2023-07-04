@@ -37,7 +37,6 @@ function Footer() {
                 <p><a href='babycare'>Baby Care</a></p>
                 <p><a href='community'>Community</a></p>
             </div>
-
             <div>
                 <h5>Search Website</h5>
                 <p>Need a quick find? Use the search bar</p>

@@ -24,7 +24,9 @@
 
 .post a {
     font-family: LatoSemibold;
-    font-family: 26px;
+    font-size: 24px;
     text-decoration: underline;
     color: #745464;
+    line-height: 140%;
+    letter-spacing: 0;
 }

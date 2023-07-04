@@ -28,9 +28,37 @@
 }
 
 .how-p-container p {
-    font-family: PoppinsRegular;
-    font-size: 14px;
+    font-family: SofiaProRegular;
+    font-size: 16px;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
+}
+
+.content-card p:not(:first-of-type), 
+.content-card .expanded-btn {
+    display: none;
+}
+
+.expanded-card .content-btn {
+    display: none;
+}
+
+.content-btn, 
+.expanded-btn {
+    border: 1px #FFD700 solid;
+    color: #510115;
+    font-family: LatoBold;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.content-btn:hover, 
+.expanded-btn:hover {
+    border: none;
+    background-color: #FFD700;
 }

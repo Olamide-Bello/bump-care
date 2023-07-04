@@ -4,7 +4,7 @@
 
 .fitness-hd {
     text-align: center;
-    padding: 10px 30px;
+    padding: 10px 90px;
 }
 
 .fitness-hd>h5 {
@@ -16,8 +16,8 @@
 }
 
 .fitness-hd>p {
-    font-family: PoppinsRegular;
-    font-size: 14px;
+    font-family: SofiaProRegular;
+    font-size: 16px;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;

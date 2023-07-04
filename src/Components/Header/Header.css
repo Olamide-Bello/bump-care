@@ -19,13 +19,13 @@ nav ul {
     padding: 8px;
     gap: 40px;
     list-style: none;
-    font-family:PoppinsRegular ;
+    font-family:SofiaProRegular ;
 }
 
 nav a {
     text-decoration: none;
     color: #745464;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 140%;
     letter-spacing: 0;
 }

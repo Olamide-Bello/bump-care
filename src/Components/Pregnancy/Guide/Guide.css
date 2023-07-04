@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 116px;
+    gap: 200px;
     margin-top: 20px;
     padding: 60px 80px 60px 120px;
 }
@@ -17,8 +17,8 @@
 }
 
 .t-guide-c1>p {
-    font-family: PoppinsRegular;
-    font-size: 14px;
+    font-family: SofiaProRegular;
+    font-size: 16px;
     line-height: 140%;
     letter-spacing: 0px;
     color: #745464;

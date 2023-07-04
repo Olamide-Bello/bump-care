@@ -1,6 +1,33 @@
-.map-container {
-    width: 100vw;
-    height: 100vh;
-    padding: 30px;
+.map-hd {
+    text-align: center;
 }
 
+.map-hd h5 {
+    font-family: LatoBold;
+    font-size: 40px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.map-hd p {
+    font-family: SofiaProRegular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #745464;
+    margin-top: 30px;
+}
+
+.map-hd button {
+    background-color: #FFD700;
+    padding: 15px 64px;
+    border: none;
+    border-radius: 10px;
+    color: #510115;
+    font-family: LatoBold;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0;
+}

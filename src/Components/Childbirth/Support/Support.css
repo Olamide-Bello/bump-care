@@ -1,0 +1,49 @@
+.support {
+    padding: 70px 100px;
+}
+
+.support>h5 {
+    font-family: LatoBold;
+    font-size: 32px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.p-support {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+.p-support img {
+    border-radius: 10px;
+    width: 650px;
+    height: fit-content;
+}
+
+.support-bd {
+    background-color: #FFF1F4;
+    padding: 100px 10px 0 50px;
+    border-radius: 10px;
+}
+
+.support-bd h5 {
+    font-family: LatoBold;
+    font-size: 40px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.support-bd p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+}

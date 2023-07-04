@@ -8,8 +8,8 @@
 }
 
 .story-wrapper {
-    padding-top: 45px;
-    margin-top: 45px;
+    padding-top: 0;
+    margin-bottom: 40px;
 }
 .story-hd {
     font-family: LatoBold;
@@ -21,8 +21,8 @@
 }
 
 .story {
-    font-family: PoppinsRegular;
-    font-size: 14;
+    font-family: SofiaProRegular;
+    font-size: 18px;
     line-height: 140%;
     letter-spacing: 0;
     color: #745F64;
@@ -70,6 +70,6 @@
 
 .stats-bd {
     color: #745F64;
-    font-family: PoppinsRegular;
-    font-size: 14;
+    font-family: SofiaProRegular;
+    font-size: 18px;
 }

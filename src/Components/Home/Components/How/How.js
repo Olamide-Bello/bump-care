@@ -16,7 +16,7 @@ function How() {
                     <p className='how-bd'>Click on the get started button to 
                         <br/>to create an account by providing your 
                         <br/>email address, phone number and set 
-                        <br/>a password
+                        <br/>a password.
                     </p>
                 </div>
                 <div className='how-explore'>

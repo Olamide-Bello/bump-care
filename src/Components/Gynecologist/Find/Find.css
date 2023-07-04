@@ -4,12 +4,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .find-gyn1 p {
-    font-family: PoppinsRegular;
-    font-size: 16px;
+    font-family: SofiaProRegular;
+    font-size: 18px;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
@@ -26,6 +26,10 @@
     padding: 15px 30px;
     border-radius: 10px;
     background-color: #fff;
+}
+
+.no-colour-btn:hover {
+    background-color: #FFD700;
 }
 
 .find-gyn2{

@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 180px;
 }
 
 .p-signs>h5 {
@@ -18,7 +18,7 @@
 
 .p-signs>p:first-of-type {
     font-family: InterMedium;
-    font-size: 16;
+    font-size: 16px;
     color: #510115;
     line-height: 120%;
     letter-spacing: 0;
@@ -26,8 +26,8 @@
 
 .p-signs P:not(:first-of-type),
 .p-signs li span {
-    font-family: PoppinsRegular;
-    font-size: 14px;
+    font-family: SofiaProRegular;
+    font-size: 16px;
     line-height: 120%;
     letter-spacing: 0;
     color: #745464;
