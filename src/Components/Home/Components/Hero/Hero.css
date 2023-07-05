@@ -82,7 +82,7 @@
     height: 767px;
 }
 
-div.carousel-des.carousel-caption {
+div.carousel-des.carousel-caption:has(.hero1) {
     top: 150px !important;
     right: 45px !important;
     left: unset !important;
@@ -92,10 +92,12 @@ div.carousel-des.carousel-caption {
 div.carousel-des.carousel-caption:has(.hero2) {
     top: 30px !important;
     right: 180px !important;
+    left: unset !important;
 }
 div.carousel-des.carousel-caption:has(.hero3) {
     top: 100px !important;
     left: 80px !important;
+    right: unset !important;
 }
 
 span.carousel-control-prev-icon,

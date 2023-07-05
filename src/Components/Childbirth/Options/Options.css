@@ -1,0 +1,88 @@
+.options {
+    padding: 70px 100px;
+    background-color: rgba(246, 229, 250, 0.50);
+}
+
+.options-main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.options-main1 h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.options-main2 {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.options-main2>div:first-of-type{
+    padding: 60px 30px 20px 60px;
+}
+.options-main2 div>div {
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.options-main2 h5,
+.options-alt h5 {
+    font-size: 24px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.options-main2>div>h5,
+.options-alt h5 {
+    color: #510115;
+}
+
+.options-main2 p,
+.options-alt p {
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.options-main2>div>p,
+.options-alt p {
+    color: #745464;
+}
+
+.options-main2>div>div {
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+}
+.options-main2 div:last-of-type {
+    position: relative;
+    width: 400px;
+}
+
+.options-main2 div:last-of-type>img {
+    position: absolute;
+    width: 100%;
+}
+
+.options-alt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 150px;
+}
+
+

@@ -1,0 +1,96 @@
+.prepare {
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.p-prepare>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.p-prepare>p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    color: #745464;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+    padding-right: 30px;
+}
+
+.prepare-steps {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.prepare-steps div:last-of-type {
+    grid-column: 1 / span 2;
+    width: 275.75px;
+    margin:-40px auto 0 auto;
+
+}
+
+.prepare-steps div:last-of-type>h5:first-of-type {
+    text-align: center;
+}
+
+.prepare-steps div>h5:first-of-type {
+    color: #FC6F92;
+    font-family: LatoBold;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+.prepare-steps div>h5:last-of-type {
+    color: #510115;
+    font-family: LatoBold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.prepare-steps div>p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    color: #745464;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.prepare-img {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.prepare-img1,
+.prepare-img2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prepare-img1 {
+    justify-content: flex-start;
+}
+
+.prepare-img2 {
+    margin-top: 70px;
+}
+
+.prepare-img img {
+    border-radius: 10px;
+}

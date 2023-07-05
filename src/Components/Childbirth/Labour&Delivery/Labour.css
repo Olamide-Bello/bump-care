@@ -1,0 +1,52 @@
+.labour {
+    padding: 70px 100px;
+}
+
+.labour>h5 {
+    color: #510115;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.labour-stages {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.labour-stages h5 {
+    color: #510115;
+    font-size: 24px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.labour-stages p,
+.labour-stages2 li {
+    color: #745464;
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.labour-stages2 li::marker {
+    color: #510115;
+}
+
+.labour-stages1 div {
+    margin-top: 60px;
+}
+
+.labour-stages2 div:last-of-type {
+    margin-top: 20px;
+}
