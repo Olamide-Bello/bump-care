@@ -1,0 +1,61 @@
+.premature {
+    padding: 70px 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.premature h5 {
+    color: #510115;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.premature p {
+    color: #745464;
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.incubator {
+    position: relative;
+    width: 543px;
+}
+
+.incubator::before {
+    position: absolute;
+    content: '';
+    right: -15px;
+    top: -15px;
+    border-radius: 10px;
+    height: 354px;
+    width: 220px;
+    background-color: #FC6F92;
+    z-index: 0 !important;
+
+}
+.incubator::after {
+    position: absolute;
+    content: '';
+    left: -30px;
+    bottom: -15px;
+    border-radius: 50%;
+    height: 63px;
+    width: 63px;
+    background-color: #FB9CD0;
+    z-index: 0 !important;
+
+}
+
+.incubator * {
+    position: relative;
+    z-index: 100;
+}

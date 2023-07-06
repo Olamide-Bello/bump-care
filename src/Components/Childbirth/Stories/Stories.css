@@ -1,0 +1,26 @@
+.stories-mums {
+    padding: 70px 100px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+}
+
+.stories-mums div {
+    display: flex;
+    gap: 10px;
+}
+
+.fa-quote-left {
+    color: #FC6F92;
+}
+
+.stories-mums p {
+    color: #745464;
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-top: 10px;
+}

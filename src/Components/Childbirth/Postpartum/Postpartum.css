@@ -1,0 +1,75 @@
+.postpartum {
+    padding: 70px 100px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.postpartum>div>h5 {
+    color: #510115;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.postpartum p {
+    color: #745464;
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.postpartum-img {
+    position: relative;
+    width: 480px;
+    margin: 70px 0 0 30px;
+}
+
+.postpartum-img::before {
+    position: absolute;
+    content: '';
+    right: -30px;
+    top: -30px;
+    border-radius: 10px;
+    height: 480px;
+    width: 540px;
+    background-color: #FFF1F4;
+    z-index: 0 !important;
+}
+
+.postpartum-img * {
+    position: relative;
+}
+
+.recovery h5 {
+    color: #FC6F92;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.recovery div {
+    padding-left: 30px;
+    height: 120px;
+    position: relative;
+}
+
+.recovery div:not(:last-of-type) {
+    border-left: 1px #745464 solid;
+}
+
+.recovery h5 {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    background-color: #fff;
+}
