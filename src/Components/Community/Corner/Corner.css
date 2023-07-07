@@ -1,0 +1,143 @@
+.corner {
+    padding: 60px 100px;
+}
+
+.corner>h5 {
+    color: #510115;
+    font-size: 44px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+}
+
+.corner>p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.corner-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+
+.info-dt h5 {
+    color: #510115;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 30px 0;
+}
+
+.info-dt p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+}
+
+.info1-img-container {
+    display: flex;
+    background-color: #FFF1F4;
+
+}
+
+.info1-img-container>div,
+.info4-img-container>div:first-of-type {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info1-img-container>div>h5,
+.info4-img-container>div>h5 {
+    color: #510115;
+    font-size: 26px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.info2-img-container {
+    position: relative;
+    width: 580px;
+}
+
+.info2-img-container>div {
+    position: absolute;
+    width: 460px;
+    height: 174px;
+    left: 60px;
+    top: 70px;
+    background-color: rgba(239, 205, 203, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info2-img-container h5 {
+    color: #510115;
+    font-size: 26px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.info3-img-container {
+    position: relative;
+    width: 580px;
+}
+
+.info3-img-container::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #FDAAB9;
+    left: 20px;
+    bottom: 70px;
+    transform: rotateZ(45deg);
+}
+.info3-img-container::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #FDAAB9;
+    left: 100px;
+    bottom: 80px;
+    transform: rotateZ(45deg);
+}
+
+.info4-img-container {
+    display: flex;
+    background-color: #F6E5FA;
+}
+
+.info4-img-container>div:last-of-type {
+    position: relative;
+    width: 224px;
+}
+
+.info4-img-container>div>img:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

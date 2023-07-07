@@ -1,0 +1,57 @@
+.welcome {
+    padding: 70px 100px;
+}
+
+.welcome-container {
+    position: relative;
+    height: 575px;
+}
+
+.welcome-container h5 {
+    color: #510115;
+    font-size: 45px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 525px;
+}
+
+.welcome-container p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+    position: absolute;
+    right: 90px;
+    top: 0;
+    width: 405px;
+}
+
+.welcome-container img:first-of-type {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 650px;
+}
+
+.welcome-container img:last-of-type {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 550px;
+    height: auto;
+}
+
+.welcome-container::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    background-color: rgba(255, 241, 244, 0.8);
+}

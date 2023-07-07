@@ -5,6 +5,7 @@ import Pregnancy from './Components/Pregnancy/Pregnancy.js';
 import Gynecologist from './Components/Gynecologist/Gynecologist.js';
 import Childbirth from './Components/Childbirth/Childbirth.js';
 import Babycare from './Components/Babycare/Babycare.js';
+import Community from './Components/Community/Community';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/gynecologist" element={<Gynecologist/>}/>
         <Route path="/childbirth" element={<Childbirth/>}/>
         <Route path="/babycare" element={<Babycare/>}/>
+        <Route path="/community" element={<Community/>}/>
         <Route path="*" element={<Navigate to='/' />} />
       </Routes>
 
