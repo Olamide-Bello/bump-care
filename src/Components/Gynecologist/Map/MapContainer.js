@@ -9,6 +9,7 @@ import {
     Text,
 } from '@chakra-ui/react'
 import { FaLocationArrow, FaTimes } from 'react-icons/fa'
+import { Spinner } from 'react-bootstrap'
 
 import './MapContainer.css'
 
@@ -30,7 +31,6 @@ function MapContainer() {
         googleMapsApiKey: 'AIzaSyBaALWcoyQjgvTKTB7BtM6C3kddtePabe8',
         libraries: ['places'],
     })
-    console.log('heyy')
     const [map, setMap] = useState(/** @type google.maps.Map */(null))
     const directionsResponse = useRef(null)
     const [distance, setDistance] = useState('')
@@ -50,7 +50,6 @@ function MapContainer() {
                     lng: position.coords.longitude
                 }
                 setCenter(pos)
-                console.log(pos)
                 setLat(position.coords.latitude)
                 setLng(position.coords.longitude)
             })
@@ -90,7 +89,6 @@ function MapContainer() {
     }
 
     const getHospitals = async () => {
-        console.log(hospitals)
         let copy = [...hospitalPos]
         for (let i = 0; i < hospitals.length; i++) {
             const hospitalLat = hospitals[i].geometry.location.lat()
@@ -101,7 +99,6 @@ function MapContainer() {
             }]
             setHospitalPos(copy)
         }
-        console.log(hospitalPos)
         // const bounds = new google.maps.LatLngBounds();
         // hospitalPos.forEach(({ position }) => bounds.extend(position));
         // map.fitBounds(bounds);
@@ -185,7 +182,9 @@ function MapContainer() {
                 overflow='hidden'
             >
                 <Box position='absolute' left={0} top={0} h='100%' w='100%'>
-                    {/* Google Map Box */}
+                   {
+                    lat === null ? <Spinner/>
+                    :
                     <GoogleMap
                         id='map'
                         center={center}
@@ -210,6 +209,7 @@ function MapContainer() {
                             <DirectionsRenderer directions={directionsResponse.current} />
                         )}
                     </GoogleMap>
+                   }
                 </Box>
                 <Box
                     p={4}
