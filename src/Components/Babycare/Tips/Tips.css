@@ -1,0 +1,38 @@
+.tips {
+    padding: 70px 0;
+}
+.tips>h5 {
+    font-family: LatoBold;
+    font-size: 30px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tips-vd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.tips-vd>div>div {
+    position: relative;
+    width: 250px;
+
+}
+
+.tips-vd h5 {
+    color: #510115;
+    font-size: 20px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 20px;
+}

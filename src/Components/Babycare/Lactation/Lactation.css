@@ -1,0 +1,25 @@
+.lactation {
+    padding: 70px 100px;
+    background-color: #FFF1F4;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.lactation h5 {
+    font-family: LatoBold;
+    font-size: 32px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.lactation p {
+    color: #745F64;
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}

@@ -1,0 +1,50 @@
+.weaning {
+    padding: 70px 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.weaning-dt>h5 {
+    font-family: LatoBold;
+    font-size: 32px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.weaning-dt p {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+}
+
+.weaning-steps {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+.weaning-steps h5 {
+    color: #FC6F92;
+    font-size: 24px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.weaning-img {
+    align-self: center;
+    justify-self: right;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.weaning-img img:first-of-type {
+    align-self: self-end;
+}

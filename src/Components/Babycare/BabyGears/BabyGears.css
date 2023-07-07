@@ -1,0 +1,122 @@
+.gears {
+    padding: 70px 100px;
+}
+
+.gears>h5 {
+    font-family: LatoBold;
+    font-size: 32px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.baby-essentials {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6E5FA;
+    margin-top: 40px;
+}
+
+.mother-essentials {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EFCDCB;
+    margin-top: 20px;
+}
+
+.baby-essentials h5,
+.mother-essentials h5,
+.baby-gears h5 {
+    font-family: LatoBold;
+    font-size: 24px;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.baby-essentials img,
+.mother-essentials img {
+    width: 575px;
+}
+
+.gears li {
+    color: #745F64;
+    font-size: 18px;
+    font-family: SofiaProRegular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.gears li::marker {
+    color: #FC6F92;
+}
+
+
+
+.baby-essentials-dt,
+.mother-essentials-dt {
+    padding: 50px 100px 50px 50px;
+}
+
+.baby-gears {
+    margin-top: 100px;
+}
+
+.baby-gear-essentials {
+    display: flex;
+    gap: 40px;
+}
+
+.baby-gear-essentials div {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.gear-img {
+    position: relative;
+    width: auto;
+}
+
+.gear-img::after {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(255, 241, 244, 0.6);
+    color: #510115;
+    font-size: 20px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    padding-top: 20px;
+}
+
+.gear-img:first-of-type::after {
+    content: 'Crib/Bassinet';
+    border-bottom-right-radius: 10px;
+
+}
+
+.gear-img:nth-last-of-type(3)::after {
+    content: 'Baby Stroller';
+}
+.gear-img:nth-last-of-type(2)::after {
+    content: 'Baby Car Seat';
+    border-bottom-left-radius: 10px;
+}
+
+.gear-img:nth-last-of-type(1)::after {
+    content: 'Baby Rocker';
+}
+
+.gear-img:nth-last-of-type(2) {
+    border-bottom-left-radius: 10px;
+}
