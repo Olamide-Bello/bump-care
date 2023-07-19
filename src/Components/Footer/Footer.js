@@ -25,7 +25,7 @@ function Footer() {
         <div className='foot2'>
             <div>
                 <h5>Other Information</h5>
-                <p><a href='/policy#faq'>FAQ</a></p>
+                <p><a href='/policy#faqs'>FAQ</a></p>
                 <p><a href='/policy#contact'>Contact Us</a></p>
                 <p><a href='/policy'>Privacy Policy</a></p>
             </div>

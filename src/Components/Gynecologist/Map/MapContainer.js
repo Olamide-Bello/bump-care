@@ -170,7 +170,7 @@ function MapContainer() {
             <div className='map-hd'>
                 <h5>Expert gynecologists, right at<br /> your fingertips</h5>
                 <p>Click the button below to get address and direction to hospital close to you. <br />Got an hospital in mind? use the search box instead.</p>
-                <button onClick={getHospitals}>Get Hospital Around</button>
+                <button onClick={getHospitals}>Find Gynecologist around</button>
             </div>
             <Flex
                 position='relative'

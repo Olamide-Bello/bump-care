@@ -1,0 +1,54 @@
+.privacy-hd {
+    background-color: #FFF1F4;
+    padding: 70px 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.privacy-hd h5 {
+    color: #510115;
+    font-size: 45px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.privacy-bd {
+    padding: 70px 210px;
+}
+
+.privacy-bd p,
+.privacy-bd li {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+}
+
+.privacy-bd div:first-of-type {
+    margin-bottom: 50px;
+}
+.privacy-bd h5 {
+    color: #510115;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 40px;
+}
+
+.privacy-bd li {
+    margin-bottom: 10px;
+}
+
+.privacy-bd li::marker {
+    color: #FC6F92;
+}
+
+.p-diff {
+    color: #510115;
+}
