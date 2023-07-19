@@ -10,7 +10,7 @@ import { getFirestore } from 'firebase/firestore';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBaALWcoyQjgvTKTB7BtM6C3kddtePabe8",
-  authDomain: "bumpcare.firebaseapp.com",
+  authDomain: "bump-care.pages.dev",
   projectId: "bumpcare",
   storageBucket: "bumpcare.appspot.com",
   messagingSenderId: "603381864922",
