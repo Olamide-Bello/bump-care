@@ -73,3 +73,36 @@
     font-family: SofiaProRegular;
     font-size: 18px;
 }
+
+@media(max-width: 780px) {
+    .story-body {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .story-hd {
+        font-size: 14px;
+    }
+
+    .story {
+        font-size: 10px;
+    }
+
+    .story-img {
+        width: 365px;
+    }
+
+    .stat {
+        padding: 18px 20px;
+    }
+
+    .stats-hd {
+        font-size: 16px;
+    }
+
+    .stats-bd {
+        font-size: 10px;
+        line-height: 120%;
+    }
+}

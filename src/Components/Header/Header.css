@@ -77,3 +77,10 @@ nav a {
 .logged p {
     cursor: pointer;
 }
+
+
+@media(max-width: 780px) {
+    .header {
+        padding: 16px 20px;
+    }
+}

@@ -42,7 +42,7 @@ function SignUp() {
             await updateProfile(auth.currentUser, {
                 displayName: data.name,
             }).then(() => {
-                // Update successful
+                handleSignUpModal()
 
             }).catch((error) => {
                 // An error occurred

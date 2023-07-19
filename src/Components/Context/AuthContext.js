@@ -22,14 +22,15 @@ const AuthContextProvider = ({ children }) => {
         const provider = new GoogleAuthProvider();
         // signInWithPopup(auth, provider)
         signInWithRedirect(auth, provider)
-            .then((result) => {
-                setUser(result.user)
-                console.log(user.UserImpl.photoURL)
-            }).catch((error) => {
-                const errorCode = error.code
-                const errorMsg = error.message
-                console.log(error)
-            })
+            // .then((result) => {
+            //     console.log(result)
+            //     setUser(result.user)
+            // }).catch((error) => {
+            //     const errorCode = error.code
+            //     const errorMsg = error.message
+            //     alert(error)
+            //     console.log(error)
+            // })
     }
 
     const facebookSignIn = () => {
@@ -41,6 +42,7 @@ const AuthContextProvider = ({ children }) => {
             }).catch((error) => {
                 const errorCode = error.code
                 const errorMsg = error.message
+                alert(error)
                 console.log(error)
             })
     }

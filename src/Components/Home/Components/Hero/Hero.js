@@ -26,8 +26,8 @@ function Hero() {
                     src={slides[0]}
                     alt="hero banner"
                 />
-                <Carousel.Caption className="carousel-des">
-                    <h5 className='hero-title hero1'>{message[0]}</h5>
+                <Carousel.Caption className="carousel-des hero1">
+                    <h5 className='hero-title'>{message[0]}</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className='item2'>
@@ -36,8 +36,8 @@ function Hero() {
                     src={slides[1]}
                     alt="hero banner"
                 />
-                <Carousel.Caption className="carousel-des">
-                    <h5 className='hero-title hero2'>{message[1]}</h5>
+                <Carousel.Caption className="carousel-des hero2">
+                    <h5 className='hero-title'>{message[1]}</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item className='item3'>
@@ -46,8 +46,8 @@ function Hero() {
                     src={slides[2]}
                     alt="hero banner"
                 />
-                <Carousel.Caption className="carousel-des">
-                    <h5 className='hero-title hero3'>{message[2]}</h5>
+                <Carousel.Caption className="carousel-des hero3">
+                    <h5 className='hero-title'>{message[2]}</h5>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

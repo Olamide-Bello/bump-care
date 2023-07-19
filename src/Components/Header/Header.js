@@ -2,6 +2,8 @@ import React, { useContext, useRef, useMemo, } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.css'
 import logo from './logo.png'
+import logoMobile from './logoMobile.png'
+import Hamburger from './Hamburger.png'
 import { GlobalContext } from '../Context/GlobalContext.js';
 import SignUp from '../SignUp/SignUp';
 import SignIn from '../SignIn/SignIn';
@@ -28,13 +30,14 @@ function Header() {
         }
         userInitials.current = initials
         console.log(userInitials.current)
+        console.log(matches)
     }
 }, [user])
 
   return (
     <div className='header'>
-      <a href='/home'><img src={logo} alt='logo' /></a>
-      <nav>
+      {matches? <a href='/home'><img src={logoMobile} alt='logo' /></a> :  <a href='/home'><img src={logo} alt='logo' /></a>}
+      {!matches && <nav>
         <ul>
           <li><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
           <li><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
@@ -42,8 +45,9 @@ function Header() {
           <li><NavLink to='/babycare'>Baby Care</NavLink></li>
           <li><NavLink to='/community'>Community</NavLink></li>
         </ul>
-      </nav>
-      {user !== null ? <div className='logged'>{user.photoURL?<img className='dis-pic' src={user.photoURL} alt='display photo' />:<div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div> : <button className='yellow-btn big-btn' onClick={handleSignUp}>Get Started</button>}
+      </nav>}
+      {matches && <img src={Hamburger} alt='burger menu'/>}
+      {!matches && (user === null ? <button className='yellow-btn big-btn' onClick={handleSignUp}>Get Started</button> : <div className='logged'>{user.photoURL?<img className='dis-pic' src={user.photoURL} alt='display photo' />:<div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div>)}
       {openSignUp && <SignUp />}
       {openSignIn && <SignIn/>}
       {openReset && <PasswordReset/>}

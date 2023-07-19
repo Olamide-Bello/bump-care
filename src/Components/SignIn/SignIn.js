@@ -46,6 +46,7 @@ function SignUp() {
 
                 const userDetails = userCredential.user;
                 setUser(userDetails)
+                handleModal()
                 navigate('/home')
             })
             .catch((error) => {
@@ -63,6 +64,7 @@ function SignUp() {
             navigate('/home')
         }
         catch (error) {
+            alert(error.code)
             const errorCode = error.code;
             const errorMessage = error.message;
             setFirebaseErrmsg(errorMessage)

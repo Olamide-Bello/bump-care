@@ -15,8 +15,8 @@ export const GlobalContext = createContext({
     user: {},
     token: "",
     handleUser: () => { },
-    matches: window.matchMedia("(max-width: 768px)").matches,
-    normalScreen: window.matchMedia("(min-width: 768px) and (max-width: 1100px)").matches
+    matches: window.matchMedia("(max-width: 780px)").matches,
+    normalScreen: window.matchMedia("(min-width: 781px) and (max-width: 1100px)").matches
 })
 
 function GlobalState({ children }) {
@@ -46,10 +46,10 @@ function GlobalState({ children }) {
         }
     )
     const [matches, setMatches] = useState(
-        window.matchMedia("(max-width: 768px)").matches
+        window.matchMedia("(max-width: 780px)").matches
     )
     const [normalScreen, setNormalScreen] = useState(
-        window.matchMedia("(min-width: 769px) and (max-width: 1100px)").matches
+        window.matchMedia("(min-width: 781px) and (max-width: 1100px)").matches
     )
     const handleModal = () => {
         setOpenSignIn(!openSignIn)
@@ -80,12 +80,12 @@ function GlobalState({ children }) {
 
     useEffect(() => {
         window
-            .matchMedia("(max-width: 768px)")
+            .matchMedia("(max-width: 780px)")
             .addEventListener('change', e => setMatches(e.matches));
     }, []);
     useEffect(() => {
         window
-            .matchMedia("(min-width: 769px) and (max-width: 1100px)")
+            .matchMedia("(min-width: 781px) and (max-width: 1100px)")
             .addEventListener('change', e => setNormalScreen(e.matches));
     }, []);
     
@@ -94,6 +94,7 @@ function GlobalState({ children }) {
         logUser,
         logged,
         logOut,
+        matches,
         handleModal,
         handleSignUpModal,
         handleReset,
