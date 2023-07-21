@@ -19,7 +19,7 @@ nav ul {
     padding: 8px;
     gap: 40px;
     list-style: none;
-    font-family:SofiaProRegular ;
+    font-family: SofiaProRegular;
 }
 
 nav a {
@@ -78,6 +78,54 @@ nav a {
     cursor: pointer;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 15px 23px 20px 18px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bd ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 55px;
+}
+
+.menu-bd li {
+    font-family: LatoBold;
+    color: #510115;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.menu-bd button {
+    padding: 7px 19px;
+    background-color: #FFD700;
+    border-radius: 3px;
+    border: none;
+    color: #510115;
+    font-family: LatoBold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 @media(max-width: 780px) {
     .header {
