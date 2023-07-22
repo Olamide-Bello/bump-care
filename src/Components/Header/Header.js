@@ -14,14 +14,9 @@ import PasswordReset from '../SignIn/PasswordReset';
 
 function Header() {
   const [menu, setMenu] = useState(false)
-  const { handleSignUpModal, openSignIn, openSignUp, openReset, matches, normalScreen } = useContext(GlobalContext)
+  const { openReset, matches, normalScreen } = useContext(GlobalContext)
   const { user, logOut } = useContext(AuthContext)
   const userInitials = useRef(null)
-
-
-  const handleSignUp = () => {
-    handleSignUpModal()
-  }
 
   const handleMenu = () => {
     setMenu(!menu)
@@ -73,9 +68,7 @@ function Header() {
           </div>
         </div>}
       {matches && <img onClick={handleMenu} src={Hamburger} alt='burger menu' />}
-      {!matches && (user === null ? <button className='yellow-btn big-btn' onClick={handleSignUp}>Get Started</button> : <div className='logged'>{user.photoURL ? <img className='dis-pic' src={user.photoURL} alt='display photo' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div>)}
-      {openSignUp && <SignUp />}
-      {openSignIn && <SignIn />}
+      {!matches && (user === null ? <a href='/signup'><button className='yellow-btn big-btn'>Get Started</button></a> : <div className='logged'>{user.photoURL ? <img className='dis-pic' src={user.photoURL} alt='display photo' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div>)}
       {openReset && <PasswordReset />}
     </div>
   )

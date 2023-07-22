@@ -1,7 +1,12 @@
 import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignUP.css'
-import ExitIcon from './ExitIcon.png'
+import Direct from './Direct.png'
+import logo from './logo.png'
+import userLogo from './user.png'
+import mail from './mail.png'
+import lock from './lock.png'
+import ExitIcon from './Exit.png'
 import Facebook from './Facebook.png'
 import Google from './Google.png'
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -13,23 +18,21 @@ import { addDoc, collection } from 'firebase/firestore';
 
 function SignUp() {
     const [firebaseErrmsg, setFirebaseErrmsg] = useState([])
-    const { logUser, handleUser, handleSignUpModal, handleModal, matches } = useContext(GlobalContext)
+    const {  handleSignUpModal, matches } = useContext(GlobalContext)
     const { googleSignIn, facebookSignIn, user, setUser } = useContext(AuthContext)
     const navigate = useNavigate()
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm();
 
     const handleLogin = () => {
-        handleSignUpModal()
-        handleModal()
+        navigate('/login')
     }
 
-    const toggleModal = () => {
-        handleSignUpModal()
+    const handleExit = () => {
+        navigate(-1)
     }
 
     const OnSubmit = async (data) => {
@@ -46,6 +49,7 @@ function SignUp() {
 
             }).catch((error) => {
                 // An error occurred
+                console.log(error)
             });
             navigate('/home')
         } catch (err) {
@@ -85,34 +89,49 @@ function SignUp() {
     }
 
     return (
-        <div className={matches ? "mobile-modal-container" : 'modal-container'}>
-            <div className={matches ? 'mobile-sign-up-modal' : 'sign-up-modal'}>
-                <div className={matches ? 'mobile-modal-header' : 'modal-header'}>
-                    <img onClick={toggleModal} src={ExitIcon} alt='exit icon' />
+        <div className='modal-container'>
+            {!matches && <div className='modal-img'>
+                <img src={Direct} alt='a pregnant woman with phone' />
+                <div className='modal-img-dt'>
+                    <h5>Welcome to BumpCare</h5>
+                    <h5>Your Ultimate Pregnancy Resources and Gynecologist Directory</h5>
                 </div>
-                <p>Welcome To Bump Care</p>
-                <h5>Create an account</h5>
+            </div>}
+            <div className={matches ? 'mobile-sign-up-modal' : 'sign'}>
+                <div className={matches ? 'mobile-modal-header' : 'modal-header'}>
+                    <img src={logo} alt='logo' />
+                    <img onClick={handleExit} className='sign-exit' src={ExitIcon} alt='exit icon' />
+                </div>
+                <h5>Create an Account to Get Started</h5>
+                <div className='alt'>
+                    <p>OR</p>
+                    <button className='alt-login' onClick={handleGoogleSignIn}><img src={Google} alt='google icon' /> Google</button>
+                    <button className='alt-login' onClick={handleFacebookSignIn}><img src={Facebook} alt='facebook icon' /> Facebook</button>
+                </div>
                 <form onSubmit={handleSubmit(OnSubmit)}>
                     <div className='form-group'>
+                        <label htmlFor='name'>Name</label>
                         <input
                             type="name"
                             name="name"
                             id="name"
-                            placeholder="Name:"
+                            placeholder="Enter your name"
                             {...register("name",
                                 {
                                     required: "Username is required"
                                 })
                             }
                         />
+                        <img src={userLogo} alt='user'/>
                         {errors.username && (<p className="errorMsg">{errors.username.message}</p>)}
                     </div>
                     <div className='form-group'>
+                        <label htmlFor='email'>Email</label>
                         <input
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="Email address:"
+                            placeholder="Enter your mail address"
                             {...register("email",
                                 {
                                     required: "Email is required.",
@@ -123,14 +142,16 @@ function SignUp() {
                                 })
                             }
                         />
+                        <img src={mail} alt='mail'/>
                         {errors.email && <p className="errorMsg">{errors.email.message}</p>}
                     </div>
                     <div className='form-group'>
+                        <label htmlFor='password' >Password</label>
                         <input
                             type="password"
                             name="password"
                             id="password"
-                            placeholder="Password:"
+                            placeholder="Enter your password"
                             {...register("password",
                                 {
                                     required: true, minLength: {
@@ -140,39 +161,16 @@ function SignUp() {
                                 })
                             }
                         />
+                        <img src={lock} alt='lock'/>
                         {errors.password?.type === "required" && (<p className="errorMsg">Password is required.</p>)}
                         {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
                     </div>
-                    <div className='form-group'>
-                        <input
-                            type="password"
-                            name="confirm_password"
-                            id="confirm_password"
-                            placeholder="Re-enter password:"
-                            {...register("confirm_password",
-                                {
-                                    required: true, validate: (val) => {
-                                        if (watch('password') != val) {
-                                            return "Your passwords do no match";
-                                        }
-                                    }
-                                })
-                            }
-                        />
-                        {errors.confirm_password?.type === "required" && (<p className="errorMsg">Re-enter password.</p>)}
-                        {errors.confirm_password && (<p className="errorMsg">{errors.confirm_password.message}</p>)}
-                    </div>
-                    <button className='submit-btn' type='submit' id='submit-btn'><strong>SIGN UP</strong></button>
+                    <input type='checkbox' id='agree'/>
+                    <label htmlFor='agree' className='agree'>By clicking the button, you agree to our <a href='/policy'>Terms of use</a> and <a href='/policy'>Privacy Policy</a>.</label>
+                    <button className='submit-btn' type='submit' id='submit-btn'><strong>Sign Up</strong></button>
                 </form>
-                <p className='agree'>By clicking the button, you agree to our <a href='/policy'>Terms of use</a> and <a href='/policy'>Privacy Policy</a>.</p>
                 <br />
-                <div className='alt'>
-                    <p>OR</p>
-                    <button className='alt-login' onClick={handleGoogleSignIn}><img src={Google} alt='google icon' /> Google</button>
-                    <button className='alt-login' onClick={handleFacebookSignIn}><img src={Facebook} alt='facebook icon' /> Facebook</button>
-                </div>
-
-                <p onClick={handleLogin}>Already a Member? Log in</p>
+                <p>Have an account with us? <span onClick={handleLogin}>Sign In here</span></p>
             </div>
         </div>
     )

@@ -6,11 +6,7 @@ export const GlobalContext = createContext({
     upperCase: () => { },
     logged: false,
     logOut: () => { },
-    handleModal: () => { },
-    handleSignUpModal: () => { },
     handleReset: () => {},
-    openSignIn: false,
-    openSignUp: false,
     openReset: false,
     user: {},
     token: "",
@@ -20,8 +16,6 @@ export const GlobalContext = createContext({
 })
 
 function GlobalState({ children }) {
-    const [openSignIn, setOpenSignIn] = useState(false)
-    const [openSignUp, setOpenSignUp] = useState(false)
     const [openReset, setOpenReset] = useState(false)
     const [logged, setLogged] = useState(false)
     const [token, setToken] = useState(
@@ -51,13 +45,6 @@ function GlobalState({ children }) {
     const [normalScreen, setNormalScreen] = useState(
         window.matchMedia("(min-width: 781px) and (max-width: 1100px)").matches
     )
-    const handleModal = () => {
-        setOpenSignIn(!openSignIn)
-    }
-
-    const handleSignUpModal = () => {
-        setOpenSignUp(!openSignUp)
-    }
 
     const handleReset = () => {
         setOpenReset(!openReset)
@@ -95,11 +82,7 @@ function GlobalState({ children }) {
         logged,
         logOut,
         matches,
-        handleModal,
-        handleSignUpModal,
         handleReset,
-        openSignIn,
-        openSignUp,
         openReset,
         user,
         token,

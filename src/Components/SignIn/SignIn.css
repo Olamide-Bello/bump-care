@@ -1,87 +1,11 @@
-
-.sign-in-modal {
-    width: 725px;
-    height: auto;
-    padding-top: 5px;
-    position: absolute;
-    z-index: 1000;
-    top: 25vh;
-    left: 25vw;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    text-align: center;
-    overflow: auto;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: right;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.sign-in-modal p {
-    font-family: SofiaProRegular;
-    font-size: 18px;
-    line-height: 140%;
-    letter-spacing: 0;
-    color: #FC6F92;
-}
-
-.sign-in-modal>p:first-of-type {
-    margin-bottom: 0;
-    text-align: left;
-    margin-left: 25px;
-}
-
-.sign-in-modal>h5 {
-    color: #510115;
-    font-size: 30px;
-    font-family: LatoBold;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    text-align: left;
-    margin-left: 25px;
-}
-
-.sign-in-modal input {
-    width: 665px;
-    height: 62px;
-    border: 0.5px solid #510115;
-    margin-bottom: 20px;
-    font-family: sofiaProRegular;
-    font-size: 18px;
-    color: #745464;
-    padding-left: 20px;
-}
-
 .forgot-alt {
-    padding: 0 25px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 20px;
 }
 
-.alt-alt {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.alt-alt {
-    font-family: sofiaProRegular;
-    font-size: 18px;
-    color: #745464;
-}
-
-.underline {
-    text-decoration: underline;
-    cursor: pointer;
+.forgot-alt input#agree {
+    margin-top: 0 !important;
 }
 
 .link-format {

@@ -9,6 +9,9 @@ import Community from './Components/Community/Community';
 import Policy from './Components/Policy/Policy';
 import AuthContextProvider from './Components/Context/AuthContext';
 import { ToastContainer } from 'react-toastify';
+import SignUp from './Components/SignUp/SignUp';
+import SignIn from './Components/SignIn/SignIn';
+import PasswordReset from './Components/SignIn/PasswordReset';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/login" element={<SignIn/>} />
+          <Route path="/reset" element={<PasswordReset/>} />
           <Route path="/pregnancy" element={<Pregnancy />} />
           <Route path="/gynecologist" element={<Gynecologist />} />
           <Route path="/childbirth" element={<Childbirth />} />
