@@ -19,10 +19,10 @@ function Story() {
         <div className='story-stats'>
             <div className='story-img'><img src={StoryPic} alt='moms'/></div>
             <div className='stat'>
-                <div className='stat-wrapper'><span className='stats-hd'>97%</span><br/><span className='stats-bd'>Mothers recommend</span></div>
+                <div className='stat-wrapper'><span className='stats-hd'>97%</span><br/><span className='stats-bd'>Mothers <br/>recommend</span></div>
                 <div className='stat-wrapper'><span className='stats-hd'>500+</span><br/><span className='stats-bd'>Community <br/>of mothers</span></div>
-                <div className='stat-wrapper'><span className='stats-hd'>30+</span><br/><span className='stats-bd'>Expert Contributors</span></div>
-                <div className='stat-wrapper'><span className='stats-hd'>95%</span><br/><span className='stats-bd'>Positive Feedbacks</span></div>
+                <div className='stat-wrapper'><span className='stats-hd'>30+</span><br/><span className='stats-bd'>Expert <br/>Contributors</span></div>
+                <div className='stat-wrapper'><span className='stats-hd'>95%</span><br/><span className='stats-bd'>Positive <br/>Feedbacks</span></div>
             </div>
         </div>
 

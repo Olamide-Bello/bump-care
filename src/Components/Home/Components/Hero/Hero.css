@@ -48,24 +48,26 @@ div.carousel-indicators,
 
 @media(max-width: 780px) {
     .hero-img {
-        height: 243px;
+        min-height: 40vh;
+        height: auto;
+        aspect-ratio: 1/0.6;
     }
 
     .hero-title {
-        font-size: 13px;
-        width: 130px;
+        font-size: 3vw;
+        width: 30vw;
     }
 
     div.carousel-des.carousel-caption.hero1 {
-        top: 50px !important;
-        left: 220px !important;
+        top: 8vh !important;
+        left: 57vw !important;
     }
     div.carousel-des.carousel-caption.hero2 {
-        top: 5px !important;
-        left: 220px !important;
+        top: 1vh !important;
+        left: 60vw !important;
     }
     div.carousel-des.carousel-caption.hero3 {
-        top: 20px !important;
-        left: 40px !important;
+        top: 2vh !important;
+        left: 7vw !important;
     }
 }

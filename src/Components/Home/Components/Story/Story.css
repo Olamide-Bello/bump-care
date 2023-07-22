@@ -82,27 +82,29 @@
     }
 
     .story-hd {
-        font-size: 14px;
+        font-size: 3vw;
     }
 
     .story {
-        font-size: 10px;
+        font-size: 2.5vw;
     }
 
     .story-img {
-        width: 365px;
+        width: 100%;
     }
 
     .stat {
         padding: 18px 20px;
+        justify-content: space-between;
+        gap: 5vw;
     }
 
     .stats-hd {
-        font-size: 16px;
+        font-size: 3.2vw;
     }
 
     .stats-bd {
-        font-size: 10px;
+        font-size: 2vw;
         line-height: 120%;
     }
 }

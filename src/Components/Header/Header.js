@@ -7,8 +7,6 @@ import LogOut from './LogOut.png'
 import logoMobile from './logoMobile.png'
 import Hamburger from './Hamburger.png'
 import { GlobalContext } from '../Context/GlobalContext.js';
-import SignUp from '../SignUp/SignUp';
-import SignIn from '../SignIn/SignIn';
 import { AuthContext } from '../Context/AuthContext';
 import PasswordReset from '../SignIn/PasswordReset';
 
