@@ -68,9 +68,7 @@
 .modal-header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-right: 20px;
+    align-items: flex-start;
 }
 
 .form-group label {
@@ -103,21 +101,32 @@
     color: #745464;
     text-align: center;
 }
+
+
+.agree-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
 .sign>p>span {
     color: rgba(81, 1, 21, 0.80);
     text-decoration: underline;
     cursor: pointer;
 }
 
+
+
 input#agree {
     width: 20px;
     height: 20px;
-    margin-top: 20px;
     border: 0;
+    outline: 0;
+    /* opacity: 0; */
 }
 
 #agree:checked {
     accent-color: #F25169;
+    opacity: 1;
 }
 
 .agree {
@@ -126,8 +135,7 @@ input#agree {
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin-left: 5px;
 }
 
 .agree a {
@@ -161,7 +169,7 @@ input#agree {
 }
 
 .sign .form-group input:focus {
-    border: none ;
+    border: none;
     outline: none;
     background-color: #fff;
 }
@@ -210,6 +218,8 @@ input#agree {
     padding: 30px 0 50px 0;
     margin-bottom: 30px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .alt>p {
@@ -245,4 +255,65 @@ input#agree {
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
+}
+
+@media(max-width: 780px) {
+    .sign {
+        width: 100vw;
+        padding: 40px 25px;
+    }
+
+    .sign-exit {
+        top: 40px;
+        right: 30px;
+    }
+
+    .sign>h5:first-of-type {
+        font-size: 14.5px;
+        margin-top: 20px;
+    }
+
+    .alt-login {
+        width: 145px;
+        font-size: 11px;
+        height: 32px;
+    }
+
+    .alt-login img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .form-group label {
+        font-size: 11px;
+    }
+
+    .sign .form-group input {
+        height: 41px;
+        font-size: 8px;
+
+    }
+
+    .sign .form-group img {
+        width: 14px;
+        height: 14px;
+        top: 50px;
+    }
+
+    input#agree {
+        width: 11.7px;
+        height: 11.7px;
+    }
+
+    .agree {
+        font-size: 10px;
+    }
+
+    .submit-btn {
+        height: 41px;
+    }
+
+    .sign p {
+        font-size: 10px;
+    }
 }

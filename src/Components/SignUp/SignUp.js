@@ -3,10 +3,12 @@ import { useForm } from 'react-hook-form';
 import './SignUP.css'
 import Direct from './Direct.png'
 import logo from './logo.png'
+import logoMobile from './logoMobile.png'
 import userLogo from './user.png'
 import mail from './mail.png'
 import lock from './lock.png'
 import ExitIcon from './Exit.png'
+import ExitMobile from './ExitMobile.png'
 import Facebook from './Facebook.png'
 import Google from './Google.png'
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -18,7 +20,7 @@ import { addDoc, collection } from 'firebase/firestore';
 
 function SignUp() {
     const [firebaseErrmsg, setFirebaseErrmsg] = useState([])
-    const {  handleSignUpModal, matches } = useContext(GlobalContext)
+    const { handleSignUpModal, matches } = useContext(GlobalContext)
     const { googleSignIn, facebookSignIn, user, setUser } = useContext(AuthContext)
     const navigate = useNavigate()
     const {
@@ -97,10 +99,11 @@ function SignUp() {
                     <h5>Your Ultimate Pregnancy Resources and Gynecologist Directory</h5>
                 </div>
             </div>}
-            <div className={matches ? 'mobile-sign-up-modal' : 'sign'}>
-                <div className={matches ? 'mobile-modal-header' : 'modal-header'}>
-                    <img src={logo} alt='logo' />
-                    <img onClick={handleExit} className='sign-exit' src={ExitIcon} alt='exit icon' />
+            <div className='sign'>
+                <div className='modal-header'>
+                    {matches ? <img src={logoMobile} alt='logo' /> : <img src={logo} alt='logo' />}
+                    {matches ? <img onClick={handleExit} className='sign-exit' src={ExitMobile} alt='exit icon' /> :
+                        <img onClick={handleExit} className='sign-exit' src={ExitIcon} alt='exit icon' />}
                 </div>
                 <h5>Create an Account to Get Started</h5>
                 <div className='alt'>
@@ -122,7 +125,7 @@ function SignUp() {
                                 })
                             }
                         />
-                        <img src={userLogo} alt='user'/>
+                        <img src={userLogo} alt='user' />
                         {errors.username && (<p className="errorMsg">{errors.username.message}</p>)}
                     </div>
                     <div className='form-group'>
@@ -142,7 +145,7 @@ function SignUp() {
                                 })
                             }
                         />
-                        <img src={mail} alt='mail'/>
+                        <img src={mail} alt='mail' />
                         {errors.email && <p className="errorMsg">{errors.email.message}</p>}
                     </div>
                     <div className='form-group'>
@@ -161,12 +164,14 @@ function SignUp() {
                                 })
                             }
                         />
-                        <img src={lock} alt='lock'/>
+                        <img src={lock} alt='lock' />
                         {errors.password?.type === "required" && (<p className="errorMsg">Password is required.</p>)}
                         {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
                     </div>
-                    <input type='checkbox' id='agree'/>
-                    <label htmlFor='agree' className='agree'>By clicking the button, you agree to our <a href='/policy'>Terms of use</a> and <a href='/policy'>Privacy Policy</a>.</label>
+                    <div className='agree-container'>
+                        <input type='checkbox' id='agree' />
+                        <label htmlFor='agree' className='agree'>By clicking the button, you agree to our <a href='/policy'>Terms of use</a> and <a href='/policy'>Privacy Policy</a>.</label>
+                    </div>
                     <button className='submit-btn' type='submit' id='submit-btn'><strong>Sign Up</strong></button>
                 </form>
                 <br />

@@ -10,4 +10,6 @@
 
 .link-format {
     cursor: pointer;
+    margin-bottom: 0;
+    align-self: center;
 }

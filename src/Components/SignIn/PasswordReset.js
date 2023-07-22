@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import './SignIn.css'
 import Direct from './Direct.png'
 import logo from './logo.png'
+import logoMobile from './logoMobile.png'
+import ExitMobile from './ExitMobile.png'
 import mail from './mail.png'
 import ExitIcon from './Exit.png'
 import Facebook from './Facebook.png'
@@ -80,10 +82,11 @@ function PasswordReset() {
                     <h5>Welcome Back We're Thrilled to Support Your Journey</h5>
                 </div>
             </div>}
-            <div className={matches ? 'mobile-sign-in-modal' : 'sign'}>
-                <div className={matches ? 'mobile-modal-header' : 'modal-header'}>
-                    <img src={logo} alt='logo' />
-                    <img onClick={handleExit} className='sign-exit' src={ExitIcon} alt='exit icon' />
+            <div className='sign'>
+                <div className='modal-header'>
+                    {matches ? <img src={logoMobile} alt='logo' /> : <img src={logo} alt='logo' />}
+                    {matches ? <img onClick={handleExit} className='sign-exit' src={ExitMobile} alt='exit icon' /> :
+                        <img onClick={handleExit} className='sign-exit' src={ExitIcon} alt='exit icon' />}
                 </div>
                 <h5>Hello! Welcome back</h5>
                 <div className='alt'>

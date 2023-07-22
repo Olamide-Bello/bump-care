@@ -62,7 +62,7 @@ function Header() {
               <li>Child Birth</li>
               <li>Baby Care</li>
               <li>Community</li>
-              <li><button>Get Started</button></li>
+              <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>
               <li onClick={logOut}><img src={LogOut} alt='log out icon'/> Log Out</li>
             </ul>
           </div>
