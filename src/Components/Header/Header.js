@@ -54,12 +54,12 @@ function Header() {
           </div>
           <div className='menu-bd'>
             <ul>
-              <li>Home</li>
-              <li>Pregnancy</li>
-              <li>Gynecologist</li>
-              <li>Child Birth</li>
-              <li>Baby Care</li>
-              <li>Community</li>
+              <li><NavLink to='/home'>Home</NavLink></li>
+              <li><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
+              <li><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
+              <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
+              <li><NavLink to='/babycare'>Baby Care</NavLink></li>
+              <li><NavLink to='/community'>Community</NavLink></li>
               <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>
               <li onClick={logOut}><img src={LogOut} alt='log out icon'/> Log Out</li>
             </ul>
