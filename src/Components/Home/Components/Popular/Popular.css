@@ -30,3 +30,28 @@
     line-height: 140%;
     letter-spacing: 0;
 }
+
+@media(max-width: 780px) {
+    .popular {
+        padding: 16px 20px;
+    }
+
+    .popular>h5 {
+        font-size: 3vw;
+    }
+
+    .post-container {
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .post,
+    .post>img {
+        width: 45vw;
+    }
+
+    .post a {
+        font-size: 2.8vw;
+    }
+}

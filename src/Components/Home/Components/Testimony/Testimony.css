@@ -113,7 +113,7 @@
         right: unset;
         background-color: #FFF1F4;
         border-radius: 10px;
-        padding: 10vw 12vw 0 8vw;
+        padding: 9vw 12vw 0 8vw;
         display: flex;
         flex-direction: column;
     
@@ -140,10 +140,21 @@
     }
 
     .tes-dt {
-        width: 15vw;
+        width: 18vw;
     }
 
     .tes-dt h5 {
         font-size: 2.5vw;
+        margin-bottom: 0;
+    }
+
+    .tes-dt img {
+        width: 15vw;
+    }
+
+    div.testimony div.carousel.slide a.carousel-control-prev,
+    div.testimony div.carousel.slide a.carousel-control-next{
+        display: block;
+        bottom: -10vw;
     }
 }
