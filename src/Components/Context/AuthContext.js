@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react'
-import { GoogleAuthProvider, FacebookAuthProvider, signOut, onAuthStateChanged, signInWithPopup, signInWithRedirect } from 'firebase/auth'
+import { GoogleAuthProvider, FacebookAuthProvider, signOut, onAuthStateChanged, signInWithRedirect } from 'firebase/auth'
 import { auth } from '../../Firebase_setup/Firebase'
 
 

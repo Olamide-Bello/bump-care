@@ -9,22 +9,29 @@ import How6 from './How6.png'
 
 function How() {
 
-    const [toggle, setToggle] = useState(false)
-    const [chosen, setChosen] = useState("")
+    const [toggle, setToggle] = useState({
+        p1: false,
+        p2: false,
+        p3: false,
+        p4: false,
+        p5: false,
+        p6: false
+
+    })
     const showMore = (id) => {
-        setToggle(true)
-        setChosen(id)
-    }
-    const showLess = () => {
-        setToggle(false)
-        setChosen("")
+        id === 'p1' && setToggle({...toggle, p1 : !toggle.p1})
+        id === 'p2' && setToggle({...toggle, p2 : !toggle.p2})
+        id === 'p3' && setToggle({...toggle, p3 : !toggle.p3})
+        id === 'p4' && setToggle({...toggle, p4 : !toggle.p4})
+        id === 'p5' && setToggle({...toggle, p5 : !toggle.p5})
+        id === 'p6' && setToggle({...toggle, p6 : !toggle.p6})
     }
 
     return (
         <div className='how-p'>
             <h5>Getting Pregnant</h5>
             <div className='how-p-container'>
-                <div className={toggle && chosen === '1p' ? "expanded-card" : "content-card"}>
+                <div className={toggle?.p1 ? "expanded-card" : "content-card"}>
                     <img src={How1} alt='icon' />
                     <h5>Track Ovulation</h5>
                     <p>An ovulation tracker is a helpful tool for women who are
@@ -40,10 +47,10 @@ function How() {
                         Fertility tracking apps or just by tracking your menstrual
                         cycle.
                     </p>
-                    <button className='content-btn' onClick={() => showMore('1p')}><strong>View More</strong></button>
-                    <button className='expanded-btn' onClick={showLess}><strong>Show Less</strong></button>
+                    <button className='content-btn' onClick={() => showMore('p1')}><strong>View More</strong></button>
+                    <button className='expanded-btn' onClick={() => showMore('p1')}><strong>Show Less</strong></button>
                 </div>
-                <div className={toggle && chosen === '2p' ? "expanded-card" : "content-card"}>
+                <div className={toggle?.p2 ? "expanded-card" : "content-card"}>
                     <img src={How2} alt='icon' />
                     <h5>Nutrition</h5>
                     <p>Nutrition is an important factor for women who are trying to
@@ -61,10 +68,10 @@ function How() {
                         alcohol intake can also help support your reproductive
                         health.
                     </p>
-                    <button className='content-btn' onClick={() => showMore('2p')}><strong>View More</strong></button>
-                    <button className='expanded-btn' onClick={showLess}><strong>Show Less</strong></button>
+                    <button className='content-btn' onClick={() => showMore('p2')}><strong>View More</strong></button>
+                    <button className='expanded-btn' onClick={() => showMore('p2')}><strong>Show Less</strong></button>
                 </div>
-                <div className={toggle && chosen === '3p' ? "expanded-card" : "content-card"}>
+                <div className={toggle?.p3 ? "expanded-card" : "content-card"}>
                     <img src={How3} alt='icon' />
                     <h5>Sex</h5>
                     <p>Sex is a critical factor for women who are trying to get
@@ -81,10 +88,10 @@ function How() {
                         pillow under their hips after intercourse can help the sperm
                         reach the cervix easily.
                     </p>
-                    <button className='content-btn' onClick={() => showMore('3p')}><strong>View More</strong></button>
-                    <button className='expanded-btn' onClick={showLess}><strong>Show Less</strong></button>
+                    <button className='content-btn' onClick={() => showMore('p3')}><strong>View More</strong></button>
+                    <button className='expanded-btn' onClick={() => showMore('p3')}><strong>Show Less</strong></button>
                 </div>
-                <div className={toggle && chosen === '4p' ? "expanded-card" : "content-card"}>
+                <div className={toggle?.p4 ? "expanded-card" : "content-card"}>
                     <img src={How4} alt='icon' />
                     <h5>Health & Fitness</h5>
                     <p>Fitness and health are important factors for women who are
@@ -100,10 +107,10 @@ function How() {
                         important for fertility.<br /><br />
                         3.Smoking & Alcohol; Smoking & excessive alcohol intake can harm fertility and increase the risk of miscarriage.
                     </p>
-                    <button className='content-btn' onClick={() => showMore('4p')}><strong>View More</strong></button>
-                    <button className='expanded-btn' onClick={showLess}><strong>Show Less</strong></button>
+                    <button className='content-btn' onClick={() => showMore('p4')}><strong>View More</strong></button>
+                    <button className='expanded-btn' onClick={() => showMore('p4')}><strong>Show Less</strong></button>
                 </div>
-                <div className={toggle && chosen === '5p' ? "expanded-card" : "content-card"}>
+                <div className={toggle?.p5 ? "expanded-card" : "content-card"}>
                     <img src={How5} alt='icon' />
                     <h5>Alternative Therapies</h5>
                     <p>Alternative therapies for getting pregnant refer to a range of
@@ -124,10 +131,10 @@ function How() {
                         implanting them into the uterus, while surrogacy involves
                         using a gestational carrier to carry and give birth to a baby.
                     </p>
-                    <button className='content-btn' onClick={() => showMore('5p')}><strong>View More</strong></button>
-                    <button className='expanded-btn' onClick={showLess}><strong>Show Less</strong></button>
+                    <button className='content-btn' onClick={() => showMore('p5')}><strong>View More</strong></button>
+                    <button className='expanded-btn' onClick={() => showMore('p5')}><strong>Show Less</strong></button>
                 </div>
-                <div className={toggle && chosen === '6p' ? "expanded-card" : "content-card"}>
+                <div className={toggle?.p6 ? "expanded-card" : "content-card"}>
                     <img src={How6} alt='icon' />
                     <h5>Stress Management</h5>
                     <p>When trying to get pregnant, managing stress can be an
@@ -148,8 +155,8 @@ function How() {
                         Additionally, regular exercise such as jogging, swimming, or
                         cycling can help to reduce stress and improve overall health
                     </p>
-                    <button className='content-btn' onClick={() => showMore('6p')}><strong>View More</strong></button>
-                    <button className='expanded-btn' onClick={showLess}><strong>Show Less</strong></button>
+                    <button className='content-btn' onClick={() => showMore('p6')}><strong>View More</strong></button>
+                    <button className='expanded-btn' onClick={() => showMore('p6')}><strong>Show Less</strong></button>
                 </div>
             </div>
         </div>

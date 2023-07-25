@@ -12,7 +12,7 @@ import PasswordReset from '../SignIn/PasswordReset';
 
 function Header() {
   const [menu, setMenu] = useState(false)
-  const { openReset, matches, normalScreen } = useContext(GlobalContext)
+  const { openReset, matches } = useContext(GlobalContext)
   const { user, logOut } = useContext(AuthContext)
   const userInitials = useRef(null)
 
@@ -30,7 +30,6 @@ function Header() {
       }
       userInitials.current = initials
       console.log(userInitials.current)
-      console.log(matches)
     }
   }, [user])
 
@@ -53,20 +52,22 @@ function Header() {
             <img onClick={handleMenu} src={Exit} alt='exit-icon' />
           </div>
           <div className='menu-bd'>
-            <ul>
-              <li><NavLink to='/home'>Home</NavLink></li>
-              <li><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
-              <li><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
-              <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
-              <li><NavLink to='/babycare'>Baby Care</NavLink></li>
-              <li><NavLink to='/community'>Community</NavLink></li>
-              <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>
-              <li onClick={logOut}><img src={LogOut} alt='log out icon'/> Log Out</li>
-            </ul>
+            <nav>
+              <ul>
+                <li><NavLink to='/home'>Home</NavLink></li>
+                <li><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
+                <li><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
+                <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
+                <li><NavLink to='/babycare'>Baby Care</NavLink></li>
+                <li><NavLink to='/community'>Community</NavLink></li>
+                <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>
+                <li onClick={logOut}><img src={LogOut} alt='log out icon' /> Log Out</li>
+              </ul>
+            </nav>
           </div>
         </div>}
       {matches && <img onClick={handleMenu} src={Hamburger} alt='burger menu' />}
-      {!matches && (user === null ? <a href='/signup'><button className='yellow-btn big-btn'>Get Started</button></a> : <div className='logged'>{user.photoURL ? <img className='dis-pic' src={user.photoURL} alt='display photo' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div>)}
+      {!matches && (user === null ? <a href='/signup'><button className='yellow-btn big-btn'>Get Started</button></a> : <div className='logged'>{user.photoURL ? <img className='dis-pic' src={user.photoURL} alt='dp' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div>)}
       {openReset && <PasswordReset />}
     </div>
   )

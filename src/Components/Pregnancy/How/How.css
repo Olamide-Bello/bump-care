@@ -35,7 +35,7 @@
     color: #745464;
 }
 
-.content-card p:not(:first-of-type), 
+.content-card p:not(:first-of-type),
 .content-card .expanded-btn {
     display: none;
 }
@@ -44,7 +44,7 @@
     display: none;
 }
 
-.content-btn, 
+.content-btn,
 .expanded-btn {
     border: 1px #FFD700 solid;
     color: #510115;
@@ -57,8 +57,41 @@
     background-color: #fff;
 }
 
-.content-btn:hover, 
+.content-btn:hover,
 .expanded-btn:hover {
     border: none;
     background-color: #FFD700;
+}
+
+@media(max-width: 780px) {
+    .how-p {
+        padding: 15vw 5vw 10vw 3.5vw;
+    }
+
+    .how-p>h5 {
+        font-size: 3.5vw;
+    }
+
+    .how-p-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-p-container img {
+        width: 15vw;
+    }
+
+    .how-p-container h5 {
+        font-size: 2.8vw;
+    }
+
+    .how-p-container p {
+        font-size: 2.5vw;
+    }
+
+    .content-btn,
+    .expanded-btn {
+        font-size: 2.5vw;
+        padding: 2.5vw 3vw;
+    }
 }

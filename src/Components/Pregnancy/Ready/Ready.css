@@ -37,10 +37,12 @@
     position: absolute;
     top: 0px;
 }
+
 .journey-bump1>img {
     position: absolute;
     bottom: 0px;
 }
+
 .journey-bump2>img {
     position: absolute;
     top: 30px;
@@ -49,4 +51,31 @@
 .journey-bf>img {
     position: absolute;
     right: 0px;
+}
+
+@media(max-width: 780px) {
+    .ready h5 {
+        font-size: 3.2vw;
+    }
+
+    .ready-hd {
+        width: 60vw;
+    }
+
+    .journey {
+        padding: 3.5vw;
+        gap: 1vw;
+    }
+
+    .journey-res,
+    .journey-bump1,
+    .journey-bump2,
+    .journey-bf {
+        height: 37vw;
+        width: 22vw;
+    }
+
+    .journey-bump2>img {
+        top: 3.5vw;
+    }
 }

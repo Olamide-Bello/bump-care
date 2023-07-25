@@ -14,7 +14,8 @@ const firebaseConfig = {
   storageBucket: "bumpcare.appspot.com",
   messagingSenderId: "603381864922",
   appId: "1:603381864922:web:e22066a51722b59b1cc8e3",
-  measurementId: "G-GF4EQXFFFL"
+  measurementId: "G-GF4EQXFFFL",
+  databaseURL: "https://bumpcare-default-rtdb.firebaseio.com",
 };
 
 // Initialize Firebase
