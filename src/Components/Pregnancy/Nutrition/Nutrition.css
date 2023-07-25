@@ -65,8 +65,8 @@
 }
 
 .p-nutrition p {
-    font-family: InterMedium;
-    font-size: 16;
+    font-family: SofiaProRegular;
+    font-size: 16px;
     color: #510115;
     line-height: 120%;
     letter-spacing: 0;
@@ -85,4 +85,53 @@
 .p-nutrition li::marker {
     color: #FC6F92;
     font-size: 30px;
+}
+@media(max-width: 780px) {
+    .nutrition {
+        padding: 15vw 2vw 10vw 3.5vw;
+        gap: 0;
+    }
+
+    .p-dish h5 {
+        font-size: 3vw;
+    }
+
+    .dish {
+        height: 38vw;
+        width: 38vw;
+    }
+
+    #dish1,
+    #dish4,
+    #dish3,
+    #dish6,
+    #dish5 {
+        width: 15vw;
+    }
+
+    #dish2,
+    #dish7 {
+        width: 3.7vw;
+    }
+
+    .p-nutrition {
+        padding: 0;
+    }
+    .p-nutrition p {
+        display: none;
+    }
+
+    .p-nutrition ul {
+        list-style-position: outside !important;
+    }
+
+    .p-nutrition li {
+        font-size: 2.2vw;
+        padding-top: 1vw;
+    }
+
+    .p-nutrition li::marker {
+        font-size: 1.5vw;
+    }
+
 }

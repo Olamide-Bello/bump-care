@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Nutrition.css'
 import Dish1 from './Dish1.png'
 import Dish2 from './Dish2.png'
@@ -7,8 +7,10 @@ import Dish4 from './Dish4.png'
 import Dish5 from './Dish5.png'
 import Dish6 from './Dish6.png'
 import Dish7 from './Dish7.png'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 function Nutrition() {
+    const { matches } = useContext(GlobalContext)
     return (
         <div className='nutrition'>
             <div className='p-dish'>
@@ -31,11 +33,16 @@ function Nutrition() {
                 </p>
 
                 <ul>
-                    <li>
-                        Fruits and vegetables: These provide important vitamins, minerals, and fiberthat are essential for both you and your baby. Aim to include a variety of
-                        colorful fruits and vegetables in your diet, such as leafy greens, berries,
-                        citrus fruits, carrots, and sweet potatoes.
-                    </li>
+                    {matches ? <li>
+                        Fruits and vegetables: These provide important vitamins, minerals, and fiber that are essential for both you and your baby. Include a variety of
+                        colorful fruits and vegetables in your diet.
+                    </li> :
+                        <li>
+                            Fruits and vegetables: These provide important vitamins, minerals, and fiber that are essential for both you and your baby. Aim to include a variety of
+                            colorful fruits and vegetables in your diet, such as leafy greens, berries,
+                            citrus fruits, carrots, and sweet potatoes.
+                        </li>
+                    }
                     <li>
                         Whole grains: These provide important nutrients like fiber, iron, and B
                         vitamins. Choose whole grain breads and cereals, brown rice, quinoa, and
@@ -45,16 +52,22 @@ function Nutrition() {
                         Protein: This is essential for building and repairing tissues, and supporting
                         the growth of your baby. Good sources of protein include lean meat, poultry,fish, eggs, beans, and lentils.
                     </li>
-                    <li>
-                        Dairy: Dairy products like milk, cheese, and yogurt provide important
-                        nutrients like calcium and vitamin D that are essential for bone growth and
-                        development.
-                    </li>
-                    <li>
+                    {matches ?
+                        <li>
+                            Dairy: Dairy products like milk, cheese, and yogurt provide important
+                            nutrients like calcium and vitamin D.
+                        </li>
+                        : 
+                        <li>
+                            Dairy: Dairy products like milk, cheese, and yogurt provide important
+                            nutrients like calcium and vitamin D that are essential for bone growth and
+                            development.
+                        </li>}
+                    {!matches && <li>
                         Healthy fats: These are important for brain development and can help
                         prevent preterm labor. Good sources of healthy fats include nuts, seeds,
                         avocados, and fatty fish like salmon.
-                    </li>
+                    </li>}
                 </ul>
 
             </div>

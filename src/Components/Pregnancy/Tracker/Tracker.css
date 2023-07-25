@@ -35,3 +35,31 @@
     padding-bottom: 5px;
 }
 
+@media(max-width: 780px) {
+    .tracker {
+        padding: 15vw 3vw 10vw 3.5vw;
+    }
+
+    .tracker>img {
+        width: 40vw;
+        aspect-ratio: 4/5;
+    }
+
+    .p-tracker {
+        padding: 3.2vw 2.1vw 2.9vw 2.4vw;
+    }
+
+    .p-tracker h5 {
+        font-size: 2.8vw;
+    }
+
+    .p-tracker p {
+        font-size: 2.5vw;
+        padding-top: 0;
+    }
+
+    .p-tracker>.big-btn.yellow-btn {
+        padding: 2vw 3.3vw ;
+        font-size: 2.5vw;
+    }
+}

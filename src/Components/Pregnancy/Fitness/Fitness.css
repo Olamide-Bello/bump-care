@@ -55,7 +55,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .play-btn:hover {
@@ -104,4 +104,29 @@
     background-color: #FC6F92;
     color: #F5F5F5;
     border: 1px #FC6F92 solid;
+}
+
+@media(max-width: 780px) {
+    .fitness {
+        padding: 15vw 5vw 10vw 3.5vw;
+    }
+
+    .fitness-hd {
+        padding: 3.1vw 4vw 3.5vw 4vw;
+    }
+
+    .fitness-hd>h5 {
+        font-size: 3vw;
+    }
+
+    .fitness-hd>p {
+        font-size: 2.5vw;
+    }
+
+    .play-btn {
+        width: 3vw;
+    }
+    .avoid {
+        display: none;
+    }
 }

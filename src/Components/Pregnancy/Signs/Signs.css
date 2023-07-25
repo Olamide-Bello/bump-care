@@ -17,15 +17,15 @@
 }
 
 .p-signs>p:first-of-type {
-    font-family: InterMedium;
+    font-family: SofiaProRegular;
     font-size: 16px;
     color: #510115;
     line-height: 120%;
     letter-spacing: 0;
 }
 
-.p-signs P:not(:first-of-type),
-.p-signs li span {
+.p-signs P:last-of-type,
+.p-signs li{
     font-family: SofiaProRegular;
     font-size: 16px;
     line-height: 120%;
@@ -38,6 +38,9 @@
 }
 .p-signs li {
     list-style-position: inside;
+}
+
+.p-signs li::marker {
     color: #FB9CD0;
 }
 
@@ -62,4 +65,34 @@
     z-index: 100;
 }
 
+@media(max-width: 780px) {
+    .signs {
+        padding: 5vw 5vw 5vw 3.5vw;
+        gap: 2.6vw;
+    }
 
+    .p-signs>h5 {
+        font-size: 3vw;
+    }
+
+    .p-signs>p:last-of-type,
+    .p-signs>ul>li {
+        font-size: 2.2vw ;
+        margin-bottom: 0;
+    }
+
+    .signs-img {
+        width: 40vw;
+    }
+
+    .signs-img::before {
+        width: 25vw;
+        height: 25vw;
+        top: -2vw;
+        right: -2vw;
+    }
+
+    .signs-img img {
+        width: 40vw;
+    }
+}

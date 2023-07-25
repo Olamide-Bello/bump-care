@@ -34,11 +34,11 @@
     gap: 15px;
     margin-left: 0;
     padding-left: 0;
-    list-style-position:inside;
+    list-style-position: inside;
 }
 
 .tests li {
-    border: 1px #745464 solid ;
+    border: 1px #745464 solid;
     border-radius: 10px;
     padding: 30px 25px 20px 40px;
     text-indent: -20px;
@@ -66,4 +66,38 @@
     line-height: 140%;
     letter-spacing: 0;
     margin-bottom: 10px;
+}
+
+@media(max-width: 780px) {
+    .prenatal {
+        padding: 15vw 5vw 10vw 3.5vw;
+    }
+
+    .prenatal>h5 {
+        font-size: 3vw;
+    }
+
+    .p-test-nutr {
+        flex-direction: column-reverse;
+        gap: 3.6vw;
+    }
+
+    .tests>h5,
+    .nutrients>h5 {
+        font-size: 2.8vw;
+    }
+
+    .tests li,
+    .nutrients li {
+        font-size: 2.5vw;
+    }
+
+    .nutrients ul {
+        padding: 8vw 3vw 5vw 6.5vw ;
+    }
+
+    .tests li {
+        padding: 2.5vw 2.4vw 3.4vw 6.5vw;
+        text-indent: -3.5vw;
+    }
 }
