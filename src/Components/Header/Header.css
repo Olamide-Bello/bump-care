@@ -101,6 +101,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     gap: 40px;
     margin-top: 55px;
 }
@@ -130,5 +131,9 @@ nav a {
 @media(max-width: 780px) {
     .header {
         padding: 16px 20px;
+    }
+
+    nav {
+        margin: 0;
     }
 }
