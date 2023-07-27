@@ -82,6 +82,10 @@
 
     .find-gyn2 p {
         font-size: 2.2vw;
+        font-family: SofiaProRegular;
+        line-height: 140%;
+        letter-spacing: 0;
+        color: #745464;
     }
 
     .no-colour-btn {
