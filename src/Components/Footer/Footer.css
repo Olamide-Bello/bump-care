@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 0.5px #F5F5F5 solid;
+    border-bottom: 0.2px #F5F5F5 solid;
     padding: 60px 100px 10px 100px;
 }
 
@@ -61,7 +61,6 @@
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
-    border: none;
     border-radius: 5px;
 }
 

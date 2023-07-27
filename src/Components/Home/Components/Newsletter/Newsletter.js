@@ -4,12 +4,18 @@ import Letters from './Letters.png'
 import { getDatabase, ref, set, child, push, update } from "firebase/database";
 import { auth } from '../../../../Firebase_setup/Firebase'
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 function Newsletter() {
+    const navigate = useNavigate()
 
     const subscribe = async () => {
+        
         try {
             const user = auth.currentUser
+            if (user === null) {
+                navigate('/login')
+            }
             console.log(user)
             const db = getDatabase();
             let uid = user.uid;

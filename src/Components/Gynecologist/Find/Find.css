@@ -32,7 +32,7 @@
     background-color: #FFD700;
 }
 
-.find-gyn2{
+.find-gyn2 {
     width: 550px;
 }
 
@@ -47,4 +47,54 @@
 
 .find-gyn2 img {
     width: 520px;
+}
+
+@media(max-width: 780px) {
+    .find {
+        padding: 2vw 5vw 10vw 3.5vw;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .find-gyn1,
+    .find-gyn2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+    }
+
+    .find img {
+        width: 47vw;
+    }
+
+    .find-gyn1 h5 {
+        font-size: 3.2vw;
+        font-family: LatoBold;
+        color: #510115;
+        line-height: 140%;
+        letter-spacing: 0;
+    }
+
+    .find-gyn2 {
+        width: unset;
+    }
+
+    .find-gyn2 p {
+        font-size: 2.2vw;
+    }
+
+    .no-colour-btn {
+        font-size: 2.6vw;
+        background-color: #FFD700;
+        border: none;
+        padding: 1.6vw 3.5vw;
+        border-radius: 4px;
+    }
+
+    .no-colour-btn:hover {
+        border: 1px #FFD700 solid;
+        color: #510115;
+        background-color: #fff;
+    }
 }

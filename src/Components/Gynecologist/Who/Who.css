@@ -31,3 +31,36 @@
 .who img {
     width: 550px;
 }
+
+@media(max-width: 780px) {
+    .who {
+        margin: 3vw 4vw 10vw 3.5vw;
+        border-radius: 3px;
+        height: 40vw;
+    }
+
+    .who-gyn {
+        padding: 3.5vw 2.5vw 4vw;
+    }
+
+    .who-gyn h5 {
+        font-size: 2.7vw;
+        line-height: 120%;
+    }
+
+    .who-gyn p {
+        font-size: 2.2vw;
+        margin-top: 0;
+        line-height: 120%;
+        margin-bottom: 0;
+    }
+    
+    .who>img {
+       height: 100%;
+       width: 40vw;
+       border-top-left-radius: 3px;
+       border-bottom-left-radius: 3px;
+       object-fit: cover;
+    }
+
+}

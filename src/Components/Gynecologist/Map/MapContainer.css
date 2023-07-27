@@ -20,7 +20,7 @@
     margin-top: 30px;
 }
 
-.map-hd button {
+.map-hd>button {
     background-color: #FFD700;
     padding: 15px 64px;
     border: none;
@@ -30,4 +30,74 @@
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0;
+}
+
+.map-hd>button:hover {
+    border: 1px #FFD700 solid;
+    color: #510115;
+    background-color: #fff;
+}
+
+.destination {
+    position: relative;
+    margin: 3vw auto;
+    width: 35vw;
+}
+
+.destination input {
+    width: 100%;
+    background-color: #FFF1F4;
+    font-family: SofiaProRegular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: #745464;
+    border-radius: 10px;
+    border: 1px solid #510115;
+    padding: 1vw;
+}
+
+.destination input:focus {
+    outline: #510115;
+}
+
+.destination img {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+@media(max-width: 780px) {
+    .map-hd h5 {
+        font-size: 3vw;
+    }
+
+    .map-hd p {
+        font-size: 2.3vw;
+    }
+
+    .map-hd>button {
+        font-size: 2.6vw;
+        background-color: #FFD700;
+        border: none;
+        padding: 1.6vw 3.5vw;
+        border-radius: 4px;
+    }
+
+    .destination {
+        width: 80vw;
+        margin: 10vw 10vw 0;
+    }
+
+    .destination input {
+        font-size: 2.3vw;
+        border-radius: 8px;
+        padding: 2vw 4vw;
+    }
+
+    .destination img {
+        width: 3vw;
+        top: 2.5vw;
+        right: 2.5vw;
+    }
 }
