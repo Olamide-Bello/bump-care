@@ -3,7 +3,7 @@ import './Journey.css'
 import Preggy from './Preggy.png'
 import Babies from './Babies.png'
 import Baby1 from './Baby1.png'
-import Baby2 from './Baby3.png'
+import Baby2 from './Baby2.png'
 import Baby3 from './Baby3.png'
 import { GlobalContext } from '../../Context/GlobalContext'
 

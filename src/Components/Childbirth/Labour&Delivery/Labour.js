@@ -10,18 +10,6 @@ function Labour() {
                 <div className='labour-stages1'>
                     <img src={Postnatal} alt='mother and child' />
                     <div>
-                        <h5>The Second Stage Of Labor</h5>
-                        <p>During this stage, the baby moves down the birth canal and is born.
-                            This stage begins once the cervix is fully dilated and ends with the birth
-                            of the baby. It typically lasts between 20 minutes to 2 hours, depending on
-                            various factors such as the position of the baby and the strength of the
-                            mother's contractions. The mother will likely have a strong urge to push during
-                            this stage.
-                        </p>
-                    </div>
-                </div>
-                <div className='labour-stages2'>
-                    <div>
                         <h5>The First Stage Of Labor</h5>
                         <p>
                             During this stage, the cervix gradually opens (dilates) to about 10 centimeters
@@ -46,6 +34,18 @@ function Labour() {
                                 shortest, lasting typically between 30 minutes to 2 hours.
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div className='labour-stages2'>
+                    <div>
+                        <h5>The Second Stage Of Labor</h5>
+                        <p>During this stage, the baby moves down the birth canal and is born.
+                            This stage begins once the cervix is fully dilated and ends with the birth
+                            of the baby. It typically lasts between 20 minutes to 2 hours, depending on
+                            various factors such as the position of the baby and the strength of the
+                            mother's contractions. The mother will likely have a strong urge to push during
+                            this stage.
+                        </p>
                     </div>
                     <div>
                         <h5>The Third Stage Of Labor</h5>

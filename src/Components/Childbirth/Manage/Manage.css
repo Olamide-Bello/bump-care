@@ -78,3 +78,61 @@
     gap: 90px;
 }
 
+@media(max-width: 780px) {
+    .manage {
+        padding: 0;
+    }
+    
+    .pain-mgt>h5,
+    .pain-mgt>p {
+        padding: 2vw 3.5vw 10vw;
+
+    }
+
+    .mgt-ways {
+        padding: 10vw 3.5vw;
+    }
+
+    .pain-mgt>h5 {
+        font-size: 3vw;
+    }
+
+    .pain-mgt p {
+        font-size: 2.5vw;
+    }
+
+    .mgt-ways h5 {
+        font-size: 2.8vw;
+    }
+
+    .mgt-ways li>div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .mgt-ways li>div>div {
+        width: 55vw;
+    }
+
+    .mgt-ways li:first-of-type img {
+        width: 28vw;
+    }
+
+    .mgt-ways li:nth-child(2) img {
+        width: 17vw;
+    }
+    .mgt-ways li:nth-child(3) img {
+        width: 25vw;
+    }
+    .mgt-ways li:nth-child(2) img {
+        width: 22vw;
+    }
+
+    .mgt-ways li::marker {
+        color: #FC6F92;
+        transform: translateY(5vw);
+    }
+
+    
+}
