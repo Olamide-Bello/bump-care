@@ -85,8 +85,7 @@
     
     .pain-mgt>h5,
     .pain-mgt>p {
-        padding: 2vw 3.5vw 10vw;
-
+        padding: 1vw 3.5vw 0;
     }
 
     .mgt-ways {
@@ -95,10 +94,13 @@
 
     .pain-mgt>h5 {
         font-size: 3vw;
+        margin-top: 8vw;
+        margin-bottom: 0;
     }
 
     .pain-mgt p {
         font-size: 2.5vw;
+        margin-bottom: 6vw;
     }
 
     .mgt-ways h5 {
