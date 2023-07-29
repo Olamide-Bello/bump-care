@@ -53,3 +53,57 @@
 .labour-stages1 div {
     margin-top: 60px;
 }
+
+@media(max-width: 780px) {
+    .labour {
+        padding: 10vw 3.5vw;
+    }
+
+    .labour>h5 {
+        font-size: 3vw;
+    }
+
+    .labour-stages {
+        gap: 5vw;
+    }
+
+    .labour-stages1,
+    .labour-stages2 {
+        gap: 3vw;
+    }
+
+    .labour-stages1 ul {
+        display: flex;
+        gap: 4.5vw;
+    }
+
+    .labour-stages1 div {
+        margin-top: 0;
+    }
+
+    .labour-stages2{
+        flex-direction: column;
+        
+    }
+
+    .labour-stages h5 {
+        font-size: 2.8vw;
+    }
+
+    .labour-stages p {
+        font-size: 2.3vw;
+    }
+
+    .labour-stages li {
+        font-size: 2.45vw;
+    }
+
+    .labour-stages1>img {
+        width: 41vw;
+        height: 37vw;
+    }
+
+    .labour-stages li::marker {
+        color: #FC6F92;
+    }
+}

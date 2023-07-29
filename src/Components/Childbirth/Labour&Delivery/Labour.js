@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Labour.css'
 import Postnatal from './Postnatal.png'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 function Labour() {
+    const { matches } = useContext(GlobalContext)
     return (
         <div className='labour'>
             <h5>Labor And Delivery Stages</h5>
@@ -21,21 +23,37 @@ function Labour() {
                                 Early Labor: The cervix starts to dilate and thin out (efface), and
                                 contractions become more regular and intense, but still manageable.
                             </li>
-                            <li>
+                            {!matches && <><li>
                                 Active Labor: The cervix continues to dilate and contractions become
                                 stronger and closer together, typically lasting 40 to 60 seconds and
                                 occurring every 3 to 4 minutes. This is the stage when most women go to
                                 the hospital or birthing center.
                             </li>
-                            <li>
-                                Transition: The cervix completes its dilation to 10 centimeters, and
-                                contractions reach their maximum intensity and frequency. This is often
-                                the most challenging and painful stage for the mother, but it is also the
-                                shortest, lasting typically between 30 minutes to 2 hours.
-                            </li>
+                                <li>
+                                    Transition: The cervix completes its dilation to 10 centimeters, and
+                                    contractions reach their maximum intensity and frequency. This is often
+                                    the most challenging and painful stage for the mother, but it is also the
+                                    shortest, lasting typically between 30 minutes to 2 hours.
+                                </li></>}
                         </ul>
                     </div>
                 </div>
+                {matches && <div className='labour-stages1'>
+                    <ul>
+                        <li>
+                            Active Labor: The cervix continues to dilate and contractions become
+                            stronger and closer together, typically lasting 40 to 60 seconds and
+                            occurring every 3 to 4 minutes. This is the stage when most women go to
+                            the hospital or birthing center.
+                        </li>
+                        <li>
+                            Transition: The cervix completes its dilation to 10 centimeters, and
+                            contractions reach their maximum intensity and frequency. This is often
+                            the most challenging and painful stage for the mother, but it is also the
+                            shortest, lasting typically between 30 minutes to 2 hours.
+                        </li>
+                    </ul>
+                </div>}
                 <div className='labour-stages2'>
                     <div>
                         <h5>The Second Stage Of Labor</h5>
