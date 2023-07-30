@@ -108,6 +108,7 @@
 .gear-img:nth-last-of-type(3)::after {
     content: 'Baby Stroller';
 }
+
 .gear-img:nth-last-of-type(2)::after {
     content: 'Baby Car Seat';
     border-bottom-left-radius: 10px;
@@ -119,4 +120,74 @@
 
 .gear-img:nth-last-of-type(2) {
     border-bottom-left-radius: 10px;
+}
+
+@media(max-width: 780px) {
+    .gears {
+        padding: 3vw 3.5vw 10vw;
+    }
+
+    .gears>h5 {
+        font-size: 3vw;
+    }
+
+    .baby-essentials .mother-essentials {
+        margin-top: 3vw;
+    }
+
+    .baby-essentials h5,
+    .mother-essentials h5,
+    .baby-gears h5 {
+        font-size: 2.8vw;
+    }
+
+    .baby-essentials h5,
+    .mother-essentials h5 {
+        margin-left: 2vw;
+    }
+
+    .baby-essentials-dt,
+    .mother-essentials-dt {
+        padding: 3.2vw 1.5vw 3.2vw 1vw;
+    }
+
+    .baby-essentials img,
+    .mother-essentials img {
+        width: 38vw;
+        height: 45.6vw;
+        object-fit: cover;
+    }
+
+    .gears li {
+        font-size: 2.3vw;
+        line-height: 100%;
+    }
+
+    .gears ul {
+        margin-bottom: 0;
+        padding-left: 5vw;
+    }
+
+    .baby-gears {
+        margin-top: 10vw;
+    }
+
+    .baby-gear-essentials div {
+        gap: 3vw;
+    }
+
+    .gear-img {
+        width: 42.3vw;
+    }
+
+    .gear-img img {
+        width: 42.3vw;
+    }
+
+    .gear-img::after {
+        width: 42.3vw;
+        height: 7vw;
+        font-size: 2.5vw;
+        padding-top: 2vw;
+    }
 }

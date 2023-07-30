@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Discover.css'
 import Crawling from './Crawling.png'
 import Playtime from './Playtime.png'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 function Discover() {
+    const {matches} = useContext(GlobalContext)
     return (
         <div className='discover'>
             <div className='wonder'>
@@ -12,7 +14,7 @@ function Discover() {
                 <p>Whether you're a first-time parent or a seasoned pro, our guide is packed
                     with useful information to help you navigate the exciting world of babyhood.
                 </p>
-                <button className='no-colour-btn extra-btn'>Get Started</button>
+                {!matches && <button className='no-colour-btn extra-btn'>Get Started</button>}
             </div>
             <div className='play-time'>
                 <div className='play-time1'>

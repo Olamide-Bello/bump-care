@@ -19,18 +19,24 @@
     letter-spacing: 0;
     color: #745464;
     width: 709px;
-    margin:auto;
+    margin: auto;
     text-align: center;
 }
 
 .needs {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
     gap: 60px;
     margin-top: 100px;
 }
 
-.needs div>h5:first-of-type {
+.needs>div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 60px;
+}
+
+.needs div>div>h5:first-of-type {
     color: #FC6F92;
     font-size: 30px;
     font-family: LatoBold;
@@ -39,7 +45,7 @@
     line-height: 140%;
 }
 
-.needs div>h5:last-of-type {
+.needs div>div>h5:last-of-type {
     color: #510115;
     font-size: 24px;
     font-family: LatoBold;
@@ -112,6 +118,7 @@
     border-radius: 10px;
 
 }
+
 .sleeping-img2::before {
     position: absolute;
     content: '';
@@ -161,4 +168,108 @@
     right: -15px;
     background-color: #F6E5FA;
     z-index: 0;
+}
+
+@media(max-width: 780px) {
+    .understanding {
+        padding: 3vw 3.5vw 10vw;
+    }
+
+    .understanding>h5 {
+        font-size: 3vw;
+    }
+
+    .understanding>p {
+        font-size: 2.5vw;
+        line-height: 120%;
+        width: 90vw;
+    }
+
+    .needs {
+        gap: 5vw;
+        margin-top: 15vw;
+    }
+
+    .needs>div {
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .needs div>div>h5:first-of-type {
+        font-size: 3.3vw;
+    }
+
+    .needs div>div>h5:last-of-type {
+        font-size: 2.8vw;
+    }
+
+    .needs p {
+        font-size: 2.5vw;
+        line-height: 120%;
+        padding-right: 0;
+    }
+
+    .feeding-img {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .feeding-img2 {
+        width: 25.5vw;
+        top: 6vw;
+        left: 11vw;
+    }
+
+    .feeding-img1 {
+        width: 18.5vw;
+    }
+
+    .feeding-img3 {
+        width: 14.3vw;
+        left: 3vw;
+        bottom: -1vw;
+    }
+
+    .sleeping-img {
+        gap: 1vw;
+    }
+
+    .sleeping-img1,
+    .sleeping-img2,
+    .sleeping-img1 img,
+    .sleeping-img2 img,
+    .sleeping-img1::before,
+    .sleeping-img2::before {
+        width: 16.7vw;
+        height: 27vw;
+    }
+
+    .sleeping-img1::before {
+        bottom: -1vw;
+        left: -1vw;
+    }
+
+    .sleeping-img2::before {
+        right: -1vw;
+        top: -1vw;
+    }
+
+    .dev-img {
+        padding-left: 10vw;
+    }
+
+    .dev-img1,
+    .dev-img1 img {
+        width: 25vw;
+        height: 28.2vw;
+    }
+
+    .needs-sleeping,
+    .needs-feeding,
+    .needs-dev {
+        width: 45vw;
+    }
+
 }

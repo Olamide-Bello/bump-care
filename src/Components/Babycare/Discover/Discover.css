@@ -113,3 +113,69 @@
 .wonder>.extra-btn {
     padding: 15px 50px;
 }
+
+@media(max-width: 780px) {
+    .discover {
+        padding: 3vw 3.5vw 10vw;
+        flex-direction: column;
+        gap: 12vw;
+    }
+
+    .wonder>h5:first-of-type {
+        font-size: 2.5vw;
+    }
+
+    .wonder>h5:last-of-type {
+        font-size: 3.2vw;
+    }
+
+    .wonder p {
+        font-size: 2.5vw;
+    }
+
+    .play-time {
+        width: 68vw;
+        min-width: 68vw;
+        height: 46vw;
+        margin-left: 8vw;
+    }
+
+    .play-time1 div,
+    .play-time1 div>img {
+        width: 41.3vw;
+    }
+
+    .play-time2 div,
+    .play-time2 div>img {
+        width: 31.6vw;
+    }
+
+    .play-time1 div::before {
+        width: 10vw;
+        height: 10vw;
+        top: -3vw;
+        left: -2.6vw;
+        border-bottom-right-radius: 10vw;
+    }
+
+    .play-time1 div::after {
+        width: 3.5vw;
+        height: 3.5vw;
+        top: 3.2vw;
+        right: -0.8vw;
+    }
+
+    .play-time2 div::before {
+        width: 5vw;
+        height: 5vw;
+        border-top-left-radius: 5vw ;
+        left: -6vw;
+    }
+
+    .play-time2 div::after {
+        width: 3.3vw;
+        height: 3.3vw;
+        bottom: 2.5vw;
+        right: -0.5vw;
+    }
+}

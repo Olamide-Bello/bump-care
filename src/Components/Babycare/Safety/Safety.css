@@ -49,3 +49,32 @@
     right: -10px;
     background-color: #F2527C;
 }
+
+@media(max-width: 780px) {
+    .safety {
+        padding: 8vw 3.5vw;
+        gap: 5vw;
+        align-items: center;
+    }
+
+    .safety-dt>h5 {
+        font-size: 3.2vw;
+    }
+
+    .safety-dt li {
+        font-size: 2.3vw;
+        line-height: 120%;
+    }
+
+    .safety-img,
+    .safety-img img {
+        width: 24.3vw;
+    }
+
+    .safety-img::before {
+        width: 18.3vw;
+        height: 19.3vw;
+        top: -1.5vw;
+        right: -1.5vw;
+    }
+}

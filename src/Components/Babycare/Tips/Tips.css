@@ -24,7 +24,6 @@
 .tips-vd>div>div {
     position: relative;
     width: 250px;
-
 }
 
 .tips-vd h5 {
@@ -35,4 +34,31 @@
     font-weight: 600;
     line-height: 120%;
     margin-top: 20px;
+}
+
+@media(max-width: 780px) {
+    .tips {
+        padding: 10vw 0;
+    }
+
+    .tips>h5 {
+        font-size: 3vw;
+    }
+
+    .tips-vd {
+        gap: 2vw;
+    }
+
+    .tips-vd>div>div,
+    .tips-vd>div {
+        width: 20.3vw;
+    }
+
+    .tips-vd>div>div>img:first-of-type {
+        width: 20.3vw;
+    }
+
+    .tips-vd h5 {
+        font-size: 2.5vw;
+    }
 }

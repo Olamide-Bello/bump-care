@@ -1,5 +1,8 @@
 .weaning {
     padding: 70px 100px;
+}
+
+.weaning-container {
     display: flex;
     gap: 100px;
 }
@@ -47,4 +50,50 @@
 
 .weaning-img img:first-of-type {
     align-self: self-end;
+}
+
+@media(max-width: 780px) {
+    .weaning {
+        padding: 3vw 3.5vw 10vw;
+        display: block;
+
+    }
+
+    .weaning>h5 {
+        font-family: LatoBold;
+        font-size: 3vw;
+        color: #510115;
+        line-height: 140%;
+        letter-spacing: 0;
+        margin-bottom: 2vw;
+    }
+
+    .weaning p {
+        font-family: SofiaProRegular;
+        font-size: 2.5vw;
+        line-height: 120%;
+        letter-spacing: 0;
+        color: #745464;
+    }
+
+    .weaning-container {
+        gap: 5vw;
+    }
+
+    .weaning-steps {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        gap: 4vw;
+    }
+
+    .weaning-img {
+        gap: 1vw;
+    }
+
+    .weaning-img img {
+        width: 22.2vw;
+    }
+
+    
 }

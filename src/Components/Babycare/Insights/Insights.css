@@ -51,15 +51,17 @@
     border: 0.5px solid #ada8a8;
     border-top: none;
     padding: 30px 10px 10px 20px;
-    height: 640px;
+    height: 660px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    position: relative;
 }
 
 .expert {
     display: flex;
     gap: 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 .expert>img {
@@ -75,4 +77,57 @@
     font-weight: 600;
     line-height: 140%;
     margin: 0;
+}
+
+@media(max-width: 780px) {
+    .insights {
+        padding: 3vw 3.5vw 10vw;
+    }
+
+    .insights>h5 {
+        font-size: 3vw;
+    }
+
+    .insights>p {
+        font-size: 2.5vw;
+        width: 70vw;
+        line-height: 120%;
+    }
+
+    .insights-wrapper {
+        grid-template-columns: 28vw 28vw 28vw;
+        gap: 3vw;
+        margin-top: 10vw;
+    }
+
+    .insights-wrapper p {
+        font-size: 2.2vw;
+        line-height: 120%;
+    }
+
+    .insights-dt {
+        padding: 2.3vw 2vw;
+        height: 83vw;
+        justify-content: unset;
+        position: relative;
+    }
+
+    .insights-dt>h5 {
+        font-size: 2.5vw;
+    }
+
+    .expert {
+        position: absolute;
+        bottom: 0;
+        gap: 2vw;
+    }
+
+    .expert h5 {
+        font-size: 2.3vw;
+    }
+
+    .expert img {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
 }

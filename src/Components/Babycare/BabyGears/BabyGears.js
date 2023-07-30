@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './BabyGears.css'
 import BabyClothes from './BabyClothes.png'
 import MotherClothes from './MotherClothes.png'
@@ -7,8 +7,10 @@ import BabyGear2 from './BabyGear2.png'
 import BabyGear3 from './BabyGear3.png'
 import BabyGear4 from './BabyGear4.png'
 import BabyGear5 from './BabyGear5.png'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 function BabyGears() {
+    const {matches} = useContext(GlobalContext)
   return (
     <div className='gears'>
         <h5>Baby Gears & Essentials </h5>
@@ -46,14 +48,14 @@ function BabyGears() {
                     <li>Snacks and drinks for labor and recovery</li>
                     <li>Insurance and hospital paperwork</li>
                     <li>Phone charger and camera for capturing special moments</li>
-                    <li>Comfortable shoes or slippers for walking around</li>
+                    {!matches && <li>Comfortable shoes or slippers for walking around</li>}
                 </ul>
             </div>
         </div>
         <div className='baby-gears'>
             <h5>Must Have Baby Gears</h5>
             <div className='baby-gear-essentials'>
-                <img src={BabyGear1} alt='baby gear'/>
+                {!matches && <img src={BabyGear1} alt='baby gear'/>}
                 <div>
                     <div className='gear-img'><img src={BabyGear2} alt='baby gear'/></div>
                     <div className='gear-img'><img src={BabyGear3} alt='baby gear'/></div>

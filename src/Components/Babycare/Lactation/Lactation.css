@@ -23,3 +23,23 @@
     font-weight: 400;
     line-height: 140%;
 }
+
+@media(max-width: 780px) {
+    .lactation {
+        padding: 10vw 3.5vw ;
+        gap: 5vw;
+    }
+
+    .lactation h5 {
+        font-size: 3vw;
+    }
+
+    .lactation p {
+        font-size: 2.3vw;
+        line-height: 120%;
+    }
+
+    .lactation img {
+        width: 36.5vw;
+    }
+}
