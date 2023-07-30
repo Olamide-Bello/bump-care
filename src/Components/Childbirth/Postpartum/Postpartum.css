@@ -1,11 +1,14 @@
 .postpartum {
     padding: 70px 100px;
+}
+
+.postpartum-container {
     display: flex;
     align-items: flex-end;
     gap: 20px;
 }
 
-.postpartum>div>h5 {
+.postpartum>div>div>h5 {
     color: #510115;
     font-size: 30px;
     font-family: LatoBold;
@@ -55,6 +58,10 @@
     font-weight: 700;
     line-height: 140%;
     letter-spacing: 0;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    background-color: #fff;
 }
 
 .recovery div {
@@ -67,9 +74,61 @@
     border-left: 1px #745464 solid;
 }
 
-.recovery h5 {
-    position: absolute;
-    top: -10px;
-    left: -20px;
-    background-color: #fff;
+
+@media(max-width: 780px) {
+    .postpartum {
+        padding: 3vw 3.5vw 10vw;
+    }
+
+    .postpartum-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15vw;
+    }
+
+    .postpartum>h5 {
+        color: #510115;
+        font-size: 3vw;
+        font-family: LatoBold;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0;
+    }
+
+    .postpartum p {
+        font-size: 2.5vw;
+    }
+
+    .postpartum-img {
+        width: 73vw;
+        height: 54.5vw;
+    }
+
+    .postpartum-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .postpartum-img::before {
+        width: 77vw;
+        height: 45.5vw;
+        right: -2vw;
+        top: -2vw;
+    }
+
+    .recovery {
+        padding: 0 10vw;
+    }
+
+    .recovery h5 {
+        font-size: 3.3vw;
+        top: -2vw;
+        left: -2.2vw;
+    }
+    
+    .recovery div {
+        height: 17.4vw;
+    }
 }

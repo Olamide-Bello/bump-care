@@ -1,8 +1,12 @@
 .premature {
     padding: 70px 100px;
+}
+
+.premature-container {
     display: flex;
     gap: 50px;
     align-items: center;
+
 }
 
 .premature h5 {
@@ -58,4 +62,49 @@
 .incubator * {
     position: relative;
     z-index: 100;
+}
+
+@media(max-width: 780px) {
+    .premature {
+        padding: 10vw 3.5vw;
+    }
+
+    .premature-container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .premature h5 {
+        font-size: 3vw;
+        line-height: 120%;
+    }
+
+    .premature p {
+        font-size: 2.5vw;
+        line-height: 120%;
+    }
+
+    .incubator {
+        width: 69vw;
+        margin-left: 2vw;
+        margin-top: 5vw;
+    }
+
+    .incubator img {
+        width: 100%;
+    }
+
+    .incubator::before {
+        width: 23vw;
+        height: 45vw;
+        top: -1.5vw;
+        right: -1.5vw;
+    }
+
+    .incubator::after {
+        width: 7.9vw;
+        height: 7.9vw;
+        bottom: -2vw;
+        left: -3vw;
+    }
 }

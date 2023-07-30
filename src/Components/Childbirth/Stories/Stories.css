@@ -1,11 +1,25 @@
 .stories-mums {
     padding: 70px 100px;
+}
+
+.stories-mums>h5 {
+    color: #510115;
+    font-size: 30px;
+    font-family: LatoBold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.stories-mums-container {
     display: grid;
     gap: 30px;
     grid-template-columns: auto auto;
 }
 
-.stories-mums div {
+.stories-mums-container div {
     display: flex;
     gap: 10px;
 }
@@ -23,4 +37,29 @@
     line-height: 140%;
     letter-spacing: 0;
     margin-top: 10px;
+}
+
+@media(max-width: 780px) {
+    .stories-mums {
+        padding: 0 3.5vw 10vw;
+    }
+    
+    .stories-mums-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories-mums>h5 {
+        font-size: 3.2vw;
+        line-height: 120%;
+    }
+
+    .stories-mums div {
+        align-items: center;
+    }
+
+    .stories-mums p {
+        font-size: 2.5vw;
+        line-height: 120%;
+    }
 }

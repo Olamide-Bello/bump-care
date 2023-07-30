@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Premature.css'
 import Incubator from './Incubator.png'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 function Premature() {
+  const {matches} = useContext(GlobalContext)
   return (
     <div className='premature'>
+      {matches && <h5>Premature Labour And Birth</h5>}
+      <div className='premature-container'>
         <div className='premature-bd'>
-            <h5>Premature Labour And Birth</h5>
+            {!matches &&<h5>Premature Labour And Birth</h5>}
             <p>Premature labor refers to the onset of labor before the 37th week 
                 of pregnancy, while premature birth is the delivery of a baby before 
                 the 37th week of pregnancy. Premature birth can lead to complications 
@@ -24,6 +28,7 @@ function Premature() {
         <div className='incubator'>
             <img src={Incubator} alt='infant incubator'/>
         </div>
+      </div>
     </div>
   )
 }
