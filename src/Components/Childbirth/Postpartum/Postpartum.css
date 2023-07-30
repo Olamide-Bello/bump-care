@@ -83,7 +83,7 @@
     .postpartum-container {
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 15vw;
     }
 
@@ -104,10 +104,11 @@
     .postpartum-img {
         width: 73vw;
         height: 54.5vw;
+        margin: 7vw 3vw;
     }
 
     .postpartum-img img {
-        width: 100%;
+        width: 73vw;
         height: auto;
     }
 
