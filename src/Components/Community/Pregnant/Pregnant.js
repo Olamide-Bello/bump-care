@@ -10,9 +10,16 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 function Pregnant() {
     const [liked, setLiked] = useState(false)
+    const [count, setCount] = useState(10)
 
     const likePost = () => {
+        if(liked) {
+            setCount(prev => prev-1)
+        } else {
+            setCount(prev => prev +1)
+        }
         setLiked(!liked)
+
     }
 
   return (
@@ -38,7 +45,7 @@ function Pregnant() {
                     {
                        liked? <FontAwesomeIcon onClick={likePost} icon={faHeart}/>: <img  onClick={likePost} src={Like} alt='like button'/>
                     }
-                    <p>10</p>
+                    <p>{count}</p>
                 </div>
                 <div>
                     <img src={Comment} alt='Comments'/>

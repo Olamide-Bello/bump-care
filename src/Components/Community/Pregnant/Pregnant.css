@@ -91,3 +91,68 @@
     color: #FC6F92;
     font-size: 18px;
 }
+
+@media(max-width: 780px) {
+    .preg-community {
+        padding: 3vw 3.5vw;
+    }
+
+    .preg-community-hd {
+        gap: 4vw;
+    }
+
+    .preg-community-hd h5 {
+        font-size: 3vw;
+    }
+
+    .preg-community-hd>.no-colour-btn {
+        border: 1px #FFD700 solid;
+        color: #510115;
+        background-color: #fff;
+    }
+
+    .preg-community-hd>.no-colour-btn:hover {
+        background-color: #FFD700;
+    }
+
+    .com-post {
+        padding: 3.1vw 0 2.9vw;
+    }
+    .com-post h5 {
+        font-size: 2.8vw;
+    }
+
+    .author {
+        font-size: 2.3vw;
+        align-items: center;
+    }
+
+    .author p {
+        margin-bottom: 0;
+    }
+
+    .com-post p:not(.post-main) {
+        font-size: 2.3vw;
+    }
+
+    .post-main {
+        font-size: 2.5vw;
+        width: 83vw;
+    }
+
+    .post-utility {
+        gap: 4vw;
+    }
+
+    .more {
+        padding-top: 12.3vw;
+        margin-bottom: 10vw;
+    }
+
+    .more button {
+        font-size: 2.5vw;
+        border-radius: 3px !important;
+        padding: 2.2vw 7.4vw;
+    }
+
+}

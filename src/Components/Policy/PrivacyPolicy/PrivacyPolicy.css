@@ -31,6 +31,7 @@
 .privacy-bd div:first-of-type {
     margin-bottom: 50px;
 }
+
 .privacy-bd h5 {
     color: #510115;
     font-size: 30px;
@@ -51,4 +52,42 @@
 
 .p-diff {
     color: #510115;
+}
+
+.p-diff>a {
+    color: #510115;
+    text-decoration: none;
+}
+
+
+@media(max-width: 780px) {
+    .privacy-hd,
+    .privacy-bd {
+        padding: 9.2vw 11.3vw;
+    }
+
+    .privacy-hd h5 {
+        font-size: 3.1vw;
+    }
+
+    .privacy-hd>img {
+        width: 29vw;
+    }
+
+    .privacy-bd p,
+    .privacy-bd li {
+        font-size: 2.5vw;
+    }
+
+    .privacy-bd div:first-of-type {
+        margin-bottom: 11.5vw;
+    }
+
+    .privacy-bd h5 {
+        font-size: 3vw;
+    }
+
+    .privacy-bd li {
+        margin-bottom: 3.5vw;
+    }
 }

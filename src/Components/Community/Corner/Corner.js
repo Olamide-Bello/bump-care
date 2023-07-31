@@ -1,22 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Corner.css'
 import Corner1 from './Corner1.png'
 import Corner2 from './Corner2.png'
 import Corner3 from './Corner3.png'
 import Corner4 from './Corner4.png'
 import Corner4B from './Corner4B.png'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 function Corner() {
+    const {matches} = useContext(GlobalContext)
   return (
     <div className='corner'>
         <h5>Mom's Corner</h5>
         <p>Welcome to our blog session for moms and babies! Here, we provide you with the 
             latest information, tips, and insights about motherhood and raising healthy and 
-            happy babies. Our blog covers a range of topics including pregnancy, baby care, 
+            happy babies. {!matches && <span>Our blog covers a range of topics including pregnancy, baby care, 
             breastfeeding, parenting, and much more. Our aim is to create a community where 
             moms can connect, share their experiences, and learn from one another. So, whether 
             you're a new mom or an experienced one, join us as we navigate the exciting journey 
-            of motherhood together.
+            of motherhood together.</span>}
         </p>
         <div className='corner-info'>
             <div className='info1'>

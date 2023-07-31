@@ -55,3 +55,40 @@
     bottom: 0;
     background-color: rgba(255, 241, 244, 0.8);
 }
+
+@media(max-width: 780px) {
+    .welcome {
+        padding: 3vw 3.5vw;
+    }
+
+    .welcome-container {
+        height: 51vw;
+    }
+
+    .welcome-container h5 {
+        font-size: 3.2vw;
+        line-height: 120%;
+        width: 33vw;
+    }
+
+    .welcome-container p {
+        font-size: 2.3vw;
+        line-height: 120%;
+        width: 39vw;
+        right: 0;
+    }
+
+    .welcome-container img:first-of-type {
+        width: 49vw;
+        bottom: 0;
+    }
+
+    .welcome-container img:last-of-type {
+        width: 44vw;
+        bottom: 0;
+    }
+
+    .welcome-container::after  {
+        height: 2.9vw;
+    }
+}

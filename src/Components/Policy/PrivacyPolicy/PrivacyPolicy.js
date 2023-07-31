@@ -78,7 +78,7 @@ function PrivacyPolicy() {
                 </div>
                 <div id='contact'>
                     <h5>Contact Us</h5>
-                    <p>If you have any questions about this Privacy Policy or our data practices, please contact us at <span className='p-diff'>support@Bumpcare.com or 09057171458</span></p>
+                    <p>If you have any questions about this Privacy Policy or our data practices, please contact us at <span className='p-diff'><a href='/'>support@Bumpcare.com</a> or 09057171458</span></p>
                 </div>
             </div>
         </div>
