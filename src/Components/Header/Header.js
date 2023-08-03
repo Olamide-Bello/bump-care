@@ -13,7 +13,7 @@ import PasswordReset from '../SignIn/PasswordReset';
 function Header() {
   const [menu, setMenu] = useState(false)
   const { openReset, matches } = useContext(GlobalContext)
-  const { user, logOut } = useContext(AuthContext)
+  const { user, logOut, logged } = useContext(AuthContext)
   const userInitials = useRef(null)
 
   const handleMenu = () => {
@@ -67,7 +67,7 @@ function Header() {
           </div>
         </div>}
       {matches && <img onClick={handleMenu} src={Hamburger} alt='burger menu' />}
-      {!matches && (user === null ? <a href='/signup'><button className='yellow-btn big-btn'>Get Started</button></a> : <div className='logged'>{user.photoURL ? <img className='dis-pic' src={user.photoURL} alt='dp' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div>)}
+      {!matches && (logged ? <div className='logged'>{user?.photoURL ? <img className='dis-pic' src={user?.photoURL} alt='dp' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div> : <a href='/signup'><button className='yellow-btn big-btn'>Get Started</button></a>) }
       {openReset && <PasswordReset />}
     </div>
   )

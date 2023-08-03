@@ -8,7 +8,8 @@ export const AuthContext = createContext({
     user: {},
     facebookSignIn: () => { },
     logOut: () => { },
-    setUser: () => { }
+    setUser: () => { },
+    logged: false
 })
 // // UserAuth Function Must Begin With Capital Letter Cos Of useContext Call
 // export const UserAuth = () => {
@@ -17,6 +18,7 @@ export const AuthContext = createContext({
 
 const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState({})
+    const [logged, setLogged] = useState(false)
 
     const googleSignIn = () => {
         const provider = new GoogleAuthProvider();
@@ -55,6 +57,9 @@ const AuthContextProvider = ({ children }) => {
     useEffect(() => {
         const manageUserState = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
+            if(currentUser) {
+                setLogged(true)
+            }
             console.log('user', currentUser)
         })
         console.log(user)
@@ -64,7 +69,7 @@ const AuthContextProvider = ({ children }) => {
     }, [])
 
     return (
-        <AuthContext.Provider value={{ googleSignIn, facebookSignIn, user, setUser, logOut }}>
+        <AuthContext.Provider value={{ googleSignIn, facebookSignIn, user, setUser, logOut, logged }}>
             {children}
         </AuthContext.Provider>
     )
