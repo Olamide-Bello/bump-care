@@ -16,7 +16,7 @@ function Footer() {
   return (
     <div className='footer'>
         <div className='foot1'>
-            <a href='/home'><img src={Logo} alt='logo'/></a>
+            <img src={Logo} alt='logo'/>
             <div>
                 <a href='https://instagram.com'><img src={Instagram} alt='Insta'/></a>
                 <a href='https://facebook.com'><img src={Facebook} alt='Facebook'/></a>

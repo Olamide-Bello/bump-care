@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
 import './Tracker.css'
 import Step from './Step.png'
+import Step2 from './Step2.png'
 import { GlobalContext } from '../../Context/GlobalContext'
 
 function Tracker() {
     const {matches} = useContext(GlobalContext)
     return (
         <div className='tracker'>
-            <img src={Step} alt='step' />
+            {matches?<img src={Step2} alt='step' /> : <img src={Step} alt='step' />}
             <div className='p-tracker'>
                 <h5>Stay on Top of Every Milestone With Our Pregnancy Tracker!</h5>
                 <p>Our pregnancy tracker is a helpful tool for moms-to-be to

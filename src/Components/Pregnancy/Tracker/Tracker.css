@@ -39,16 +39,18 @@
 @media(max-width: 780px) {
     .tracker {
         padding: 15vw 3vw 10vw 3.5vw;
+        gap: 0;
     }
 
     .tracker>img {
-        width: 40vw;
-        aspect-ratio: 4/5;
+        width: 40vw !important;
+        height: 48.7vw;
         object-fit: cover;
     }
 
     .p-tracker {
         padding: 3.2vw 2.1vw 2.9vw 2.4vw;
+        height: 48.7vw;
     }
 
     .p-tracker h5 {
@@ -63,5 +65,6 @@
     .p-tracker>.big-btn.yellow-btn {
         padding: 2vw 3.3vw ;
         font-size: 2.5vw;
+        border-radius: 3px;
     }
 }
