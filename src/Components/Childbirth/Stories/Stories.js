@@ -11,7 +11,7 @@ function Stories() {
             <h5>Pregnancy Stories From Other Mum</h5>
             <div className='stories-mums-container'>
                 <div>
-                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? 'x' : '2x'} />
+                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? '1x' : '2x'} />
                     <p>My pregnancy was a rollercoaster of emotions. I was overjoyed to be expecting
                         my first child, but I also experienced bouts of anxiety and worry. I was
                         constantly researching and reading up on all the things I should and shouldn't
@@ -21,7 +21,7 @@ function Stories() {
                     </p>
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? 'x' : '2x'} />
+                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? '1x' : '2x'} />
                     <p>I had always dreamed of having a natural birth, but when I went into labor with my
                         first child, things didn't go as planned. After hours of intense contractions,
                         my baby's heart rate began to drop and I had to have an emergency C-section.
@@ -31,7 +31,7 @@ function Stories() {
                     </p>
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? 'x' : '2x'} />
+                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? '1x' : '2x'} />
                     <p>I had a relatively easy pregnancy with my first child, but my second
                         was a completely different story. I experienced intense morning sickness
                         throughout the first trimester and was constantly fatigued. As the
@@ -41,7 +41,7 @@ function Stories() {
                     </p>
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? 'x' : '2x'} />
+                    <FontAwesomeIcon icon={faQuoteLeft} size={matches ? '1x' : '2x'} />
                     <p>When I was pregnant with my first child, I was excited but also anxious
                         about the upcoming labor and delivery. However, my water broke unexpectedly
                         while I was at home one evening, and I had to rush to the hospital. The
