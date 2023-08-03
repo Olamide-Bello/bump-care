@@ -8,7 +8,7 @@
     margin: 20px 0;
 }
 
-.carousel-inner::before {
+.testimony .carousel-inner::before {
     content: '';
     background-color: #FB9CD0;
     border-radius: 10px;
@@ -91,7 +91,7 @@
         font-size: 3vw;
     }
 
-    .carousel-inner::before {
+    .testimony .carousel-inner::before {
         width: 100vw !important;
         height: 75vw;
         left: 0;
