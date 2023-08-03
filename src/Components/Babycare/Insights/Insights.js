@@ -65,14 +65,24 @@ function Insights() {
                     <img src={Teething} alt='a teething baby' />
                     <div className='insights-dt'>
                         <h5>Teething in Babies</h5>
+                        { matches? 
+                        <p>
+                            Teething can be a difficult time for both babies and parents. As your 
+                            baby's teeth begin to emerge, they may experience discomfort, irritability, 
+                            and sleep disturbances. Experts recommend using a clean, chilled teething 
+                            ring or cloth for your baby to chew on, as the cold temperature can help 
+                            numb the gums and reduce swelling. Additionally, over-the-counter teething 
+                            gels or pain relievers
+                        </p>
+                        :
                         <p>Teething can be a difficult time for both babies and parents. As your
                             baby's teeth begin to emerge, they may experience discomfort, irritability,
                             and sleep disturbances. Experts recommend using a clean, chilled teething
                             ring or cloth for your baby to chew on, as the cold temperature can help
                             numb the gums and reduce swelling. You can also try gently massaging your
                             baby's gums with a clean finger. Additionally, over-the-counter teething
-                            gels or pain relievers {matches?<span>may help</span> : <span>may also provide some relief.</span>}
-                        </p>
+                            gels or pain relievers may also provide some relief.
+                        </p>}
                         <div className='expert'>
                             <img src={Expert3} alt='expert' />
                             <div>

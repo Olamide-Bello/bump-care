@@ -116,7 +116,8 @@
     }
 
     .search-bar>img {
-        top: 2vw;
-        right: 2vw;
+        width: 3vw;
+        top: 3vw;
+        right: 2.5vw;
     }
 }

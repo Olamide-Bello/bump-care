@@ -9,6 +9,7 @@
 
 .tracker>img {
     width: 500px;
+    object-fit: cover;
 }
 
 .p-tracker {
@@ -43,6 +44,7 @@
     .tracker>img {
         width: 40vw;
         aspect-ratio: 4/5;
+        object-fit: cover;
     }
 
     .p-tracker {
