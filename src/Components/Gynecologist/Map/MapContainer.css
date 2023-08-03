@@ -120,4 +120,8 @@
         top: 2.5vw;
         right: 2.5vw;
     }
+
+    .placeholder-map img {
+        height: 73vw;
+    }
 }

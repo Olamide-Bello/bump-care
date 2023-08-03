@@ -20,7 +20,8 @@ import {
     Marker,
     // InfoWindow,
 } from '@react-google-maps/api'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useContext } from 'react'
+import { GlobalContext } from '../../Context/GlobalContext'
 
 
 
@@ -39,6 +40,7 @@ function MapContainer() {
     const [lng, setLng] = useState(null)
     const [hospitals, setHospitals] = useState([])
     const [hospitalPos, setHospitalPos] = useState([])
+    const {matches} = useContext(GlobalContext)
 
     useEffect(() => {
         if ('geolocation' in navigator) {
@@ -178,7 +180,7 @@ function MapContainer() {
                 flexDirection='column'
                 alignItems='center'
                 margin='30px auto'
-                h='100vh'
+                h={matches? '73vw': '100vh'}
                 overflow='hidden'
             >
                 <Box position='absolute' left={0} top={0} h='100%' w='100%'>
