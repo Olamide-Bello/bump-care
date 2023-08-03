@@ -27,7 +27,7 @@ import { GlobalContext } from '../../Context/GlobalContext'
 
 function MapContainer() {
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: 'AIzaSyBaALWcoyQjgvTKTB7BtM6C3kddtePabe8',
+        googleMapsApiKey: `${process.env.REACT_APP_GOOGLE_MAP_KEY}`,
         libraries: ['places'],
     })
     const [map, setMap] = useState(/** @type google.maps.Map */(null))
