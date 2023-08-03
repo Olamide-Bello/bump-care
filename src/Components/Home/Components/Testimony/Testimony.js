@@ -11,7 +11,7 @@ import { GlobalContext } from '../../../Context/GlobalContext';
 
 
 function Testimony() {
-    const { matches, normalScreen } = useContext(GlobalContext)
+    const { matches } = useContext(GlobalContext)
 
     return (
         <div className='testimony'>

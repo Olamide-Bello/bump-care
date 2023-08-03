@@ -5,7 +5,7 @@ import {
     IconButton,
     Text,
 } from '@chakra-ui/react'
-import { FaLocationArrow, FaTimes } from 'react-icons/fa'
+import { FaLocationArrow} from 'react-icons/fa'
 import { Spinner } from 'react-bootstrap'
 import Lens from './Lens.png'
 import Placeholder from './Placeholder.png'
@@ -18,7 +18,6 @@ import {
     Autocomplete,
     DirectionsRenderer,
     Marker,
-    // InfoWindow,
 } from '@react-google-maps/api'
 import { useRef, useState, useEffect, useContext } from 'react'
 import { GlobalContext } from '../../Context/GlobalContext'
@@ -55,8 +54,6 @@ function MapContainer() {
             })
         }
     }, [])
-    /** @type React.MutableRefObject<HTMLInputElement> */
-    const originRef = useRef()
     /** @type React.MutableRefObject<HTMLInputElement> */
     const destinationRef = useRef()
 
@@ -105,12 +102,6 @@ function MapContainer() {
 
     }
 
-    const onBoundChange = () => {
-        // eslint-disable-next-line no-undef
-        const bounds = new google.maps.LatLngBounds();
-        hospitalPos.forEach(({ position }) => bounds.extend(position));
-        map.fitBounds(bounds);
-    }
 
     const getDirection = async (desPos) => {
         setDistance('')
@@ -153,13 +144,6 @@ function MapContainer() {
         directionsResponse.current = results
         setDistance(results.routes[0].legs[0].distance.text)
         setDuration(results.routes[0].legs[0].duration.text)
-    }
-
-    function clearRoute() {
-        directionsResponse.current = null
-        setDistance('')
-        setDuration('')
-        destinationRef.current.value = ''
     }
 
     return (

@@ -7,7 +7,7 @@ import Resources4 from './Resources4.png'
 import { GlobalContext } from '../../../Context/GlobalContext'
 
 function Guide() {
-    const { matches, normalScreen } = useContext(GlobalContext)
+    const { matches } = useContext(GlobalContext)
     return (
         <div className='resources'>
             <div className='guide'>

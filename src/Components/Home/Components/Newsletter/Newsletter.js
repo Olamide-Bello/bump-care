@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Newsletter.css'
 import Letters from './Letters.png'
-import { getDatabase, ref, set, child, push, update } from "firebase/database";
+import { getDatabase, ref, set } from "firebase/database";
 import { auth } from '../../../../Firebase_setup/Firebase'
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';

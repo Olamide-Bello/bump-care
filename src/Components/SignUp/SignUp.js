@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignUP.css'
 import Direct from './Direct.png'
@@ -12,16 +12,14 @@ import ExitMobile from './ExitMobile.png'
 import Facebook from './Facebook.png'
 import Google from './Google.png'
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { AuthContext, UserAuth } from '../Context/AuthContext';
-import { auth, db } from '../../Firebase_setup/Firebase';
+import { AuthContext} from '../Context/AuthContext';
+import { auth } from '../../Firebase_setup/Firebase';
 import { GlobalContext } from '../Context/GlobalContext.js';
 import { useNavigate } from 'react-router-dom';
-import { addDoc, collection } from 'firebase/firestore';
 
 function SignUp() {
-    const [firebaseErrmsg, setFirebaseErrmsg] = useState([])
     const { handleSignUpModal, matches } = useContext(GlobalContext)
-    const { googleSignIn, facebookSignIn, user, setUser } = useContext(AuthContext)
+    const { googleSignIn, facebookSignIn } = useContext(AuthContext)
     const navigate = useNavigate()
     const {
         register,
@@ -57,10 +55,6 @@ function SignUp() {
         } catch (err) {
             console.error(err);
             alert(err.message);
-            //         const errorCode = error.code;
-            //         const errorMessage = error.message;
-            //         setFirebaseErrmsg(errorMessage)
-            //         console.log(errorMessage)
         }
 
     }
@@ -71,9 +65,7 @@ function SignUp() {
             navigate('/home')
         }
         catch (error) {
-            const errorCode = error.code;
             const errorMessage = error.message;
-            setFirebaseErrmsg(errorMessage)
             console.log(errorMessage)
         }
     }
@@ -83,9 +75,7 @@ function SignUp() {
             navigate('/home')
         }
         catch (error) {
-            const errorCode = error.code;
             const errorMessage = error.message;
-            setFirebaseErrmsg(errorMessage)
             console.log(errorMessage)
         }
     }

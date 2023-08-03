@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignIn.css'
 import Direct from './Direct.png'
@@ -11,15 +11,14 @@ import ExitIcon from './Exit.png'
 import Facebook from './Facebook.png'
 import Google from './Google.png'
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { AuthContext, UserAuth } from '../Context/AuthContext';
+import { AuthContext } from '../Context/AuthContext';
 import { auth } from '../../Firebase_setup/Firebase';
 import { GlobalContext } from '../Context/GlobalContext.js';
 import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
-    const [firebaseErrmsg, setFirebaseErrmsg] = useState([])
     const { matches } = useContext(GlobalContext)
-    const { googleSignIn, facebookSignIn, user, setUser } = useContext(AuthContext)
+    const { googleSignIn, facebookSignIn, setUser } = useContext(AuthContext)
     const navigate = useNavigate()
     const {
         register,
@@ -50,9 +49,7 @@ function SignUp() {
                 navigate('/home')
             })
             .catch((error) => {
-                const errorCode = error.code;
                 const errorMessage = error.message;
-                setFirebaseErrmsg(errorMessage)
                 console.log(errorMessage)
             });
 
@@ -65,9 +62,7 @@ function SignUp() {
         }
         catch (error) {
             alert(error.code)
-            const errorCode = error.code;
             const errorMessage = error.message;
-            setFirebaseErrmsg(errorMessage)
             console.log(errorMessage)
         }
     }
@@ -77,9 +72,7 @@ function SignUp() {
             navigate('/home')
         }
         catch (error) {
-            const errorCode = error.code;
             const errorMessage = error.message;
-            setFirebaseErrmsg(errorMessage)
             console.log(errorMessage)
         }
     }
