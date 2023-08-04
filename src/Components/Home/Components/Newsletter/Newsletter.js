@@ -42,7 +42,7 @@ function Newsletter() {
                 <h5>Sign up to our Newsletter</h5>
                 <div className='btn-policy'>
                     <button className='subscribe-btn big-btn yellow-btn' onClick={subscribe}>Subscribe</button>
-                    <p>For information on how we process your data, see our <a href='/home'>Privacy Policy</a></p>
+                    <p>For information on how we process your data, see our <a href='/policy'>Privacy Policy</a></p>
                 </div>
             </div>
         </div>

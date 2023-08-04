@@ -8,7 +8,7 @@ function Story() {
         <div className='story-wrapper'>
             <h5 className='story-hd'>Our founding story</h5>
             <p className='story'>Once upon a time, a group of friends who were also first-time moms struggled to find reliable
-                during their pregnacies. They spent hours searching the internet, reading bools and talking to doctors, 
+                during their pregnacies. They spent hours searching the internet, reading books and talking to doctors, 
                 but often felt overwhelmed and confused by conflicting advice. <br/>One day, they decided to create a website 
                 that would provide everything they wished they had when they were pregnant: a comprehensive resource that 
                 covers all aspects of pregnancy and parenthood, a supportive community of like-minded moms, and easy-to-use 

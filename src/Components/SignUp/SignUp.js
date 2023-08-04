@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignUP.css'
 import Direct from './Direct.png'
@@ -20,6 +20,7 @@ import { useNavigate } from 'react-router-dom';
 function SignUp() {
     const { handleSignUpModal, matches } = useContext(GlobalContext)
     const { googleSignIn, facebookSignIn } = useContext(AuthContext)
+    const [agree, setAgree] = useState(false)
     const navigate = useNavigate()
     const {
         register,
@@ -78,6 +79,10 @@ function SignUp() {
             const errorMessage = error.message;
             console.log(errorMessage)
         }
+    }
+
+    const handleAgreement= (e) => {
+        setAgree(e.target.checked)
     }
 
     return (
@@ -159,10 +164,10 @@ function SignUp() {
                         {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
                     </div>
                     <div className='agree-container'>
-                        <input type='checkbox' id='agree' />
+                        <input type='checkbox' id='agree' onChange={handleAgreement} />
                         <label htmlFor='agree' className='agree'>By clicking the button, you agree to our <a href='/policy'>Terms of use</a> and <a href='/policy'>Privacy Policy</a>.</label>
                     </div>
-                    <button className='submit-btn' type='submit' id='submit-btn'><strong>Sign Up</strong></button>
+                    <button className='submit-btn' type='submit' id='submit-btn' disabled={!agree}><strong>Sign Up</strong></button>
                 </form>
                 <br />
                 <p>Have an account with us? <span onClick={handleLogin}>Sign In here</span></p>

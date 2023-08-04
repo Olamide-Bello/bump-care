@@ -60,8 +60,8 @@ function Header() {
                 <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
                 <li><NavLink to='/babycare'>Baby Care</NavLink></li>
                 <li><NavLink to='/community'>Community</NavLink></li>
-                <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>
-                <li onClick={logOut}><img src={LogOut} alt='log out icon' /> Log Out</li>
+                {!logged && <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>}
+                {logged && <li onClick={logOut}><img src={LogOut} alt='log out icon' /> Log Out</li>}
               </ul>
             </nav>
           </div>
