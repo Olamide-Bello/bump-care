@@ -1,12 +1,12 @@
 .guide {
     text-align: center;
     width: 50vw;
-    margin: 0 auto;
+    margin: 8vw auto 5vw;
 }
 
 .guide-hd {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -14,7 +14,7 @@
 
 .guide-bd {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     color: #745F64;
     line-height: 140%;
     letter-spacing: 0;
@@ -25,26 +25,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-top: 50px;
+    gap: 2.22vw;
+    margin-top: 3.7vw;
 }
 
 .res-group1,
 .res-group2 {
-    height: 870px;
+    height: 64.5vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2.22vw;
 }
 
 .res1,
 .res2,
 .res3,
 .res4 {
-    height: 420px;
-    width: 420px;
-    padding: 25px 15px 0 30px;
+    height: 31.2vw;
+    width: 31.2vw;
+    padding: 1.85vw 1.11vw 0 2.22vw;
     border-radius: 15px;
     position: relative;
     transition: all 0.5s ease-in-out
@@ -54,6 +54,7 @@
 .res2>img,
 .res3>img,
 .res4>img {
+    width: 15.5vw;
     display: block;
     position: absolute;
     bottom: 0;
@@ -64,7 +65,7 @@
 
 .res h5 {
     font-family: LatoBold;
-    font-size: 24;
+    font-size: 1.8vw;
     color: #FFF;
     line-height: 140%;
     letter-spacing: 0;
@@ -72,7 +73,7 @@
 
 .res p {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.18vw;
     color: #FFF;
     line-height: 140%;
     letter-spacing: 0;
@@ -98,7 +99,7 @@
 .res2:hover,
 .res3:hover,
 .res4:hover {
-    height: 795px;
+    height: 59vw;
     transition: all 0.45s ease-in-out
 }
 
@@ -148,7 +149,7 @@
 
     .guide {
         width: 100%;
-        padding: 16px 20px;
+        padding: 4.1vw 5.1vw;
     }
 
     .guide-hd {
@@ -190,7 +191,7 @@
     .res2>img,
     .res3>img,
     .res4>img {
-        width: 15vw;
+        width: 14.5vw;
     }
 
     .res1:hover,

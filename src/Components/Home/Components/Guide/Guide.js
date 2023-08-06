@@ -23,7 +23,7 @@ function Guide() {
                             <h5>Pregnancy Information And Resources</h5>
                             <p>We provide you with the knowledge and tools
                                {!matches && <br/>} you need to make informed decisions about
-                               {!matches && <br/>}your health and the health of your baby
+                               {!matches && <br/>}your health and the health of your baby.
                             </p>
                         </div>
                         <img src={Resources1} alt='res' />
@@ -35,7 +35,7 @@ function Guide() {
                             <p>We offer a dedicated space for mothers to 
                             {!matches && <br/>}connect, share their experiences, and seek
                             {!matches && <br/>}advice from others who are going through 
-                            {!matches && <br/>}similar situations
+                            {!matches && <br/>}similar situations.
                             </p>
                         </div>
                         <img src={Resources2} alt='res' />

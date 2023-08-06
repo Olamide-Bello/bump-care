@@ -3,17 +3,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    padding: 60px;
+    gap: 3vw;
+    padding: 10vw 4.4vw 5.5vw;
 }
 
 .story-wrapper {
     padding-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 3vw;
 }
 .story-hd {
     font-family: LatoBold;
-    font-size: 32px;
+    font-size: 2.4vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #510115;
@@ -22,14 +22,14 @@
 
 .story {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745F64;
 }
 
 .story-img {
-    width: 575px;
+    width: 42.62vw;
     border-radius: 10px;
     position: relative;
 }
@@ -55,13 +55,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding: 20px 30px;
+    gap: 2.22vw;
+    padding: 1.5vw 2.22vw;
 }
 
 .stats-hd {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -71,14 +71,14 @@
 .stats-bd {
     color: #745F64;
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
 }
 
 @media(max-width: 780px) {
     .story-body {
-        padding: 16px 20px;
+        padding: 15vw 5vw 8vw;
         flex-direction: column;
-        gap: 30px;
+        gap: 7.7vw;
     }
 
     .story-hd {
@@ -94,7 +94,7 @@
     }
 
     .stat {
-        padding: 18px 20px;
+        padding: 4.6vw 5vw;
         justify-content: space-between;
         gap: 5vw;
     }

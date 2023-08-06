@@ -1,5 +1,5 @@
 .popular {
-    padding: 30px 120px;
+    padding: 5vw 8.9vw;
 }
 
 .popular>h5 {
@@ -8,7 +8,7 @@
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
-    margin: 20px 0;
+    margin-bottom: 1.5vw;
 }
 
 .post-container {
@@ -33,7 +33,7 @@
 
 @media(max-width: 780px) {
     .popular {
-        padding: 16px 20px;
+        padding: 15vw 5.1vw;
     }
 
     .popular>h5 {

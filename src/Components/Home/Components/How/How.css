@@ -1,12 +1,11 @@
 .how {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 12vw 0 5vw;
     text-align: center;
 }
 
 .how>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -17,29 +16,33 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 120px;
+    gap: 8.9vw;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3.7vw;
 }
 
 .how-hd {
     font-family: LatoBold;
-    font-size: 24;
+    font-size: 1.8vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
-    margin: 20px 0;
+    margin: 1.5vw 0;
 }
 
 .how-bd {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     color: #745464;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 @media(max-width: 780px) {
+    .how {
+        margin: 20vw 0 10vw;
+    }
+
     .how>h5 {
         font-size: 3vw;
     }
@@ -47,7 +50,7 @@
     .how-container {
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 20px;
+        padding: 0 5.1vw;
         gap: 8vw;
     }
 
