@@ -12,19 +12,19 @@ function Popular() {
             <div className='post-container'>
                 <div className='post'>
                     <img src={Pop1} alt='popular' />
-                    <p><a href='/home'>How to manage pain <br/>during childbirth</a></p>
+                    <p><a href='/childbirth/#manage'>How to manage pain <br/>during childbirth</a></p>
                 </div>
                 <div className='post'>
                     <img src={Pop2} alt='popular' />
-                    <p><a href='/home'>The early signs of <br/>pregnancy</a></p>
+                    <p><a href='/pregnancy/#signs'>The early signs of <br/>pregnancy</a></p>
                 </div>
                 <div className='post'>
                     <img src={Pop3} alt='popular' />
-                    <p><a href='/home'>How to manage <br/>pregnancy symptoms</a></p>
+                    <p><a href='/pregnancy/#symptoms'>How to manage <br/>pregnancy symptoms</a></p>
                 </div>
                 <div className='post'>
                     <img src={Pop4} alt='popular' />
-                    <p><a href='/home'>How to conceive a <br/>baby easily</a></p>
+                    <p><a href='/pregnancy/#how'>How to conceive a <br/>baby easily</a></p>
                 </div>
             </div>
         </div>

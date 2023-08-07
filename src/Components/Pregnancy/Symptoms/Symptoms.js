@@ -3,7 +3,7 @@ import './Symptoms.css'
 
 function Symptoms() {
   return (
-    <div className='symptoms'>
+    <div id='symptoms' className='symptoms'>
         <h5>Managing Pregnancy Symptoms</h5>
         <div className='p-symptoms'>
             <div>

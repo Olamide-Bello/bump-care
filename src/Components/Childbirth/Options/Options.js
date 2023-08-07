@@ -8,10 +8,10 @@ function Options() {
     const { matches } = useContext(GlobalContext)
     return (
         <div className='options'>
-            <h5>Birth Options Offered At The Child Birth Centre</h5>
             {
                 matches ?
                     <>
+                        <h5>Birth Options Offered At The Child Birth Centre</h5>
                         <div className='options-main'>
                             <div className='options-main1'>
                                 <img src={OptImg} alt='woman in labor' />

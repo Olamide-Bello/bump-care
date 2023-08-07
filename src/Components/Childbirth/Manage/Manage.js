@@ -13,7 +13,7 @@ import { GlobalContext } from '../../Context/GlobalContext'
 function Manage() {
     const { matches } = useContext(GlobalContext)
     return (
-        <div className='manage'>
+        <div id='manage' className='manage'>
             <div className='pain-mgt'>
                 <h5>How To Manage Pain During Child Birth</h5>
                 <p>Childbirth can be a painful and challenging experience,

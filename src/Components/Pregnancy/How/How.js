@@ -28,7 +28,7 @@ function How() {
     }
 
     return (
-        <div className='how-p'>
+        <div id='how' className='how-p'>
             <h5>Getting Pregnant</h5>
             <div className='how-p-container'>
                 <div className={toggle?.p1 ? "expanded-card" : "content-card"}>

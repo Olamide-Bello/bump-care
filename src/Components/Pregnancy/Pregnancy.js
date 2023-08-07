@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
 import Ready from './Ready/Ready.js'
@@ -13,6 +13,12 @@ import Fitness from './Fitness/Fitness.js'
 import Tracker from './Tracker/Tracker.js'
 
 function Pregnancy() {
+  useEffect(() => {
+    if(window.location.hash) {
+      const element = document.querySelector(window.location.hash)
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  }, [])
   return (
     <div>
         <Header/>

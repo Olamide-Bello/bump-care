@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../Header/Header.js'
 import Journey from './Journey/Journey.js'
 import Support from './Support/Support.js'
@@ -12,6 +12,12 @@ import Stories from './Stories/Stories.js'
 import Footer from '../Footer/Footer.js'
 
 function Childbirth() {
+  useEffect(() => {
+    if(window.location.hash) {
+      const element = document.querySelector(window.location.hash)
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  }, [])
   return (
     <div>
         <Header/>

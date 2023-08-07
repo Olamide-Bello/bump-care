@@ -6,7 +6,7 @@ import { GlobalContext } from '../../Context/GlobalContext'
 function Signs() {
     const {matches} = useContext(GlobalContext)
     return (
-        <div className='signs'>
+        <div id='signs' className='signs'>
             <div className='p-signs'>
                 <h5>Early Signs Of Pregnancy</h5>
                 {!matches && <p>Here's a list of common early pregnancy symptoms:</p>}
