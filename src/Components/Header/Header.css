@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 80px 20px 126px;
+    padding: 3.7vw 5.93vw 1.5vw 9.34vw;
 
 }
 
 nav {
-    margin-left: 60px;
+    margin-left: 4.45vw;
 }
 
 nav ul {
@@ -16,8 +16,8 @@ nav ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 8px;
-    gap: 40px;
+    padding: 0.59vw;
+    gap: 2.97vw;
     list-style: none;
     font-family: SofiaProRegular;
 }
@@ -25,7 +25,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #745464;
-    font-size: 18px;
+    font-size: 1.33vw;
     line-height: 140%;
     letter-spacing: 0;
 }
@@ -36,14 +36,14 @@ nav a {
 
 .big-btn {
     font-family: LatoBold;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .dis-pic {
-    width: 50px;
-    height: 50px;
+    width: 3.7vw;
+    height: 3.7vw;
     border-radius: 50%;
 }
 
@@ -52,7 +52,7 @@ nav a {
     color: #fff;
     font-family: LatoBold;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2.22vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@ nav a {
 
 .log-out {
     font-family: SofiaProRegular;
-    font-size: 24;
+    font-size: 1.78vw;
     font-weight: 600;
 }
 
@@ -71,69 +71,68 @@ nav a {
 .logged {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.5vw;
 }
 
 .logged p {
     cursor: pointer;
 }
 
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-    background-color: #fff;
-    padding: 15px 23px 20px 18px;
-}
-
-.menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-bd ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 40px;
-    margin-top: 55px;
-}
-
-.menu-bd li {
-    font-family: LatoBold;
-    color: #510115;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-}
-
-.menu-bd button {
-    padding: 7px 19px;
-    background-color: #FFD700;
-    border-radius: 3px;
-    border: none;
-    color: #510115;
-    font-family: LatoBold;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
 
 @media(max-width: 780px) {
     .header {
         padding: 16px 20px;
     }
-
+    
     nav {
         margin: 0;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background-color: #fff;
+        padding: 3.8vw 5.89vw 5.13vw 4.62vw;
+    }
+    
+    .menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu-bd ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12vw;
+    }
+    
+    .menu-bd li,
+    nav a {
+        font-family: LatoBold;
+        color: #510115;
+        font-size: 3vw;
+        font-style: normal;
+        line-height: 140%;
+        margin-bottom: 10.25vw;
+    }
+    
+    .menu-bd button {
+        padding: 7px 19px;
+        background-color: #FFD700;
+        border-radius: 3px;
+        border: none;
+        color: #510115;
+        font-family: LatoBold;
+        font-size: 2.8vw;
+        font-style: normal;
+        line-height: normal;
     }
 }

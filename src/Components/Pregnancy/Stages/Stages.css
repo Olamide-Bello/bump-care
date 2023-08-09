@@ -1,10 +1,10 @@
 .stages {
-    padding: 40px 80px 40px 120px;
+    padding: 2.97vw 5.93vw 2.97vw 8.89vw;
 }
 
 .stages>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -13,33 +13,33 @@
 .p-stage {
     display: grid;
     grid-template-columns: auto;
-    gap: 40px;
-    margin-top: 20px;
+    gap: 5vw;
+    margin-top: 1.5vw;
     align-items: center;
 }
 
 .p-stage>div {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 40px;
+    gap: 2.97vw;
     align-items: center;
 }
 .p-stage img {
-    width: 530px;
+    width: 39.3vw;
 }
 
 .p-stage h5 {
     font-family: LatoSemibold;
-    font-size: 24px;
+    font-size: 1.78vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #510115;
-    margin-top: 20px;
+    margin-top: 1.5vw;
 }
 
 .p-stage p {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
@@ -55,7 +55,7 @@
     }
 
     .p-stage {
-        gap: 5vw;
+        gap: 8vw;
     }
 
     .p-stage>div:nth-last-of-type(2) {

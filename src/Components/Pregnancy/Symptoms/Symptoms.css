@@ -1,10 +1,11 @@
 .symptoms {
-    padding: 60px 80px 40px 120px;
+    padding: 4.45vw 5.93vw 2.97vw 8.89vw;
+    margin-top: 5vw;
 }
 
 .symptoms>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -13,14 +14,14 @@
 .p-symptoms {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 20px 60px;
-    margin-top: 50px;
+    gap: 1.5vw 4.45vw;
+    margin-top: 3.7vw;
 }
 
 .p-symptoms div {
     border: 1px #745464 solid;
     border-radius: 10px;
-    padding: 30px 10px 10px 20px;
+    padding: 2.22vw 0.74vw 0.74vw 1.5vw;
 }
 
 .p-symptoms div:hover {
@@ -35,7 +36,7 @@
 
 .p-symptoms div h5 {
     font-family: LatoBold;
-    font-size: 18px;
+    font-size: 1.33vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -43,7 +44,7 @@
 
 .p-symptoms div p {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     line-height: 120%;
     letter-spacing: 0;
     color: #745464;

@@ -1,39 +1,41 @@
 .tracker {
-    padding: 80px;
+    padding: 5.93vw;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.5vw;
     justify-content: center;
     align-items: center;
 }
 
 .tracker>img {
-    width: 500px;
+    width: 37vw;
+    height: 30vw;
     object-fit: cover;
 }
 
 .p-tracker {
     background-color: rgba(255, 241, 244, 0.6);
-    padding: 40px 20px 30px 30px;
-
+    padding: 4vw 1.5vw 3.6vw 2.22vw;
+    height: 30vw;
 }
 
 .p-tracker h5 {
     font-family: LatoRegular;
-    font-size: 24px;
+    font-size: 1.78vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
+    width: 34.23vw;
 }
 
 .p-tracker p {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
-    padding-top: 25px;
-    padding-bottom: 5px;
+    padding-top: 1.85vw;
+    padding-bottom: 0.37vw;
 }
 
 @media(max-width: 780px) {

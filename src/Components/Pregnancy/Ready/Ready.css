@@ -1,31 +1,31 @@
 .ready h5 {
     font-family: LatoBold;
-    font-size: 45px;
+    font-size: 3.33vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .ready-hd {
-    width: 750px;
+    width: 55.6vw;
     text-align: center;
-    margin: 20px auto;
+    margin: 1.5vw auto;
 }
 
 .journey {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 20px 80px 20px 120px;
+    gap: 0.74vw;
+    padding: 1.5vw 5.93vw 1.5vw 8.89vw;
 }
 
 .journey-res,
 .journey-bump1,
 .journey-bump2,
 .journey-bf {
-    height: 430px;
-    width: 270px;
+    height: 31.87vw;
+    width: 20vw;
     position: relative;
 }
 
@@ -45,7 +45,7 @@
 
 .journey-bump2>img {
     position: absolute;
-    top: 30px;
+    top: 2.22vw;
 }
 
 .journey-bf>img {

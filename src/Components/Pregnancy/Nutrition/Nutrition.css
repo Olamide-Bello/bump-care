@@ -1,15 +1,15 @@
 .nutrition {
-    padding: 60px 80px 40px 120px;
+    padding: 4.45vw 5.93vw 2.97vw 8.89vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 40px;
+    gap: 2.97vw;
 }
 
 .p-dish h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -19,8 +19,8 @@
 .dish {
     position: relative;
     width: 40vw;
-    height: 500px;
-    margin-top: 30px;
+    height: 37.06vw;
+    margin-top: 2.22vw;
 
 }
 .dish img {
@@ -45,7 +45,7 @@
 
 #dish4 {
     top: 22%;
-    right: 21%;
+    right: 27%;
 }
 
 #dish7 {
@@ -60,7 +60,7 @@
 }
 
 #dish6 {
-    right: 11%;
+    right: 17%;
     bottom: 10%;
 }
 
@@ -84,7 +84,7 @@
 
 .p-nutrition li::marker {
     color: #FC6F92;
-    font-size: 30px;
+    font-size: 2.22vw;
 }
 @media(max-width: 780px) {
     .nutrition {
@@ -112,6 +112,14 @@
     #dish2,
     #dish7 {
         width: 3.7vw;
+    }
+
+    #dish4 {
+        right: 22%;
+    }
+
+    #dish6 {
+        right: 12%;
     }
 
     .p-nutrition {

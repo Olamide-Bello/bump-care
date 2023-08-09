@@ -1,14 +1,15 @@
 .prenatal {
-    padding: 60px 80px 40px 120px;
+    padding: 4.45vw 5.93vw 2.97vw 8.89vw;
 }
 
 .prenatal>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
     text-align: center;
+    margin-bottom: 3vw;
 }
 
 .p-test-nutr {
@@ -16,13 +17,13 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 60px;
+    gap: 4.45vw;
 }
 
 .tests>h5,
 .nutrients>h5 {
     font-family: LatoBold;
-    font-size: 24px;
+    font-size: 1.78vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -31,7 +32,7 @@
 .tests ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.11vw;
     margin-left: 0;
     padding-left: 0;
     list-style-position: inside;
@@ -40,10 +41,10 @@
 .tests li {
     border: 1px #745464 solid;
     border-radius: 10px;
-    padding: 30px 25px 20px 40px;
-    text-indent: -20px;
+    padding: 2.22vw 1.85vw 1.5vw 2.97vw;
+    text-indent: -1.5vw;
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     color: #745464;
 }
 
@@ -55,13 +56,13 @@
 
 .nutrients ul {
     background-color: #FFF1F4;
-    padding: 60px 20px 20px 50px;
+    padding: 4.45vw 1.5vw 1.5vw 3.7vw;
     border-radius: 10px;
 }
 
 .nutrients li {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     color: #745464;
     line-height: 140%;
     letter-spacing: 0;
@@ -80,6 +81,10 @@
     .p-test-nutr {
         flex-direction: column-reverse;
         gap: 3.6vw;
+    }
+
+    .tests ul {
+        gap: 5vw;
     }
 
     .tests>h5,

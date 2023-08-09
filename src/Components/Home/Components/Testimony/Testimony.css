@@ -78,6 +78,10 @@
     right: 2.74vw;
 }
 
+.tes-child2>img {
+    width: 18vw;
+}
+
 .tes-dt {
     text-align: left;
     align-self: center;

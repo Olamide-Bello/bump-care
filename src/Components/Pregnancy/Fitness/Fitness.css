@@ -1,15 +1,16 @@
 .fitness {
-    padding: 40px 60px 30px 60px;
+    padding: 2.97vw 4.45vw 2.22vw;
+    margin: 5vw 0;
 }
 
 .fitness-hd {
     text-align: center;
-    padding: 10px 90px;
+    padding: 0.74vw 6.67vw;
 }
 
 .fitness-hd>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -17,17 +18,17 @@
 
 .fitness-hd>p {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
 }
 
 .yoga>h5 {
-    padding: 40px 0;
+    padding: 2.97vw 0;
     text-align: center;
     font-family: LatoSemibold;
-    font-size: 24px;
+    font-size: 1.78vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -70,7 +71,7 @@
 
 .avoid h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -82,21 +83,21 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding-top: 30px; 
+    gap: 1.5vw;
+    padding-top: 2.22vw; 
 }
 
 .activity div {
     border: 1px #745464 solid ;
     border-radius: 10px;
-    padding: 30px 20px 20px 30px;
+    padding: 2.22vw 1.5vw 1.5vw 2.22vw;
     color: #745464;
     font-family: LatoSemibold;
-    font-size: 24px;
+    font-size: 1.78vw;
     line-height: 140%;
     letter-spacing: 0;
-    width: 350px;
-    height: 120px;
+    width: 25.94vw;
+    height: 8.89vw;
     text-align: center;
 }
 

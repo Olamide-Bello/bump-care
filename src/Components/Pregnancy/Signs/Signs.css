@@ -1,16 +1,17 @@
 .signs {
     background-color: rgba(246, 229, 250, 0.5);
-    padding: 60px 80px 40px 120px;
+    padding: 4.45vw 5.93vw 2.97vw 8.89vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 180px;
+    gap: 13.34vw;
+    margin-top: 7vw;
 }
 
 .p-signs>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
@@ -18,7 +19,7 @@
 
 .p-signs>p:first-of-type {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     color: #510115;
     line-height: 120%;
     letter-spacing: 0;
@@ -27,7 +28,7 @@
 .p-signs P:last-of-type,
 .p-signs li{
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     line-height: 120%;
     letter-spacing: 0;
     color: #745464;
@@ -46,18 +47,18 @@
 
 .signs-img {
     position: relative;
-    width: 450px;
+    width: 33.36vw;
 }
 
 .signs-img::before {
     position: absolute;
     content: "";
-    width: 230px;
-    height: 260px;
+    width: 17vw;
+    height: 19.27vw;
     border-radius: 10px;
     background-color: #FB9CD0;
-    right: -20px;
-    top: -20px;
+    right: -1.5vw;
+    top: -1.5vw;
 }
 
 .signs-img * {
@@ -69,6 +70,7 @@
     .signs {
         padding: 5vw 5vw 5vw 3.5vw;
         gap: 2.6vw;
+        margin-top: 12vw;
     }
 
     .p-signs>h5 {
