@@ -1,37 +1,37 @@
 .we {
-    padding: 60px 120px 20px 126px;
+    padding: 12vw 8.89vw 1.5vw 9.34vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 4.45vw;
 }
 
 .we-bump {
     position: relative;
-    width: 502px;
+    width: 37.21vw;
 }
 
 .we-bump::before {
     position: absolute;
     content: '';
     width: 17%;
-    height: 130px;
-    right: -5px;
-    top: -5px;
-    border-radius: 10px;
+    height: 9.64vw;
+    right: -0.37vw;
+    top: -0.37vw;
+    border-radius: 0.74vw;
     background-color: #FC6F92;
 }
 .we-bump * {
     position: relative;
 }
 .we-bump>img {
-    width: 502px;
+    width: 37.21vw;
 }
 
 .we-care h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     line-height: 140%;
     letter-spacing: 0px;
     color: #510115;
@@ -39,16 +39,16 @@
 
 .we-care p {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     line-height: 140%;
     letter-spacing: 0px;
     color: #745464;
-    margin-top: 30px;
+    margin-top: 2.22vw;
 }
 
 @media(max-width: 780px) {
     .we {
-        padding: 3vw 5vw 10vw 3.5vw;
+        padding: 10vw 5vw 10vw 3.5vw;
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: 4vw;

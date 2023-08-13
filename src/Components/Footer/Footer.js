@@ -47,7 +47,7 @@ function Footer() {
             </div>
         </div>
         <div className='foot3'>
-            <p>&copy; 2023 BumpCare.com. All Right Reserved</p>
+            <p>&copy; 2023 BumpCare.net. All Right Reserved</p>
         </div>
 
     </div>

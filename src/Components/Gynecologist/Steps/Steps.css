@@ -1,14 +1,14 @@
 .locate {
-    padding: 60px 150px 20px 150px;
+    padding: 12vw 11.12vw 1.5vw;
 }
 
 .locate>h5 {
     font-family: LatoBold;
-    font-size: 30px;
+    font-size: 2.22vw;
     line-height: 140%;
     letter-spacing: 0px;
     color: #510115;
-    width: 600px;
+    width: 44.48vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -18,13 +18,13 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    gap: 40px 80px;
-    margin-top: 40px;
+    gap: 5vw 5.93vw;
+    margin-top: 2.97vw;
 }
 
 .steps>div {
-    width: 450px;
-    height: 300px;
+    width: 33.36vw;
+    height: 22.24vw;
 }
 
 
@@ -36,62 +36,64 @@
 
 .diff1 {
     font-family: LatoBold;
-    font-size: 40px;
+    font-size: 2.97vw;
     line-height: 140%;
     letter-spacing: 0px;
     color: #510115;
     margin: 0 auto;
     text-align: center;
     position: absolute;
-    width: 50px;
-    top: 30px;
-    right: 300px;
+    width: 3.7vw;
+    top: 2.22vw;
+    right: 22.24vw;
 }
 
 .diff {
     font-family: LatoBold;
-    font-size: 40px;
+    font-size: 2.97vw;
     line-height: 140%;
     letter-spacing: 0px;
     color: #510115;
     margin: 0 auto;
     text-align: center;
     position: absolute;
-    width: 50px;
-    top: 30px;
-    right: 360px;
+    width: 3.7vw;
+    top: 2.22vw;
+    right: unset;
 }
 .diff2 {
     font-family: LatoBold;
-    font-size: 40px;
+    font-size: 2.97vw;
     line-height: 140%;
     letter-spacing: 0px;
     color: #510115;
     margin: 0 auto;
     text-align: center;
     position: absolute;
-    width: 50px;
-    top: 30px;
-    left: 35px;
+    width: 3.7vw;
+    top: 2.22vw;
+    left: 2.59vw;
 }
 
 
 .step .fade-bg {
     position: absolute;
-    right: 15px;
-    top: -20px;
+    right: 1.11vw;
+    top: -1.5vw;
+    width: 26.4vw;
 }
 .step .fade-bg3 {
     position: absolute;
     left: 0;
-    top: -20px;
+    top: -1.5vw;
+    width: 26.4vw;
 }
 
 .step .fade-bg2 {
-    width: 200px;
-    height: 200px;
+    width: 18vw;
+    height: 18vw;
     position: absolute;
-    right: 210px;
+    right: unset;
     top: 0;
 }
 
@@ -100,24 +102,24 @@
     position: absolute;
     right: 0;
     background-color: #FFF1F4;
-    padding: 20px 60px;
-    max-height: 300px;
+    padding: 1.5vw 4.45vw;
+    max-height: 22.24vw;
 }
 .step .step-jpg3 {
     position: absolute;
-    left: 100px;
+    left: 7.4vw;
     top: 0;
     background-color: #FFF1F4;
-    padding: 20px 80px;
-    max-height: 300px;
+    padding: 1.5vw 5.93vw;
+    max-height: 22.24vw;
 }
 
 .step .step-jpg2 {
     position: absolute;
     right: 0;
     background-color: #FFF1F4;
-    padding: 60px 40px;
-    max-height: 300px;
+    padding: 4.45vw 2.97vw;
+    max-height: 22.24vw;
 }
 
 .step-dt {
@@ -125,28 +127,28 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 20px;
+    padding: 1.5vw;
 }
 
 .step-dt h5 {
     font-family: LatoBold;
-    font-size: 24px;
+    font-size: 1.78vwx;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
 }
 .step-dt p {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     color: #745F64;
     line-height: 140%;
     letter-spacing: 0;
-    width: 450px;
+    width: 33.36vw;
 }
 
 @media(max-width: 780px) {
     .locate {
-        padding: 3vw 5vw 10vw 3.5vw;  
+        padding: 10vw 5vw 10vw 3.5vw;  
     }
 
     .locate>h5 {
@@ -157,7 +159,7 @@
     .steps {
         display: flex;
         flex-direction: column;
-        gap: 10vw;
+        gap: 15vw;
     }
 
     .steps>div {
@@ -176,18 +178,21 @@
     .step .step-jpg {
         width: 23vw;
         padding: 2.1vw 4.5vw 1vw 3.5vw;
+        max-height: 40vw;
     }
 
     .step .step-jpg3 {
         width: 24vw;
-        padding: 2.1vw 5vw 2vw 5vw;
+        padding: 2.1vw 5vw 2vw;
         left: unset;
         right: 0;
+        max-height: 40vw;
     }
 
     .step .step-jpg2 {
         width: 28vw;
         padding: 6vw 2vw 7vw 2.7vw;
+        max-height: 40vw;
     }
 
     .step .fade-bg {
@@ -199,13 +204,14 @@
     .step .fade-bg3 {
         width: 30vw;
         top: -2vw;
-        right: 0vw;
+        left: 2vw;
     }
 
     .step .fade-bg2 {
-        width: 28vw;
-        height: 28vw;
-        right: 9vw;
+        width: 26vw;
+        height: unset;
+        right: 9.5vw;
+        top: -2vw;
     }
 
     .diff,
@@ -217,18 +223,18 @@
     }
 
     .diff1 {
-        right: 22vw;
+        left: 2vw;
         top: 2vw;
     }
 
     .diff2 {
         top: 2vw;
-        left: 1.5vw;
+        left: 4vw;
     }
 
     .diff {
         top: 3vw;
-        right: 26vw;
+        left: 2vw;
     }
 
     .step-dt {

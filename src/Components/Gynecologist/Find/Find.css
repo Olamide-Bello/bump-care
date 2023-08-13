@@ -1,30 +1,30 @@
 .find {
-    padding: 20px 100px 20px 126px;
+    padding: 1.5vw 7.4vw 1.5vw 9.34vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 2.22vw;
 }
 
 .find-gyn1 p {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
-    margin-top: 40px;
+    margin-top: 2.97vw;
 }
 
 .no-colour-btn {
     border: 1px #FFD700 solid;
     color: #510115;
     font-family: LatoBold;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 140%;
     letter-spacing: 0;
-    padding: 15px 30px;
-    border-radius: 10px;
+    padding: 1.11vw 2.22vw;
+    border-radius: 0.74vw;
     background-color: #fff;
 }
 
@@ -33,20 +33,20 @@
 }
 
 .find-gyn2 {
-    width: 550px;
+    width: 40.77vw;
 }
 
 .find-gyn2 h5 {
     font-family: LatoBold;
-    font-size: 40px;
+    font-size: 2.97vw;
     color: #510115;
     line-height: 140%;
     letter-spacing: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.5vw;
 }
 
 .find-gyn2 img {
-    width: 520px;
+    width: 38.55vw;
 }
 
 @media(max-width: 780px) {
