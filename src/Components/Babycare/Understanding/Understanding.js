@@ -11,7 +11,7 @@ import Play from './Play.png'
 function Understanding() {
     return (
         <div className='understanding'>
-            <h5>Understading Baby Needs</h5>
+            <h5>Understanding Baby Needs</h5>
             <p>Understanding your baby's needs can be a challenge, especially if you're a
                 first-time parent. In this section, we'll provide you with helpful tips and
                 insights on understanding your baby's needs, so you can be the best parent

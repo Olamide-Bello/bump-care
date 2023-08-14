@@ -33,8 +33,8 @@ function Steps() {
                             <div className='step-dt'>
                                 <h5>Use The Search Engine Provided On The Map</h5>
                                 <p>
-                                    Use the search engine located at the top of the 
-                                    map to enter your location.
+                                    Click the button at the top of the map to get hospitals around you. Use the search engine located at the top of the 
+                                    map to enter your preferred hospital if a have one in mind.
                                 </p>
                             </div>
                             <div className='step'>
@@ -50,11 +50,9 @@ function Steps() {
                                 <img className='step-jpg2' src={Step3} alt='step' />
                             </div>
                             <div className='step-dt'>
-                                <h5>Enter Your Location</h5>
+                                <h5>Click on the marker</h5>
                                 <p>
-                                    Enter your city or state on the map to find 
-                                    gynecologists in your area. once you have 
-                                    entered your location, the map will give 
+                                    Once you have clicked the button, the map will show clinics closest to your location. When you click on any of the markers,  the map will give 
                                     you directions to clinics with gynecologist near you.
                                 </p>
                             </div>
