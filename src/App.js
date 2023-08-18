@@ -12,6 +12,7 @@ import { ToastContainer } from 'react-toastify';
 import SignUp from './Components/SignUp/SignUp';
 import SignIn from './Components/SignIn/SignIn';
 import PasswordReset from './Components/SignIn/PasswordReset';
+import ProtectedRoute from './Components/ProtectedRoute';
 
 function App() {
   return (
@@ -25,10 +26,10 @@ function App() {
           <Route path="/login" element={<SignIn/>} />
           <Route path="/reset" element={<PasswordReset/>} />
           <Route path="/pregnancy" element={<Pregnancy />} />
-          <Route path="/gynecologist" element={<Gynecologist />} />
+          <Route path="/gynecologist" element={<ProtectedRoute><Gynecologist /></ProtectedRoute>} />
           <Route path="/childbirth" element={<Childbirth />} />
           <Route path="/babycare" element={<Babycare />} />
-          <Route path="/community" element={<Community />} />
+          <Route path="/community" element={<ProtectedRoute><Community /></ProtectedRoute>} />
           <Route path="/policy" element={<Policy />} />
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>
