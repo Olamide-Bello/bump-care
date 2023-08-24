@@ -31,6 +31,8 @@ const AuthContextProvider = ({ children }) => {
 
     const logOut = () => {
         signOut(auth)
+        setUser({})
+        setLogged(false)
     }
 
     useEffect(() => {
