@@ -52,7 +52,7 @@ function SignUp() {
                 // An error occurred
                 console.log(error)
             });
-            navigate('/home')
+            navigate(-1)
         } catch (err) {
             console.error(err);
             alert(err.message);
@@ -63,7 +63,7 @@ function SignUp() {
     const handleGoogleSignIn = async () => {
         try {
             await googleSignIn()
-            navigate('/home')
+            navigate(-1)
         }
         catch (error) {
             const errorMessage = error.message;
@@ -73,7 +73,7 @@ function SignUp() {
     const handleFacebookSignIn = async () => {
         try {
             await facebookSignIn()
-            navigate('/home')
+            navigate(-1)
         }
         catch (error) {
             const errorMessage = error.message;

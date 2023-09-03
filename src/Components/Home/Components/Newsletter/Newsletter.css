@@ -69,7 +69,7 @@
     }
 
     .newsletter img {
-        width: 30vw;
+        width: 35vw;
     }
 
     .subscribe>p {
@@ -91,8 +91,9 @@
     }
 
     .btn-policy>.subscribe-btn {
-        padding: 1.6vw 3.5vw !important;
+        padding: 1.3vw 3.4vw !important;
         font-size: 2vw !important;
         border-radius: 3px !important;
+        font-weight: unset;
     }
 }

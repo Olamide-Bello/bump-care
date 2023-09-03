@@ -1,0 +1,150 @@
+.due-date {
+    padding: 2.97vw 5.93vw 2.97vw 8.89vw;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.due-date-calc h5 {
+    font-family: LatoBold;
+    font-size: 2.22vw;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.due-date-calc p,
+.date-form,
+.cycle-length,
+.input-calc label,
+.exp-edd {
+    font-family: SofiaProRegular;
+    font-size: 1.19vw;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #745464;
+}
+
+.input-calc {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 0.75vw;
+    margin-top: 5vw;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2.22vw;
+    padding: 3.7vw 1.3vw;
+    background-color: #FFF1F4;
+}
+
+.date-form,
+.cycle-length {
+    width: 20vw;
+    height: 3vw;
+    padding: 0.75vw 1.11vw;
+    border: none;
+    border-radius: 0.75vw;
+}
+
+.calc-btn {
+    padding: 1vw 1.11vw;
+    background-color: #FFD700;
+    border-radius: 0.75vw;
+    border: none;
+    font-family: SofiaProRegular;
+    font-size: 1.19vw;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #510115;
+}
+
+.calc-res {
+    flex: 1;
+    text-align: center;
+}
+
+.edd,
+.calc-res-abs {
+    font-family: LatoBold;
+    font-size: 2vw;
+    color: #510115;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-top: 2.22vw;
+}
+
+.css-1fjavwo {
+    margin: 0 auto;
+    height: 11em !important;
+    width: 9em !important;
+}
+
+.css-o50oyy {
+    font-family: SofiaProRegular !important;
+    font-size: 1.19vw !important;
+    line-height: 120%;
+    letter-spacing: 0;
+}
+
+@media(max-width: 780px) {
+    .due-date {
+        padding: 5vw 3.5vw;
+        width: 90vw;
+    }
+
+    .due-date-calc h5 {
+        font-size: 3vw;
+    }
+
+    .due-date-calc p,
+    .date-form,
+    .cycle-length,
+    .input-calc label,
+    .exp-edd,
+    .calc-btn {
+        font-size: 2.5vw;
+    }
+
+    .input-calc {
+        margin-top: 10vw;
+        flex-direction: column;
+    }
+
+    .calculator {
+        padding: 5vw 3.5vw;
+        gap: 3.5vw;
+
+    }
+
+    .date-form,
+    .cycle-length,
+    .calc-btn {
+        width: 80vw;
+        height: 10vw;
+    }
+
+    .calc-res {
+        padding: 5vw 1.5vw;
+    }
+
+    .edd,
+    .calc-res-abs {
+        font-size: 3vw;
+    }
+
+    .css-1fjavwo {
+        height: 18vw !important;
+        width: 15vw !important;
+    }
+
+    .css-o50oyy {
+        font-size: 2.5vw !important;
+    }
+
+    .css-gvm4fs {
+        font-size: 4.5vw !important;
+    }
+}

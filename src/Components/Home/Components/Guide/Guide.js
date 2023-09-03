@@ -46,7 +46,7 @@ function Guide() {
                     <div className='res3'>
                         <div className='res'>
                             <h5>Gynecologist Directory</h5>
-                            <p>Our website offers a comprehensive directory
+                            <p>Our website offers a comprehensive directory 
                             {!matches && <br/>}of trusted gynecologists in your area. whether 
                             {!matches && <br/>}you're looking for a doctor who specializes in 
                             {!matches && <br/>}high-risk pregnancies or one who focuses on

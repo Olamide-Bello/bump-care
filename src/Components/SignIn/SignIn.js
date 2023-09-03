@@ -46,7 +46,7 @@ function SignUp() {
 
                 const userDetails = userCredential.user;
                 setUser(userDetails)
-                navigate('/home')
+                navigate(-1)
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -58,7 +58,7 @@ function SignUp() {
     const handleGoogleSignIn = async () => {
         try {
             await googleSignIn()
-            navigate('/home')
+            navigate(-1)
         }
         catch (error) {
             alert(error.code)
@@ -69,7 +69,7 @@ function SignUp() {
     const handleFacebookSignIn = async () => {
         try {
             await facebookSignIn()
-            navigate('/home')
+            navigate(-1)
         }
         catch (error) {
             const errorMessage = error.message;

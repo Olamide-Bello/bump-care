@@ -49,7 +49,7 @@ function PasswordReset() {
     const handleGoogleSignIn = async () => {
         try {
             await googleSignIn()
-            navigate('/home')
+            navigate(-1)
         }
         catch (error) {
             const errorMessage = error.message;
@@ -59,7 +59,7 @@ function PasswordReset() {
     const handleFacebookSignIn = async () => {
         try {
             await facebookSignIn()
-            navigate('/home')
+            navigate(-1)
         }
         catch (error) {
             const errorMessage = error.message;

@@ -13,6 +13,7 @@ import SignUp from './Components/SignUp/SignUp';
 import SignIn from './Components/SignIn/SignIn';
 import PasswordReset from './Components/SignIn/PasswordReset';
 import ProtectedRoute from './Components/ProtectedRoute';
+import TrackerPage from './Components/Tracker/TrackerPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/childbirth" element={<Childbirth />} />
           <Route path="/babycare" element={<Babycare />} />
           <Route path="/community" element={<ProtectedRoute><Community /></ProtectedRoute>} />
+          <Route path="/tracker" element={<TrackerPage/>} />
           <Route path="/policy" element={<Policy />} />
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>

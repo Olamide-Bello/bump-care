@@ -18,7 +18,7 @@ function Tracker() {
                     guesswork out of calculating your due date, so you can focus on
                     taking care of yourself and your growing baby.</span>}
                 </p>
-                <button className='yellow-btn big-btn'>Track Pregnancy</button>
+                <a href='/tracker'><button className='yellow-btn big-btn'>Track Pregnancy</button></a>
             </div>
         </div>
     )
