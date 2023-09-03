@@ -60,7 +60,7 @@ function Tracker() {
                         <label htmlFor='cycle-length'>Length of cycle</label><br />
                         <input className='cycle-length' name='cycle-length' id='cycle-length' type='number' defaultValue={28} onChange={handleCycleChange} max={35} min={21} />
                     </div>
-                    <button className='calc-btn' onClick={getDueDate}>Calculate Delivery Day</button>
+                    <button className='calc-btn' onClick={getDueDate}>Calculate Due Date</button>
                 </div>
                 <div className='calc-res'>
                     {dueDate ? <> <p className='exp-edd'>Your expected delivery date is </p>
