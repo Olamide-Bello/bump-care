@@ -19,7 +19,6 @@ function Tracker() {
     const handleChange = (e) => {
         const { value } = e.target
         setLastFlow(value)
-        console.log(typeof value)
     }
 
     const handleCycleChange = (e) => {

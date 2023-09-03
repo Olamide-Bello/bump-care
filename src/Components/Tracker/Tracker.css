@@ -124,6 +124,7 @@
     .calc-btn {
         width: 80vw;
         height: 10vw;
+        border-radius: 2.5vw;
     }
 
     .calc-res {
