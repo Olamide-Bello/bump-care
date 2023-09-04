@@ -1,47 +1,45 @@
 .premature {
-    padding: 70px 100px;
+    padding: 7vw 7.41vw;
 }
 
 .premature-container {
     display: flex;
-    gap: 50px;
+    gap: 3.7vw;
     align-items: center;
 
 }
 
 .premature h5 {
     color: #510115;
-    font-size: 30px;
+    font-size: 2.22vw;
     font-family: LatoBold;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .premature p {
     color: #745464;
-    font-size: 18px;
+    font-size: 1.33vw;
     font-family: SofiaProRegular;
     font-style: normal;
-    font-weight: 400;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .incubator {
     position: relative;
-    width: 543px;
+    width: 40.25vw;
 }
 
 .incubator::before {
     position: absolute;
     content: '';
-    right: -15px;
-    top: -15px;
-    border-radius: 10px;
-    height: 354px;
-    width: 220px;
+    right: -1.11vw;
+    top: -1.11vw;
+    border-radius: 0.75vw;
+    height: 26.24vw;
+    width: 16.31vw;
     background-color: #FC6F92;
     z-index: 0 !important;
 
@@ -49,11 +47,11 @@
 .incubator::after {
     position: absolute;
     content: '';
-    left: -30px;
-    bottom: -15px;
+    left: -2.22vw;
+    bottom: -1.11vw;
     border-radius: 50%;
-    height: 63px;
-    width: 63px;
+    height: 4.67vw;
+    width: 4.67vw;
     background-color: #FB9CD0;
     z-index: 0 !important;
 

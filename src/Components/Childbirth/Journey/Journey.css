@@ -2,24 +2,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
-    margin-top: 30px;
-    padding: 20px 100px 20px 126px;
+    gap: 4.45vw;
+    margin-top: 2.22vw;
+    padding: 1.5vw 7.41vw 1.5vw 9.34vw;
 }
 
 .p-journey-img {
     position: relative;
-    width: 420px;
+    width: 31.13vw;
 }
 
 .p-journey-img::before {
     position: absolute;
     content: '';
-    right: -30px;
-    top: -30px;
-    border-radius: 10px;
-    height: 460px;
-    width: 480px;
+    right: -2.22vw;
+    top: -2.22vw;
+    border-radius: 0.75vw;
+    height: 34.1vw;
+    width: 35.58vw;
     background-color: #FFF1F4;
     z-index: 0 !important;
 }
@@ -31,39 +31,36 @@
 
 .p-journey-bd p:first-of-type {
     font-family: LatoBold;
-    font-size: 18px;
+    font-size: 1.33vw;
     color: #FC6F92;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .p-journey-bd h5 {
     color: #510115;
-    font-size: 40px;
+    font-size: 2.97vw;
     font-family: LatoBold;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .p-journey-bd p:last-of-type {
     color: #745F64;
-    font-size: 18px;
+    font-size: 1.33vw;
     font-family: SofiaProRegular;
     font-style: normal;
-    font-weight: 400;
     line-height: 140%;
 }
 
 .p-journey-bd>.no-colour-btn {
-    margin: 30px 0;
+    margin: 2.22vw 0;
 }
 
 .p-journey-bd>img {
-    margin-top: 20px;
+    margin-top: 1.5vw;
 }
 
 @media(max-width: 780px) {
@@ -77,7 +74,6 @@
         font-size: 2.8vw;
         color: #FC6F92;
         font-style: normal;
-        font-weight: 700;
         line-height: 120%;
         letter-spacing: 0;
     }
@@ -87,7 +83,6 @@
         font-size: 2.2vw;
         font-family: SofiaProRegular;
         font-style: normal;
-        font-weight: 400;
         line-height: 120%;
         margin-bottom: 10vw;
     }
@@ -97,7 +92,6 @@
         font-size: 3.1vw;
         font-family: LatoBold;
         font-style: normal;
-        font-weight: unset;
         line-height: 120%;
         letter-spacing: 0;
     }

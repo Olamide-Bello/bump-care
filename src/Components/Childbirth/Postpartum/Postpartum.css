@@ -1,47 +1,45 @@
 .postpartum {
-    padding: 70px 100px;
+    padding: 6vw 7.41vw;
 }
 
 .postpartum-container {
     display: flex;
     align-items: flex-end;
-    gap: 20px;
+    gap: 1.5vw;
 }
 
 .postpartum>div>div>h5 {
     color: #510115;
-    font-size: 30px;
+    font-size: 2.22vw;
     font-family: LatoBold;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .postpartum p {
     color: #745464;
-    font-size: 18px;
+    font-size: 1.33vw;
     font-family: SofiaProRegular;
     font-style: normal;
-    font-weight: 400;
     line-height: 140%;
     letter-spacing: 0;
 }
 
 .postpartum-img {
     position: relative;
-    width: 480px;
-    margin: 70px 0 0 30px;
+    width: 35.58vw;
+    margin: 5.19vw 0 0 2.22vw;
 }
 
 .postpartum-img::before {
     position: absolute;
     content: '';
-    right: -30px;
-    top: -30px;
-    border-radius: 10px;
-    height: 480px;
-    width: 540px;
+    right: -2.22vw;
+    top: -2.22vw;
+    border-radius: 0.75vw;
+    height: 35.58vw;
+    width: 40.03vw;
     background-color: #FFF1F4;
     z-index: 0 !important;
 }
@@ -50,23 +48,26 @@
     position: relative;
 }
 
+.postpartum-img>img {
+    width: 35.58vw;
+}
+
 .recovery h5 {
     color: #FC6F92;
-    font-size: 30px;
+    font-size: 2.22vw;
     font-family: LatoBold;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
     letter-spacing: 0;
     position: absolute;
-    top: -10px;
-    left: -20px;
+    top: -0.75vw;
+    left: -1.5vw;
     background-color: #fff;
 }
 
 .recovery div {
-    padding-left: 30px;
-    height: 120px;
+    padding-left: 2.22vw;
+    height: 8.89vw;
     position: relative;
 }
 
@@ -77,7 +78,7 @@
 
 @media(max-width: 780px) {
     .postpartum {
-        padding: 3vw 3.5vw 10vw;
+        padding: 7vw 3.5vw 10vw;
     }
 
     .postpartum-container {
@@ -92,7 +93,6 @@
         font-size: 3vw;
         font-family: LatoBold;
         font-style: normal;
-        font-weight: 700;
         line-height: 120%;
         letter-spacing: 0;
     }
