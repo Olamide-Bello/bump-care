@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import StoryPic from './StoryPic.jpg'
 import './Story.css'
+import { GlobalContext } from '../../../Context/GlobalContext'
+import { AuthContext } from '../../../Context/AuthContext'
+import { NavLink } from 'react-router-dom'
 
 function Story() {
+    const {matches} = useContext(GlobalContext)
+    const {logged} = useContext(AuthContext)
   return (
     <div className='story-body'>
         <div className='story-wrapper'>
@@ -16,6 +21,7 @@ function Story() {
                 parents, the website was launched to provide trustworthy and evidence-based informations to new mothers.
             </p>
         </div>
+        {matches && !logged &&  <NavLink to='/signup'><button className='cta-mobile'>Get Started</button></NavLink>}
         <div className='story-stats'>
             <div className='story-img'><img src={StoryPic} alt='moms'/></div>
             <div className='stat'>

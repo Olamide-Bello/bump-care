@@ -124,7 +124,8 @@ nav a {
         margin-bottom: 10.25vw;
     }
     
-    .menu-bd button {
+    .menu-bd button,
+    .cta-mobile {
         padding: 7px 19px;
         background-color: #FFD700;
         border-radius: 3px;
