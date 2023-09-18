@@ -12,12 +12,17 @@ import PasswordReset from '../SignIn/PasswordReset';
 
 function Header() {
   const [menu, setMenu] = useState(false)
-  const { openReset, matches } = useContext(GlobalContext)
+  const { openReset, matches, setPrevPath } = useContext(GlobalContext)
   const { user, logOut, logged } = useContext(AuthContext)
   const userInitials = useRef(null)
 
   const handleMenu = () => {
     setMenu(!menu)
+  }
+
+  const handlePrevPath = () => {
+    setPrevPath(window.location.pathname)
+    console.log(window.location.pathname)
   }
 
   useMemo(() => {
@@ -60,14 +65,14 @@ function Header() {
                 <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
                 <li><NavLink to='/babycare'>Baby Care</NavLink></li>
                 <li><NavLink to='/community'>Community</NavLink></li>
-                {!logged && <li><NavLink to='/signup'><button>Get Started</button></NavLink></li>}
+                {!logged && <li><NavLink onClick={handlePrevPath} to='/signup'><button >Get Started</button></NavLink></li>}
                 {logged && <li onClick={logOut}><img src={LogOut} alt='log out icon' /> Log Out</li>}
               </ul>
             </nav>
           </div>
         </div>}
       {matches && <img onClick={handleMenu} src={Hamburger} alt='burger menu' />}
-      {!matches && (logged ? <div className='logged'>{user?.photoURL ? <img className='dis-pic' src={user?.photoURL} alt='dp' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div> : <a href='/signup'><button className='yellow-btn big-btn'>Get Started</button></a>) }
+      {!matches && (logged ? <div className='logged'>{user?.photoURL ? <img className='dis-pic' src={user?.photoURL} alt='dp' /> : <div className='dis-pic avatar'>{userInitials.current}</div>}<p className='log-out' onClick={logOut}>LOG OUT</p></div> : <a onClick={handlePrevPath} href='/signup'><button  className='yellow-btn big-btn'>Get Started</button></a>) }
       {openReset && <PasswordReset />}
     </div>
   )

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignUP.css'
 import Direct from './Direct.png'
@@ -18,8 +18,8 @@ import { GlobalContext } from '../Context/GlobalContext.js';
 import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
-    const { handleSignUpModal, matches } = useContext(GlobalContext)
-    const { googleSignIn, facebookSignIn } = useContext(AuthContext)
+    const { handleSignUpModal, matches, prevPath } = useContext(GlobalContext)
+    const { googleSignIn, facebookSignIn, logged } = useContext(AuthContext)
     const [agree, setAgree] = useState(false)
     const navigate = useNavigate()
     const {
@@ -52,7 +52,6 @@ function SignUp() {
                 // An error occurred
                 console.log(error)
             });
-            navigate(-1)
         } catch (err) {
             console.error(err);
             alert(err.message);
@@ -62,8 +61,7 @@ function SignUp() {
 
     const handleGoogleSignIn = async () => {
         try {
-            await googleSignIn()
-            navigate(-1)
+            googleSignIn()
         }
         catch (error) {
             const errorMessage = error.message;
@@ -72,14 +70,26 @@ function SignUp() {
     }
     const handleFacebookSignIn = async () => {
         try {
-            await facebookSignIn()
-            navigate(-1)
+            facebookSignIn()
         }
         catch (error) {
             const errorMessage = error.message;
             console.log(errorMessage)
         }
     }
+
+    useMemo(()=> {
+        const navBack = () => {
+            if(logged) {
+                window.history.go(-1)
+                // navigate(prevPath, {replace: true})
+            }
+            
+        }
+        navBack()
+    }, [logged, navigate, prevPath])
+
+    // console.log(window.history.go(-1))
 
     const handleAgreement= (e) => {
         setAgree(e.target.checked)

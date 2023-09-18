@@ -18,8 +18,13 @@ const AuthContextProvider = ({ children }) => {
     const [logged, setLogged] = useState(false)
 
     const googleSignIn = () => {
-        const provider = new GoogleAuthProvider();
-        signInWithRedirect(auth, provider)
+        try {
+            const provider = new GoogleAuthProvider();
+            signInWithRedirect(auth, provider)
+        }
+        catch(error) {
+            alert(error)
+        }
     }
 
     const facebookSignIn = () => {

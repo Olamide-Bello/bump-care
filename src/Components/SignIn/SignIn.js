@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignIn.css'
 import Direct from './Direct.png'
@@ -17,8 +17,8 @@ import { GlobalContext } from '../Context/GlobalContext.js';
 import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
-    const { matches } = useContext(GlobalContext)
-    const { googleSignIn, facebookSignIn, setUser } = useContext(AuthContext)
+    const { matches, prevPath } = useContext(GlobalContext)
+    const { googleSignIn, facebookSignIn, setUser, logged } = useContext(AuthContext)
     const navigate = useNavigate()
     const {
         register,
@@ -46,7 +46,9 @@ function SignUp() {
 
                 const userDetails = userCredential.user;
                 setUser(userDetails)
-                navigate(-1)
+                if(logged) {
+                    navigate(-1)
+                }
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -57,8 +59,7 @@ function SignUp() {
 
     const handleGoogleSignIn = async () => {
         try {
-            await googleSignIn()
-            navigate(-1)
+            googleSignIn()
         }
         catch (error) {
             alert(error.code)
@@ -68,14 +69,28 @@ function SignUp() {
     }
     const handleFacebookSignIn = async () => {
         try {
-            await facebookSignIn()
-            navigate(-1)
+            facebookSignIn()
+            if(logged) {
+                navigate(-1)
+            }
         }
         catch (error) {
             const errorMessage = error.message;
             console.log(errorMessage)
         }
     }
+    useMemo(()=> {
+        const navBack = () => {
+            if(logged) {
+                console.log(prevPath)
+                navigate(prevPath, {replace: true})
+            }
+            
+        }
+        navBack()
+    }, [logged, navigate, prevPath])
+    console.log(prevPath)
+
 
     return (
         <div className='modal-container'>

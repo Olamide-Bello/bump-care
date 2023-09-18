@@ -19,7 +19,7 @@ import { toast } from 'react-toastify';
 function PasswordReset() {
     const [sent, setSent] = useState(false)
     const { matches } = useContext(GlobalContext)
-    const { googleSignIn, facebookSignIn } = useContext(AuthContext)
+    const { googleSignIn, facebookSignIn, logged } = useContext(AuthContext)
     const navigate = useNavigate()
     const {
         register,
@@ -48,8 +48,10 @@ function PasswordReset() {
 
     const handleGoogleSignIn = async () => {
         try {
-            await googleSignIn()
-            navigate(-1)
+            googleSignIn()
+            if(logged) {
+                navigate(-1)
+            }
         }
         catch (error) {
             const errorMessage = error.message;
@@ -58,8 +60,10 @@ function PasswordReset() {
     }
     const handleFacebookSignIn = async () => {
         try {
-            await facebookSignIn()
-            navigate(-1)
+            facebookSignIn()
+            if(logged) {
+                navigate(-1)
+            }
         }
         catch (error) {
             const errorMessage = error.message;
