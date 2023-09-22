@@ -107,4 +107,17 @@
         font-size: 2vw;
         line-height: 120%;
     }
+
+  
+    .cta-mobile {
+        padding: 3vw 8vw;
+        background-color: #FFD700;
+        border-radius: 5px;
+        border: none;
+        color: #510115;
+        font-family: LatoBold;
+        font-size: 3.2vw;
+        font-style: normal;
+        line-height: normal;
+    }
 }
