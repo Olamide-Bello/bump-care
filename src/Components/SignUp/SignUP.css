@@ -29,40 +29,38 @@
 
 .modal-img-dt {
     position: absolute;
-    top: 340px;
-    left: 40px;
+    top: 25.2vw;
+    left: 2.97vw;
     z-index: 1000;
 }
 
 .modal-img-dt h5:first-of-type {
     color: #FFF;
     font-family: LatoBold;
-    font-size: 28px;
+    font-size: 2.1vw;
     font-style: normal;
-    font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 1.11vw;
     line-height: 140%;
 }
 
 .modal-img-dt h5:last-of-type {
     color: #FFF;
     font-family: LatoBold;
-    font-size: 36px;
+    font-size: 26.69vw;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
 }
 
 .sign {
     width: 52vw;
-    padding: 40px 60px 0px 85px;
+    padding: 2.97vw 4.45vw 0 6.3vw;
     background-color: rgba(242, 82, 124, 0.02);
 }
 
 .sign-exit {
     position: absolute;
-    top: 40px;
-    right: 60px;
+    top: 2.97vw;
+    right: 4.45vw;
 }
 
 .modal-header {
@@ -73,13 +71,12 @@
 
 .form-group label {
     color: #510115;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-family: LatoBold;
     font-style: normal;
-    font-weight: 400;
     line-height: 145%;
     text-align: center;
-    margin: 10px 0;
+    margin: 0.75vw 0;
 }
 
 .form-group {
@@ -89,13 +86,13 @@
 
 .form-group img {
     position: absolute;
-    top: 70px;
-    left: 20px;
+    top: 5.2vw;
+    left: 1.5vw;
 }
 
 .sign p {
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
@@ -106,7 +103,7 @@
 .agree-container {
     display: flex;
     align-items: center;
-    margin: 10px 0 20px;
+    margin: 0.75vw 0 1.5vw;
 }
 .sign>p>span {
     color: rgba(81, 1, 21, 0.80);
@@ -117,11 +114,10 @@
 
 
 input#agree {
-    width: 20px;
-    height: 20px;
+    width: 1.5vw;
+    height: 1.5vw;
     border: 0;
     outline: 0;
-    /* opacity: 0; */
 }
 
 #agree:checked {
@@ -131,11 +127,11 @@ input#agree {
 
 .agree {
     font-family: SofiaProRegular;
-    font-size: 16px;
+    font-size: 1.19vw;
     line-height: 140%;
     letter-spacing: 0;
     color: #745464;
-    margin-left: 5px;
+    margin-left: 0.37vw;
 }
 
 .agree a {
@@ -144,18 +140,17 @@ input#agree {
 
 .sign>h5:first-of-type {
     color: #510115;
-    font-size: 23px;
+    font-size: 1.7vw;
     font-family: LatoBold;
     font-style: normal;
-    font-weight: 600;
     line-height: 140%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 2.97vw;
 }
 
 .sign .form-group input {
     width: 100%;
-    height: 65px;
+    height: 4.82vw;
     border: none;
     border-radius: 12px;
     margin-bottom: 10px;
@@ -163,9 +158,8 @@ input#agree {
     font-family: LatoBold;
     font-size: 1.19vw;
     font-style: normal;
-    font-weight: 400;
     line-height: 145%;
-    padding-left: 60px;
+    padding-left: 4.45vw;
 }
 
 .sign .form-group input:focus {
@@ -200,17 +194,16 @@ input#agree {
 
 .submit-btn {
     width: 100%;
-    height: 65px;
+    height: 4.82vw;
     border: none;
     background-color: #FFD700;
     border-radius: 5px;
     font-family: LatoBold;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: #510115;
-    font-weight: 700;
     letter-spacing: 0;
     line-height: 140%;
-    margin-bottom: 20px;
+    margin-bottom: 1.5vw;
 }
 
 .submit-btn:disabled {
@@ -219,8 +212,8 @@ input#agree {
 
 .alt {
     border-bottom: 0.5px solid rgba(116, 84, 100, 0.50);
-    padding: 30px 0 50px 0;
-    margin-bottom: 30px;
+    padding: 2.22vw 0 3.7vw 0;
+    margin-bottom: 2.22vw;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -228,36 +221,34 @@ input#agree {
 
 .alt>p {
     position: absolute;
-    bottom: -28px;
+    bottom: -2.07vw;
     left: 50%;
     background-color: rgb(254, 251, 251);
-    padding: 0 10px;
+    padding: 0 0.75vw;
     transform: translateX(-50%);
     color: rgba(116, 84, 100, 0.50);
     text-align: center;
     font-family: SofiaProRegular;
-    font-size: 18px;
+    font-size: 1.33vw;
     font-style: normal;
-    font-weight: 400;
     line-height: 140%;
 }
 
 .alt>.alt-login:first-of-type {
-    margin-right: 10px;
+    margin-right: 0.75vw;
 }
 
 .alt-login {
-    width: 250px;
-    height: 50px;
+    width: 18.53vw;
+    height: 3.7vw;
     border-radius: 5px;
     border: 0.5px solid rgba(116, 84, 100, 0.40);
     background-color: transparent;
     color: #510115;
     text-align: center;
     font-family: LatoBold;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%;
 }
 
@@ -315,6 +306,7 @@ input#agree {
 
     .submit-btn {
         height: 41px;
+        font-size: 3.5vw;
     }
 
     .sign p {
