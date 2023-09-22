@@ -126,13 +126,13 @@ nav a {
     
     .menu-bd button,
     .cta-mobile {
-        padding: 7px 19px;
+        padding: 2vw 5vw;
         background-color: #FFD700;
         border-radius: 3px;
         border: none;
         color: #510115;
         font-family: LatoBold;
-        font-size: 2.8vw;
+        font-size: 2vw;
         font-style: normal;
         line-height: normal;
     }
