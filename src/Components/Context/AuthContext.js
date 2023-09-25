@@ -1,6 +1,8 @@
-import { createContext, useEffect, useState } from 'react'
-import { GoogleAuthProvider, FacebookAuthProvider, signOut, onAuthStateChanged, signInWithRedirect } from 'firebase/auth'
+import { createContext, useContext, useEffect, useState } from 'react'
+import { GoogleAuthProvider, FacebookAuthProvider, signOut, onAuthStateChanged, signInWithRedirect, signInWithPopup } from 'firebase/auth'
 import { auth } from '../../Firebase_setup/Firebase'
+import { GlobalContext } from './GlobalContext'
+import { toast } from 'react-toastify'
 
 
 export const AuthContext = createContext({
@@ -16,20 +18,30 @@ export const AuthContext = createContext({
 const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState({})
     const [logged, setLogged] = useState(false)
+    const {matches} = useContext(GlobalContext)
 
     const googleSignIn = () => {
         try {
             const provider = new GoogleAuthProvider();
-            signInWithRedirect(auth, provider)
+            if (matches) {
+                signInWithPopup(auth, provider)
+            } else {
+                signInWithRedirect(auth, provider)
+            }
         }
         catch(error) {
-            alert(error)
+            toast.warning(error.message)
         }
     }
 
     const facebookSignIn = () => {
-        const provider = new FacebookAuthProvider();
-        signInWithRedirect(auth, provider)
+        try {
+            const provider = new FacebookAuthProvider();
+            signInWithPopup(auth, provider)
+
+        } catch(error) {
+            toast(error.message)
+        }
             
     }
 
