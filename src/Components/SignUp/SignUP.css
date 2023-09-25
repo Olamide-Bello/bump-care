@@ -46,7 +46,7 @@
 .modal-img-dt h5:last-of-type {
     color: #FFF;
     font-family: LatoBold;
-    font-size: 26.69vw;
+    font-size: 2.669vw;
     font-style: normal;
     line-height: 140%;
 }
@@ -255,7 +255,7 @@ input#agree {
 @media(max-width: 780px) {
     .sign {
         width: 100vw;
-        padding: 40px 25px;
+        padding: 10.2vw 6.5vw;
     }
 
     .sign-exit {
@@ -286,13 +286,14 @@ input#agree {
     .sign .form-group input {
         height: 41px;
         font-size: 2.5vw;
+        padding-left: 9vw;
 
     }
 
     .sign .form-group img {
         width: 14px;
         height: 14px;
-        top: 50px;
+        top: 10vw;
     }
 
     input#agree {

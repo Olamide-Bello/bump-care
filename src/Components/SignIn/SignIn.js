@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignIn.css'
 import Direct from './Direct.png'
@@ -15,8 +15,9 @@ import { AuthContext } from '../Context/AuthContext';
 import { auth } from '../../Firebase_setup/Firebase';
 import { GlobalContext } from '../Context/GlobalContext.js';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-function SignUp() {
+function SignIn() {
     const { matches, prevPath } = useContext(GlobalContext)
     const { googleSignIn, facebookSignIn, setUser, logged } = useContext(AuthContext)
     const navigate = useNavigate()
@@ -40,20 +41,22 @@ function SignUp() {
 
     const OnSubmit = async (data) => {
         console.log(data)
-        await signInWithEmailAndPassword(auth, data.email, data.password)
+        try {
 
-            .then((userCredential) => {
+            await signInWithEmailAndPassword(auth, data.email, data.password)
 
-                const userDetails = userCredential.user;
-                setUser(userDetails)
-                if(logged) {
-                    navigate(-1)
-                }
-            })
-            .catch((error) => {
-                const errorMessage = error.message;
-                console.log(errorMessage)
-            });
+                .then((userCredential) => {
+
+                    const userDetails = userCredential.user;
+                    setUser(userDetails)
+                })
+        }
+        catch (error) {
+            const errorMessage = error.message;
+            if (errorMessage === 'Firebase: Error (auth/user-not-found).') {
+                toast.warning('User does not exist, sign up instead!')
+            }
+        };
 
     }
 
@@ -70,7 +73,7 @@ function SignUp() {
     const handleFacebookSignIn = async () => {
         try {
             facebookSignIn()
-            if(logged) {
+            if (logged) {
                 navigate(-1)
             }
         }
@@ -79,16 +82,16 @@ function SignUp() {
             console.log(errorMessage)
         }
     }
-    useMemo(()=> {
+    useEffect(() => {
         const navBack = () => {
-            if(logged) {
-                console.log(prevPath)
-                navigate(prevPath, {replace: true})
+            if (logged) {
+                navigate(prevPath, { replace: true })
             }
-            
+
         }
         navBack()
     }, [logged, navigate, prevPath])
+
     console.log(prevPath)
 
 
@@ -170,4 +173,4 @@ function SignUp() {
     )
 }
 
-export default SignUp
+export default SignIn

@@ -12,7 +12,14 @@ export const GlobalContext = createContext({
 
 function GlobalState({ children }) {
     const [openReset, setOpenReset] = useState(false)
-    const [prevPath, setPrevPath] = useState("")
+    const [prevPath, setPrevPath] = useState(() => {
+        const previousPath = localStorage.getItem("prev");
+        if (previousPath) {
+            return previousPath;
+        } else {
+            return "/home";
+        }
+    })
     const [matches, setMatches] = useState(
         window.matchMedia("(max-width: 780px)").matches
     )
@@ -20,6 +27,10 @@ function GlobalState({ children }) {
     const handleReset = () => {
         setOpenReset(!openReset)
     }
+
+    useEffect(() => {
+        localStorage.setItem("prev", prevPath);
+    }, [prevPath])
 
 
     useEffect(() => {

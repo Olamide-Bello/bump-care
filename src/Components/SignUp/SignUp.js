@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './SignUP.css'
 import Direct from './Direct.png'
@@ -12,10 +12,11 @@ import ExitMobile from './ExitMobile.png'
 import Facebook from './Facebook.png'
 import Google from './Google.png'
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { AuthContext} from '../Context/AuthContext';
+import { AuthContext } from '../Context/AuthContext';
 import { auth } from '../../Firebase_setup/Firebase';
 import { GlobalContext } from '../Context/GlobalContext.js';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function SignUp() {
     const { handleSignUpModal, matches, prevPath } = useContext(GlobalContext)
@@ -53,8 +54,11 @@ function SignUp() {
                 console.log(error)
             });
         } catch (err) {
-            console.error(err);
-            alert(err.message);
+            if(err.message === 'Firebase: Error (auth/email-already-in-use).') {
+                toast.warn('You already have an account! Sign in instead')
+            } else {
+                toast.warning(`${err.message}`);
+            }
         }
 
     }
@@ -78,20 +82,19 @@ function SignUp() {
         }
     }
 
-    useMemo(()=> {
+    useEffect(() => {
         const navBack = () => {
-            if(logged) {
-                window.history.go(-1)
-                // navigate(prevPath, {replace: true})
+            if (logged) {
+                navigate(prevPath, {replace: true})
             }
-            
+
         }
         navBack()
     }, [logged, navigate, prevPath])
 
-    // console.log(window.history.go(-1))
+    console.log('here: '+ prevPath)
 
-    const handleAgreement= (e) => {
+    const handleAgreement = (e) => {
         setAgree(e.target.checked)
     }
 

@@ -20,9 +20,8 @@ function Header() {
     setMenu(!menu)
   }
 
-  const handlePrevPath = () => {
-    setPrevPath(window.location.pathname)
-    console.log(window.location.pathname)
+  const handlePrevPath = (prev) => {
+    setPrevPath(prev)
   }
 
   useMemo(() => {
@@ -34,20 +33,19 @@ function Header() {
         initials += typeof arr[i] === "string" ? arr[i].charAt(0).toUpperCase() : ""
       }
       userInitials.current = initials
-      console.log(userInitials.current)
     }
   }, [user])
 
   return (
     <div className='header'>
-      {matches ? <a href='/home'><img src={logoMobile} alt='logo' /></a> : <a href='/home'><img src={logo} alt='logo' /></a>}
+      {matches ? <a onClick={() => {handlePrevPath('/home')}}  href='/home'><img src={logoMobile} alt='logo' /></a> : <a onClick={() => {handlePrevPath('/home')}} href='/home'><img src={logo} alt='logo' /></a>}
       {!matches && <nav>
         <ul>
-          <li><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
-          <li><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
-          <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
-          <li><NavLink to='/babycare'>Baby Care</NavLink></li>
-          <li><NavLink to='/community'>Community</NavLink></li>
+          <li onClick={() => {handlePrevPath('/pregnancy')}}><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
+          <li onClick={() => {handlePrevPath('/gynecologist')}}><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
+          <li onClick={() => {handlePrevPath('/childbirth')}}><NavLink to='/childbirth'>Child Birth</NavLink></li>
+          <li onClick={() => {handlePrevPath('/babycare')}}><NavLink to='/babycare'>Baby Care</NavLink></li>
+          <li onClick={() => {handlePrevPath('/community')}}><NavLink to='/community'>Community</NavLink></li>
         </ul>
       </nav>}
       {menu &&
@@ -59,12 +57,12 @@ function Header() {
           <div className='menu-bd'>
             <nav>
               <ul>
-                <li><NavLink to='/home'>Home</NavLink></li>
-                <li><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
-                <li><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
-                <li><NavLink to='/childbirth'>Child Birth</NavLink></li>
-                <li><NavLink to='/babycare'>Baby Care</NavLink></li>
-                <li><NavLink to='/community'>Community</NavLink></li>
+                <li onClick={() => {handlePrevPath('/home')}}><NavLink to='/home'>Home</NavLink></li>
+                <li onClick={() => {handlePrevPath('/pregnancy')}}><NavLink to='/pregnancy'>Pregnancy</NavLink></li>
+                <li onClick={() => {handlePrevPath('/gynecologist')}}><NavLink to='/gynecologist'>Gynecologist</NavLink></li>
+                <li onClick={() => {handlePrevPath('/childbirth')}}><NavLink to='/childbirth'>Child Birth</NavLink></li>
+                <li onClick={() => {handlePrevPath('/babycare')}}><NavLink to='/babycare'>Baby Care</NavLink></li>
+                <li onClick={() => {handlePrevPath('/community')}}><NavLink to='/community'>Community</NavLink></li>
                 {!logged && <li><NavLink onClick={handlePrevPath} to='/signup'><button >Get Started</button></NavLink></li>}
                 {logged && <li onClick={logOut}><img src={LogOut} alt='log out icon' /> Log Out</li>}
               </ul>
